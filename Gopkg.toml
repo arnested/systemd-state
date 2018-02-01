@@ -27,8 +27,7 @@
 
 [[constraint]]
   name = "github.com/coreos/go-systemd"
-  branch = "system-state"
-  source = "github.com/arnested/go-systemd"
+  revision = "176f85496f4e86cbe92a915c597a0809518b878f"
 
 [prune]
   go-tests = true

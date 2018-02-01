@@ -2,11 +2,9 @@
 
 
 [[projects]]
-  branch = "system-state"
   name = "github.com/coreos/go-systemd"
   packages = ["dbus"]
-  revision = "de1f720bc1b49faac8ae481d2275ff2aec6b0e84"
-  source = "github.com/arnested/go-systemd"
+  revision = "176f85496f4e86cbe92a915c597a0809518b878f"
 
 [[projects]]
   name = "github.com/godbus/dbus"
@@ -17,6 +15,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "dfd7dd8a68bf5b4f9719c2f1fd006898153b473f315a7e786d75f6a7eaf017c2"
+  inputs-digest = "f5506e7b08d14a3ad653d41cc04672934c038336108e1d5276c8f5edb9683f35"
   solver-name = "gps-cdcl"
   solver-version = 1
