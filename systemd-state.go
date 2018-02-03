@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"html/template"
 	"net/http"
 	"strings"
 
@@ -22,7 +23,19 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.WriteHeader(code)
-	fmt.Fprintf(w, "<h1 style=\"text-transform: capitalize;\">%s<h1>", state)
+
+	tpl := `<!DOCTYPE html>
+<html>
+	<head>
+		<title>Systemd state: {{.}}</title>
+	</head>
+	<body>
+		<h1 style="text-transform: capitalize;">{{.}}<h1>
+	</body>
+</html>`
+
+	t, _ := template.New("systemd-state").Parse(tpl)
+	t.Execute(w, state)
 }
 
 func state() (int, string, error) {
