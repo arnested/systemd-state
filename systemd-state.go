@@ -24,6 +24,11 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 	w.WriteHeader(code)
 
+	// If this is a HEAD request we will not write a response body
+	if r.Method == http.MethodHead {
+		return
+	}
+
 	tpl := `<!DOCTYPE html>
 <html>
 	<head>
