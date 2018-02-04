@@ -1,0 +1,29 @@
+language: go
+
+go:
+  - '1.9'
+
+before_install:
+  - go get github.com/mitchellh/gox
+
+after_success:
+  - gox -os=linux -output "dist/{{.OS}}_{{.Arch}}_{{.Dir}}"
+
+deploy:
+  # Deploy to Github Releases
+  - provider: releases
+    skip_cleanup: true
+    api_key:
+      secure: Dx6ehvfH6cCS4lsanIkhZ1VQSf+Ss+OzILIFCB46tNxYuokhTkPkEoLWUAwdt4Wfb4j71SzbiiQtv+jvZmTwZZW2dcwlcJVOpKs5oT8Nmldqj/5NPTUDaDzaNjGNYP8mcxEZ7Dcxwueg85wdqNKuiSbAtaZm3OL8E5puKCUZiggTnRyKgl+gnMYjhNE9boqhJ1jlvR+ElfyUfmdjwDwCq31tw1DyUnvYHImVTVDa5nRN7Qn4wU9bXFQOhJq77LZmQlXYB2l3NDNv6BUu61M3HzzsNk+RsrdtUe2kiELJCmQc3OTzobmH9jXlDl40dMfLYLq96SQExgNwALeD4jMhpCXXgAYXSCUiMzSj7Ux4sbfkQ9IZoSCswA5la9fR8274M20Z1fKzO3UGldWYHmbn94wakp2ZDuHXM+kDrSnTpGohhzPT9QWXU0NzyTOtEE6hd52zWS7sVt5aOdUwgdeAn7cZMOXM+1bz7nBKBxQDZUcACkkGiA70zr54AzF6tyTA9Zs1boV+hditBm3QPnZhW7ds617cClYyZVm6Oos5uSh+xMcsB9mz7HxHdTrQkDNomSQ8bgB7nfPFfgItJ7gIlF7kiz2UTkvKiY2rlviKYfzWmKEg3Wgin32FGollmIz9g7BuzMMZO/BcbP+4CzrNBDcfrrQ2Ls+TfbJVSVyGFqI=
+    file_glob: true
+    file: dist/*
+    on:
+      repo: arnested/systemd-state
+      tags: true
+
+  # Purge the releases badge to get the new release number in there
+  - provider: script
+    script: curl --silent -X PURGE https://camo.githubusercontent.com/7ada60ab70c16db616686cda4aed0ae188ecb7ae/68747470733a2f2f6769746875622d72656c656173652d76657273696f6e2e6865726f6b756170702e636f6d2f6769746875622f61726e65737465642f73797374656d642d73746174652f72656c656173652e737667
+    on:
+      repo: arnested/systemd-state
+      tags: true
