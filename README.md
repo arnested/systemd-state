@@ -14,10 +14,11 @@ The server will answer with the following HTTP status codes:
 
 * 200 OK: The system is fully operational.
 * 503 Internal Server error: If the system is in any other state
-* 500 Service Unavailable: If the HTTP server got an error while requesting the system state
+* 500 Service Unavailable: If the HTTP server got an error while
+  requesting the system state
 * 410 Gone: If it cannot connect to the systemd bus
 
-## What is the purpose of this?
+## What is the purpose of this
 
 This is a "poor mans" monitoring solution.
 
@@ -41,7 +42,7 @@ Personally I have placed systemd-state behind
 
 ## Example docker-compose configuration with traefik
 
-Exposing the status on https://example.com/_systemd:
+Exposing the status on `https://example.com/_systemd`:
 
 ```yml
 version: "2"
