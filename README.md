@@ -51,7 +51,7 @@ services:
   systemd:
     image: arnested/systemd-state
     volumes:
-      - '/run/systemd/private:/run/systemd/private:ro'
+      - '/run/systemd/:/run/systemd/:ro'
     restart: always
     labels:
       - 'traefik.frontend.auth.basic=foo:$$apr1$$WCYo2XY2$$7PDdo922necZuGkMAeTI70'
