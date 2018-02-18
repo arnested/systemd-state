@@ -9,7 +9,7 @@ import (
 
 // StateFormat is the data to format in the response.
 type StateFormat struct {
-	Lead  string `json:"label"`
+	Label string `json:"label"`
 	State string `json:"state"`
 }
 
@@ -33,10 +33,10 @@ func writeHTMLBody(w io.Writer, stateFormat StateFormat) {
 	tpl := `<!DOCTYPE html>
 <html>
 	<head>
-		<title>{{.Lead}}: {{.State}}</title>
+		<title>{{.Label}}: {{.State}}</title>
 	</head>
 	<body>
-		<h2>{{.Lead}}</h2>
+		<h2>{{.Label}}</h2>
 		<h1 style="text-transform: capitalize;">{{.State}}<h1>
 	</body>
 </html>`
@@ -46,7 +46,7 @@ func writeHTMLBody(w io.Writer, stateFormat StateFormat) {
 }
 
 func writeTextBody(w io.Writer, stateFormat StateFormat) {
-	tpl := `{{.Lead}}: {{.State}}`
+	tpl := `{{.Label}}: {{.State}}`
 
 	t, _ := textTemplate.New("systemd-state").Parse(tpl)
 	_ = t.Execute(w, stateFormat)
