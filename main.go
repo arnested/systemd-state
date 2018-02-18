@@ -1,14 +1,26 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
+	"os"
 
 	"bitbucket.org/ww/goautoneg"
 )
 
 func main() {
+	addr := os.Getenv("SYSTEMD_STATE_ADDR")
+
+	if "" == addr {
+		addr = ":80"
+	}
+
 	http.HandleFunc("/", handler)
-	_ = http.ListenAndServe(":80", nil)
+	err := http.ListenAndServe(addr, nil)
+
+	if err != nil {
+		fmt.Print(err)
+	}
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
