@@ -1,4 +1,4 @@
-FROM golang:latest AS build-env
+FROM golang:1.10-alpine AS build-env
 
 WORKDIR /go/src/app
 COPY . .
