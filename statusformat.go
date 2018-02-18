@@ -2,8 +2,7 @@ package main
 
 import "net/http"
 
-func getStatusAndFormat() (int, StateFormat) {
-	state, err := State()
+func getStatusAndFormat(state SystemdState, err error) (int, StateFormat) {
 	stateFormat := StateFormat{}
 	status := 0
 

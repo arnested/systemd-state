@@ -33,7 +33,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", contentType)
 	}
 
-	status, stateFormat := getStatusAndFormat()
+	status, stateFormat := getStatusAndFormat(State())
 
 	w.WriteHeader(status)
 
