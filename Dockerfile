@@ -1,15 +1,22 @@
 FROM golang:1.10-alpine AS build-env
 
-WORKDIR /go/src/app
-COPY . .
+WORKDIR /go/src/github.com/arnested/systemd-state
+COPY *.go  /go/src/github.com/arnested/systemd-state/
+COPY vendor /go/src/github.com/arnested/systemd-state/vendor
+
+ENV CGO_ENABLED=0
+ENV GOOS=linux
 
 RUN go version
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o systemd-state .
+RUN go build
+RUN go test -o ./systemd-state.test -v -cover
 
 FROM scratch
 
 EXPOSE 80
 
-COPY --from=build-env /go/src/app/systemd-state /systemd-state
+ENV PATH=/
+COPY --from=build-env /go/src/github.com/arnested/systemd-state/systemd-state /systemd-state
+COPY --from=build-env /go/src/github.com/arnested/systemd-state/systemd-state.test /test
 
-ENTRYPOINT ["/systemd-state"]
+ENTRYPOINT ["systemd-state"]
