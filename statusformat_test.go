@@ -6,55 +6,46 @@ import (
 	"testing"
 )
 
-func TestStatusFormatRunning(t *testing.T) {
-	running := makeState("running")
-
-	status, stateFormat := getStatusAndFormat(running, nil)
-
-	if status != http.StatusOK {
-		t.Errorf("Expected status for running to be \"%d\" but got \"%d\"", http.StatusOK, status)
+func TestStatusFormatSuccess(t *testing.T) {
+	testSet := []struct {
+		status int
+		label  string
+		state  string
+	}{
+		{http.StatusOK, "Systemd state", "running"},
+		{http.StatusInternalServerError, "Systemd state", "maintenance"},
 	}
 
-	if stateFormat.Label != "Systemd state" {
-		t.Errorf("Expected state label to be \"Systemd state\" but got \"%s\"", stateFormat.Label)
-	}
+	for _, set := range testSet {
+		status, stateFormat := getStatusAndFormat(makeState(set.state), nil)
 
-	if stateFormat.State != "running" {
-		t.Errorf("Expected systemd state \"running\" but got \"%s\"", stateFormat.State)
-	}
-}
+		if status != set.status {
+			t.Errorf("Expected status for \"%s\" to be \"%d\" but got \"%d\"", set.state, set.status, status)
+		}
 
-func TestStatusFormatMaintenance(t *testing.T) {
-	maintenance := makeState("maintenance")
+		if stateFormat.Label != set.label {
+			t.Errorf("Expected state label to be \"%s\" but got \"%s\"", set.label, stateFormat.Label)
+		}
 
-	status, stateFormat := getStatusAndFormat(maintenance, nil)
-
-	if status != http.StatusInternalServerError {
-		t.Errorf("Expected status for maintenance to be \"%d\" but got \"%d\"", http.StatusInternalServerError, status)
-	}
-
-	if stateFormat.Label != "Systemd state" {
-		t.Errorf("Expected state label \"Systemd state\" but got \"%s\"", stateFormat.Label)
-	}
-
-	if stateFormat.State != "maintenance" {
-		t.Errorf("Expected systemd state \"maintenance\" but got \"%s\"", stateFormat.State)
+		if stateFormat.State != set.state {
+			t.Errorf("Expected systemd state \"%s\" but got \"%s\"", set.state, stateFormat.State)
+		}
 	}
 }
 
 func TestStatusFormatError(t *testing.T) {
-	status, stateFormat := getStatusAndFormat(SystemdState{}, errors.New("some error"))
+	errorStatus, errorStateFormat := getStatusAndFormat(SystemdState{}, errors.New("some error"))
 
-	if status != http.StatusServiceUnavailable {
-		t.Errorf("Expected status for maintenance to be \"%d\" but got \"%d\"", http.StatusServiceUnavailable, status)
+	if errorStatus != http.StatusServiceUnavailable {
+		t.Errorf("Expected status for maintenance to be \"%d\" but got \"%d\"", http.StatusServiceUnavailable, errorStatus)
 	}
 
-	if stateFormat.Label != "Error getting state" {
-		t.Errorf("Expected  \"%s\"", stateFormat.Label)
+	if errorStateFormat.Label != "Error getting state" {
+		t.Errorf("Expected  \"%s\"", errorStateFormat.Label)
 	}
 
-	if stateFormat.State != "some error" {
-		t.Errorf("Expected  \"%s\"", stateFormat.State)
+	if errorStateFormat.State != "some error" {
+		t.Errorf("Expected  \"%s\"", errorStateFormat.State)
 	}
 
 }
