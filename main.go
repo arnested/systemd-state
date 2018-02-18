@@ -4,25 +4,26 @@ import (
 	"fmt"
 	"html/template"
 	"net/http"
-	"strings"
-
-	"github.com/coreos/go-systemd/dbus"
 )
 
 func main() {
 	http.HandleFunc("/", handler)
-	http.ListenAndServe(":80", nil)
+	_ = http.ListenAndServe(":8080", nil)
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	code, state, err := state()
+	state, err := State()
 	if err != nil {
-		w.WriteHeader(code)
+		w.WriteHeader(http.StatusServiceUnavailable)
 		fmt.Fprintf(w, "Error %s!", err)
 		return
 	}
 
-	w.WriteHeader(code)
+	if state.IsRunning() {
+		w.WriteHeader(http.StatusOK)
+	} else {
+		w.WriteHeader(http.StatusInternalServerError)
+	}
 
 	// If this is a HEAD request we will not write a response body
 	if r.Method == http.MethodHead {
@@ -40,26 +41,5 @@ func handler(w http.ResponseWriter, r *http.Request) {
 </html>`
 
 	t, _ := template.New("systemd-state").Parse(tpl)
-	t.Execute(w, state)
-}
-
-func state() (int, string, error) {
-	systemd, err := dbus.NewSystemdConnection()
-	if err != nil {
-		return http.StatusGone, "", err
-	}
-	defer systemd.Close()
-
-	p, err := systemd.SystemState()
-	if err != nil {
-		return http.StatusServiceUnavailable, "", err
-	}
-
-	status := strings.Trim((&p.Value).String(), "\"")
-
-	if "running" == status {
-		return http.StatusOK, status, nil
-	}
-
-	return http.StatusInternalServerError, status, nil
+	_ = t.Execute(w, state.String())
 }
