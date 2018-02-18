@@ -2,6 +2,12 @@
 
 
 [[projects]]
+  branch = "default"
+  name = "bitbucket.org/ww/goautoneg"
+  packages = ["."]
+  revision = "75cd24fc2f2c2a2088577d12123ddee5f54e0675"
+
+[[projects]]
   name = "github.com/coreos/go-systemd"
   packages = ["dbus"]
   revision = "176f85496f4e86cbe92a915c597a0809518b878f"
@@ -15,6 +21,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "f5506e7b08d14a3ad653d41cc04672934c038336108e1d5276c8f5edb9683f35"
+  inputs-digest = "b990b37824bd734a9d5842a5aad602fe4cc3bbaa44f2442e4837ddbb4e931e78"
   solver-name = "gps-cdcl"
   solver-version = 1
