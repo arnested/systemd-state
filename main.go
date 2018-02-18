@@ -9,11 +9,7 @@ import (
 )
 
 func main() {
-	addr := os.Getenv("SYSTEMD_STATE_ADDR")
-
-	if "" == addr {
-		addr = ":80"
-	}
+	addr := getAddr()
 
 	http.HandleFunc("/", handler)
 	err := http.ListenAndServe(addr, nil)
@@ -43,4 +39,14 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	writeBody(w, contentType, stateFormat)
+}
+
+func getAddr() string {
+	addr, present := os.LookupEnv("SYSTEMD_STATE_ADDR")
+
+	if !present {
+		addr = ":80"
+	}
+
+	return addr
 }
