@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"html/template"
 	"net/http"
+
+	"bitbucket.org/ww/goautoneg"
 )
 
 func main() {
@@ -12,34 +12,23 @@ func main() {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	state, err := State()
-	if err != nil {
-		w.WriteHeader(http.StatusServiceUnavailable)
-		fmt.Fprintf(w, "Error %s!", err)
-		return
+	contentType := goautoneg.Negotiate(r.Header.Get("Accept"), []string{"text/html", "application/json", "text/plain"})
+
+	// Explicitly set the Content-Type header on non-HEAD requests
+	// if the request "application/json". This is because
+	// http.DetectContentType() is not able to detect it.
+	if "application/json" == contentType && r.Method != http.MethodHead {
+		w.Header().Set("Content-Type", contentType)
 	}
 
-	if state.IsRunning() {
-		w.WriteHeader(http.StatusOK)
-	} else {
-		w.WriteHeader(http.StatusInternalServerError)
-	}
+	status, stateFormat := getStatusAndFormat()
+
+	w.WriteHeader(status)
 
 	// If this is a HEAD request we will not write a response body
 	if r.Method == http.MethodHead {
 		return
 	}
 
-	tpl := `<!DOCTYPE html>
-<html>
-	<head>
-		<title>Systemd state: {{.}}</title>
-	</head>
-	<body>
-		<h1 style="text-transform: capitalize;">{{.}}<h1>
-	</body>
-</html>`
-
-	t, _ := template.New("systemd-state").Parse(tpl)
-	_ = t.Execute(w, state.String())
+	writeBody(w, contentType, stateFormat)
 }
