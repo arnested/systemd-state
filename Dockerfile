@@ -19,4 +19,6 @@ ENV PATH=/
 COPY --from=build-env /go/src/github.com/arnested/systemd-state/systemd-state /systemd-state
 COPY --from=build-env /go/src/github.com/arnested/systemd-state/systemd-state.test /test
 
+HEALTHCHECK CMD ["/systemd-state", "-healthcheck"]
+
 ENTRYPOINT ["systemd-state"]

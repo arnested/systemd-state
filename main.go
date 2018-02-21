@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"net/http"
 	"os"
@@ -9,6 +10,13 @@ import (
 )
 
 func main() {
+	healthcheck := flag.Bool("healthcheck", false, "Do health check")
+	flag.Parse()
+
+	if *healthcheck {
+		doHealthcheck()
+	}
+
 	addr := getAddr()
 
 	http.HandleFunc("/", handler)
@@ -49,4 +57,18 @@ func getAddr() string {
 	}
 
 	return addr
+}
+
+// We do a health check simply by checking if we can get a systemd
+// status or not. Notice the health check is not to check whether
+// systemd is healthy or not but to check if this monitoring software
+// itself is healthy.
+func doHealthcheck() {
+	_, err := State()
+
+	if err != nil {
+		os.Exit(1)
+	}
+
+	os.Exit(0)
 }
