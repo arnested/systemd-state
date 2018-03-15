@@ -3,7 +3,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/2c74204a27869bfe8426/maintainability)](https://codeclimate.com/github/arnested/systemd-state/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/2c74204a27869bfe8426/test_coverage)](https://codeclimate.com/github/arnested/systemd-state/test_coverage)
 [![Build Status](https://travis-ci.org/arnested/systemd-state.svg?branch=master)](https://travis-ci.org/arnested/systemd-state)
-[![release](https://github-release-version.herokuapp.com/github/arnested/systemd-state/release.svg)](https://github.com/arnested/systemd-state/releases/latest)
+[![Release](https://img.shields.io/github/release/arnested/systemd-state.svg)](https://github.com/arnested/systemd-state/releases/latest)
 [![Go Report Card](https://goreportcard.com/badge/github.com/arnested/systemd-state)](https://goreportcard.com/report/github.com/arnested/systemd-state)
 [![CLA assistant](https://cla-assistant.io/readme/badge/arnested/systemd-state)](https://cla-assistant.io/arnested/systemd-state)
 
