@@ -1,2 +1,5 @@
 /systemd-state
 /systemd-state.test
+/c.out
+/cc-test-reporter
+/dist/
