@@ -3,8 +3,8 @@ package main
 import "net/http"
 
 func getStatusAndFormat(state SystemdState, err error) (int, StateFormat) {
-	stateFormat := StateFormat{}
-	status := 0
+	var stateFormat StateFormat
+	var status int
 
 	if err != nil {
 		status = http.StatusServiceUnavailable
