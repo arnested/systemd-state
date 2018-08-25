@@ -1,10 +1,11 @@
 language: go
 
 go:
-  - '1.10'
+  - '1.11'
 
 before_install:
   - go get github.com/mitchellh/gox
+  - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
@@ -12,6 +13,7 @@ before_script:
   - ./cc-test-reporter before-build
 
 script:
+  - dep check
   - go test -v -coverprofile c.out ./...
 
 after_script:
