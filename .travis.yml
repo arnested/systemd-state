@@ -5,6 +5,7 @@ go:
 
 before_install:
   - go get github.com/mitchellh/gox
+  - go get github.com/frapposelli/wwhrd
   - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
 before_script:
@@ -14,6 +15,7 @@ before_script:
 
 script:
   - dep check
+  - wwhrd check
   - go test -v -coverprofile c.out ./...
 
 after_script:
