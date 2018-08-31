@@ -1,0 +1,9 @@
+---
+whitelist:
+  - Apache-2.0
+  - FreeBSD
+  - MIT
+  - NewBSD
+
+exceptions:
+  - bitbucket.org/ww/goautoneg # Uses the "NewBSD" license
