@@ -27,7 +27,7 @@
 
 [[constraint]]
   name = "github.com/coreos/go-systemd"
-  revision = "176f85496f4e86cbe92a915c597a0809518b878f"
+  version = "v18"
 
 [prune]
   go-tests = true
