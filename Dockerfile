@@ -1,4 +1,4 @@
-FROM golang:1.11-alpine AS build-env
+FROM golang:1.12-alpine AS build-env
 
 WORKDIR /go/src/github.com/arnested/systemd-state
 COPY *.go  /go/src/github.com/arnested/systemd-state/
