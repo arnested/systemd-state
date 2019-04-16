@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"os"
 
-	"bitbucket.org/ww/goautoneg"
+	"github.com/golang/gddo/httputil"
 )
 
 func main() {
@@ -28,7 +28,7 @@ func main() {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	contentType := goautoneg.Negotiate(r.Header.Get("Accept"), []string{"text/html", "application/json", "text/plain"})
+	contentType := httputil.NegotiateContentType(r, []string{"text/html", "application/json", "text/plain"}, "text/plain")
 
 	// Explicitly set the Content-Type header on non-HEAD requests
 	// if the request "application/json". This is because
