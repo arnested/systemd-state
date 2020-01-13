@@ -3,7 +3,8 @@ whitelist:
   - Apache-2.0
   - FreeBSD
   - MIT
-  - NewBSD
+  - BSD-2-Clause
+  - BSD-3-Clause
 
 exceptions:
-  - bitbucket.org/ww/goautoneg # Uses the "NewBSD" license
+  - bitbucket.org/ww/goautoneg # Uses BSD license
