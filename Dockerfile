@@ -26,3 +26,9 @@ COPY --from=build-env /build/systemd-state.test /test
 HEALTHCHECK CMD ["/systemd-state", "-healthcheck"]
 
 ENTRYPOINT ["systemd-state"]
+
+LABEL \
+        org.opencontainers.image.title="systemd state http server" \
+        org.opencontainers.image.description="A small HTTP server exposing the overall state of systemd" \
+        org.opencontainers.image.licenses="MIT" \
+        org.opencontainers.image.authors="Arne Jørgensen <arne@arnested.dk>"
