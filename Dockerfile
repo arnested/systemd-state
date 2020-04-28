@@ -6,13 +6,14 @@ ENV GO111MODULE=on
 ENV CGO_ENABLED=0
 ENV GOOS=linux
 
-RUN apk --no-cache add git=~2
+RUN apk --no-cache add git=~2 upx=~3
 
 COPY *.go go.mod go.sum /build/
 
 RUN go version
-RUN go build -tags docker
-RUN go test -o ./systemd-state.test -v -cover
+RUN go build -tags docker -ldflags '-s -w'
+RUN go test -o ./systemd-state.test -v -cover -ldflags '-s -w'
+RUN upx systemd-state systemd-state.test
 
 FROM scratch
 
