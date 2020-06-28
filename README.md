@@ -1,6 +1,7 @@
 # systemd state http server
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/2c74204a27869bfe8426/maintainability)](https://codeclimate.com/github/arnested/systemd-state/maintainability)
+[![Docker image size](https://badgen.net/docker/size/arnested/systemd-state)](https://hub.docker.com/r/arnested/systemd-state)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/2c74204a27869bfe8426/test_coverage)](https://codeclimate.com/github/arnested/systemd-state/test_coverage)
 [![Build Status](https://travis-ci.org/arnested/systemd-state.svg?branch=master)](https://travis-ci.org/arnested/systemd-state)
 [![Release](https://img.shields.io/github/release/arnested/systemd-state.svg)](https://github.com/arnested/systemd-state/releases/latest)
