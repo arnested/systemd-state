@@ -22,7 +22,6 @@ func (s *SystemdState) IsRunning() bool {
 // State returns the systemd state.
 func State() (SystemdState, error) {
 	conn, err := dbus.NewSystemdConnection()
-
 	if err != nil {
 		return SystemdState{}, err
 	}
@@ -30,7 +29,6 @@ func State() (SystemdState, error) {
 	defer conn.Close()
 
 	p, err := conn.SystemState()
-
 	if err != nil {
 		return SystemdState{}, err
 	}

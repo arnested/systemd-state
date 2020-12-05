@@ -13,7 +13,6 @@ func makeState(s string) SystemdState {
 }
 
 func TestStateIsRunning(t *testing.T) {
-
 	running := makeState("running")
 
 	if !running.IsRunning() {
@@ -62,7 +61,6 @@ func TestStateString(t *testing.T) {
 
 func TestGetState(t *testing.T) {
 	_, err := State()
-
 	if err != nil {
 		t.Skipf("Could not get state: %v", err)
 	}

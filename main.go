@@ -21,7 +21,6 @@ func main() {
 
 	http.HandleFunc("/", handler)
 	err := http.ListenAndServe(addr, nil)
-
 	if err != nil {
 		fmt.Print(err)
 	}
@@ -65,7 +64,6 @@ func getAddr() string {
 // itself is healthy.
 func doHealthcheck() {
 	_, err := State()
-
 	if err != nil {
 		os.Exit(1)
 	}

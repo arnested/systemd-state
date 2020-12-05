@@ -47,5 +47,4 @@ func TestStatusFormatError(t *testing.T) {
 	if errorStateFormat.State != "some error" {
 		t.Errorf("Expected  \"%s\"", errorStateFormat.State)
 	}
-
 }
