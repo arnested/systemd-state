@@ -54,11 +54,11 @@ deploy:
     script: 'curl --silent -X POST -H "Content-Type: application/x-www-form-urlencoded" https://goreportcard.com/checks --data "repo=github.com%2Farnested%2Fsystemd-state"'
     on:
       repo: arnested/systemd-state
-      branch: master
+      branch: main
 
   # Refresh godoc.org documentation
   - provider: script
     script: 'curl --silent -X POST -H "Content-Type: application/x-www-form-urlencoded" https://godoc.org/-/refresh --data "path=github.com%2Farnested%2Fsystemd-state"'
     on:
       repo: arnested/systemd-state
-      branch: master
+      branch: main
