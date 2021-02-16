@@ -1,0 +1,13 @@
+[Unit]
+Description=http server for monitoring systemd state
+Documentation=https://systemd-state.arnested.dk
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/libexec/systemd-state
+Restart=on-failure
+Environment=SYSTEMD_STATE_ADDR=127.0.0.1:1337
+
+[Install]
+WantedBy=multi-user.target
