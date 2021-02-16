@@ -59,8 +59,6 @@ jobs:
         sed -i "s/system-state_.*_linux_amd64.deb/<a href=\"https:\/\/github.com\/arnested\/system-state\/releases\/latest\/download\/${DEB}\">${DEB}<\/a>/" README.html
         sed -i 's/<!DOCTYPE html>//' README.html
         cat page/header.html README.html page/footer.html > site/index.html
-    - name: Add install script to GitHub Pages
-      run: cp -v install.sh site/install.sh
     - name: Deploy deb packages
       uses: JamesIves/github-pages-deploy-action@4.0.0
       with:
