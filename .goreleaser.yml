@@ -50,8 +50,8 @@ nfpms:
       - src: deb/systemd-state.list
         dst: /etc/apt/sources.list.d/systemd-state.list
 
-      - src: deb/systemd-state.asc
-        dst: /etc/apt/trusted.gpg.d/systemd-state.asc
+      - src: deb/systemd-state.gpg
+        dst: /etc/apt/trusted.gpg.d/systemd-state.gpg
 
     scripts:
       postinstall: "deb/postinstall.sh"
