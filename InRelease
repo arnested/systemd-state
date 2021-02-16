@@ -1,0 +1,34 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Tue, 16 Feb 2021 22:36:58 +0000
+MD5Sum:
+ d3a81ecd7fbeada5b87d32fc6e8e2d84             1344 Packages
+ 031051de58fe0ae7110c9bf680fdc3de              573 Packages.gz
+ 55f0f17230061640de3cdb0c8cd43e65               38 Release
+SHA1:
+ 07245df4f8adea866afc77bee68a1fca85895fa1             1344 Packages
+ c08eaf0d60b355046d153aedb905d616856c3365              573 Packages.gz
+ dd52dcd13226e696c78abc8f9d37074472859852               38 Release
+SHA256:
+ 0271755fd20cc3288c4e9334595d3453b7eca9cb1ac14c71d665354961cc0f2a             1344 Packages
+ ec92afaa5366f9f6dbbe9be720e0109f3a1c70a583894a1ab9f191a6c149dd18              573 Packages.gz
+ 6a42a01b0a5b07259811b957c1e0216cab81cb15c859578350ed42cac4e256cf               38 Release
+SHA512:
+ 2c19a934b66220775065e314e449240b133346150d651341c1453fe45e216547fbda21291dae764852b29842ee267c7f3b4011248360ff1c7a807ffb08b8b85a             1344 Packages
+ 026faf6c73bdc1ca8b4b05b0772f29dde7e438b92b151560050c5963862f3f902f158a04e9583af6464845dc41ef172189e33d067c780d76f3ed6e7f2d12824a              573 Packages.gz
+ 7d221e24a954fb649848d3468f3b7add3671b5cda2bab05e6a9a54b3efed11c142c844c7b8dc7eea46f277b44f0bcbd527cbe35a43ce93579e8f313592f4b20f               38 Release
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEOaW5aMP09wCi81cVnwaxeMQIvd4FAmAsSQoACgkQnwaxeMQI
+vd4kxAwAtrnz6QBUFqF8q56ZdkgiJitpCBo6YhwjKX6v9fsEgx1iRQCKDAcMHTXV
+Lj3BkEE3V8+Y4S+tWDImpeoQsBlYE5GRqce1uW+mbcch9B1meC/wvUGj6OixSkhl
+hS9BhYfU2qpledgg9WhdcxD3ezRMzK22lkXXqpyY14s7E9oQdPecix+SLF7CaXyK
+XJGoRCiTowjsoabPIoyGA5gE+fMZMd0WAE8TGDXoObbx+QJrsCttKUP3eXOQ3WAN
+MmouPXtA3Q964Q00P3oc5DjpA8ogvDFv9wmNv2+5t0r8zjFf3fO6RLZ81rXsi0f8
+2sTgfJFhFtSv5tww0rnTseJtCN7oKpd4nHdrtrCUxDNHWOtDoehwuLebATUZJa+/
+gSw+cVyaL8Qa9FSHQelk7aaI/avyLfy1Rbh9rif71PnxBDsoge3lxTHlFCh0Cl9U
+Yx3eK0naZfTBR3s7/i0rLunUvci4LMmv+5RHSjUxl+1iDTbkyfXwhDpoiAmBQjvI
+7qHTCAl5
+=ViqP
+-----END PGP SIGNATURE-----
