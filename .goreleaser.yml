@@ -1,0 +1,59 @@
+before:
+  hooks:
+    - go mod download
+builds:
+  - env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+archives:
+  - format: binary
+    name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
+    replacements:
+      darwin: Darwin
+      linux: Linux
+      windows: Windows
+      386: i386
+      amd64: x86_64
+checksum:
+  name_template: 'checksums.txt'
+snapshot:
+  name_template: "{{ .Tag }}-next"
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - '^docs:'
+      - '^test:'
+release:
+  # If set to auto, will mark the release as not ready for production
+  # in case there is an indicator for this in the tag e.g. v1.0.0-rc1
+  # If set to true, will mark the release as not ready for production.
+  # Default is false.
+  prerelease: auto
+
+nfpms:
+  -
+    vendor: Arne Jørgensen
+    maintainer: Arne Jørgensen <arne@arnested.dk>
+    description: http server for monitoring systemd state
+    license: MIT
+    formats:
+      - deb
+    dependencies:
+      - libsystemd0
+    bindir: /usr/libexec
+    contents:
+      - src: systemd/systemd-state.service
+        dst: /lib/systemd/system/systemd-state.service
+
+      - src: deb/systemd-state.list
+        dst: /etc/apt/sources.list.d/systemd-state.list
+
+      - src: deb/systemd-state.asc
+        dst: /etc/apt/trusted.gpg.d/systemd-state.asc
+
+    scripts:
+      postinstall: "deb/postinstall.sh"
+      preremove: "deb/preremove.sh"
+      postremove: "deb/postremove.sh"
