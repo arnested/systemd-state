@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/golang/gddo/httputil"
+	"github.com/elnormous/contenttype"
 )
 
 func main() {
@@ -27,13 +27,22 @@ func main() {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	contentType := httputil.NegotiateContentType(r, []string{"text/html", "application/json", "text/plain"}, "text/plain")
+	supportedContentTypes := []contenttype.MediaType{
+		contenttype.NewMediaType("text/plain"),
+		contenttype.NewMediaType("application/json"),
+		contenttype.NewMediaType("text/html"),
+	}
+
+	contentType, _, err := contenttype.GetAcceptableMediaType(r, supportedContentTypes)
+	if err != nil {
+		contentType = contenttype.NewMediaType("text/plain")
+	}
 
 	// Explicitly set the Content-Type header on non-HEAD requests
 	// if the request "application/json". This is because
 	// http.DetectContentType() is not able to detect it.
-	if "application/json" == contentType && r.Method != http.MethodHead {
-		w.Header().Set("Content-Type", contentType)
+	if "application/json" == contentType.String() && r.Method != http.MethodHead {
+		w.Header().Set("Content-Type", contentType.String())
 	}
 
 	status, stateFormat := getStatusAndFormat(State())
@@ -45,7 +54,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	writeBody(w, contentType, stateFormat)
+	writeBody(w, contentType.String(), stateFormat)
 }
 
 func getAddr() string {
