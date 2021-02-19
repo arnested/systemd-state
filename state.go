@@ -1,6 +1,6 @@
 package main
 
-import "github.com/coreos/go-systemd/dbus"
+import "github.com/coreos/go-systemd/v22/dbus"
 
 // SystemdState type is the state of systemd.
 type SystemdState struct {

@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/coreos/go-systemd/dbus"
+	"github.com/coreos/go-systemd/v22/dbus"
 )
 
 func makeState(s string) SystemdState {
