@@ -1,42 +1,42 @@
 Package: systemd-state
-Version: 1.3.8
+Version: 1.3.9
 Architecture: arm64
 Maintainer: Arne Jørgensen <arne@arnested.dk>
 Installed-Size: 5895
 Depends: libsystemd0
-Filename: ./systemd-state_1.3.8_linux_arm64.deb
-Size: 2334130
-MD5sum: e6f84d26768a32d2233d70733373e722
-SHA1: e46396354d138b32f3cf9d59df06909e1bb5cfbd
-SHA256: b1d58af56f459f6bc6dff42ac1fd54fd80f58e1bdb60cefdefe4feb49d4863cb
+Filename: ./systemd-state_1.3.9_linux_arm64.deb
+Size: 2334136
+MD5sum: a0ebc8f4d0e981d77ad1950cf6398630
+SHA1: 8ecda4424119b80f1a2a2333c757b040a391e441
+SHA256: d3beca77ac0a223977c962d6da2f3f0b39a2c83fd4fccb4e08db207249aefead
 Description: http server for monitoring systemd state
 Vendor: Arne Jørgensen
 
 Package: systemd-state
-Version: 1.3.8
+Version: 1.3.9
 Architecture: i386
 Maintainer: Arne Jørgensen <arne@arnested.dk>
 Installed-Size: 5383
 Depends: libsystemd0
-Filename: ./systemd-state_1.3.8_linux_386.deb
-Size: 2443196
-MD5sum: bfa6cbc927acc5883160553ad192b14f
-SHA1: 508f3856e6482ec2a854079d1bee3b35c266ac5c
-SHA256: ab6fa0efc94929764128704aef2b5970c072993e63111afe8e22d306e5a5fb06
+Filename: ./systemd-state_1.3.9_linux_386.deb
+Size: 2443194
+MD5sum: fc5b058903427bfb8442dbaaed5d3e8c
+SHA1: fc8770f8e880d7844e21344bf07d9e4744cf44b0
+SHA256: 1cae0d2d51c4ca69c01a161b7169612198be315fa5aad2383c83b20b04c8ced7
 Description: http server for monitoring systemd state
 Vendor: Arne Jørgensen
 
 Package: systemd-state
-Version: 1.3.8
+Version: 1.3.9
 Architecture: amd64
 Maintainer: Arne Jørgensen <arne@arnested.dk>
 Installed-Size: 6335
 Depends: libsystemd0
-Filename: ./systemd-state_1.3.8_linux_amd64.deb
-Size: 2569988
-MD5sum: 844c4d54324dc7daaf484fabbdb9588d
-SHA1: f4e377c9d3d976e30cd5c0aacd1a5eaba8b12f5e
-SHA256: f47398c2f8c588e98d5a32cf35b35af63504f07674b345fef691aef1d4fa6b42
+Filename: ./systemd-state_1.3.9_linux_amd64.deb
+Size: 2569992
+MD5sum: 381ba999c43c0b7085a3891456ff5b5b
+SHA1: 658878143832daff6d0f9307541d4e33c215a3f3
+SHA256: e6e62c009a12a8bc28f6b0a4ea84636643203075779879c576abaf172837d7e0
 Description: http server for monitoring systemd state
 Vendor: Arne Jørgensen
 
