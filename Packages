@@ -1,42 +1,42 @@
 Package: systemd-state
-Version: 1.3.16
+Version: 1.3.17
 Architecture: i386
 Maintainer: Arne Jørgensen <arne@arnested.dk>
 Installed-Size: 5383
 Depends: libsystemd0
-Filename: ./systemd-state_1.3.16_linux_386.deb
-Size: 2443842
-MD5sum: 0724f7ce71c5ea820735472d61451999
-SHA1: 834cc9e8306dce2c87e33d74986733d96612febb
-SHA256: 8d8e51f7fddbf4ebe1383ccad8f8e32f4c670e002d22c364fddd246d48463020
+Filename: ./systemd-state_1.3.17_linux_386.deb
+Size: 2443840
+MD5sum: e9bb53e1d60b04845a8cba8dfe0abd54
+SHA1: 2c5b10ce7f6d5036832ac832d2f6775ba4184fec
+SHA256: 21f84c1c02b6f3503bbea5b589846e7e7ae8dcbba05e814545f11cd58eaa40b3
 Description: http server for monitoring systemd state
 Vendor: Arne Jørgensen
 
 Package: systemd-state
-Version: 1.3.16
-Architecture: arm64
-Maintainer: Arne Jørgensen <arne@arnested.dk>
-Installed-Size: 5895
-Depends: libsystemd0
-Filename: ./systemd-state_1.3.16_linux_arm64.deb
-Size: 2335086
-MD5sum: a950965745ab998ef62eebf6e705487c
-SHA1: 4a05bec2c196ca821c3ce5f15b4e72d2ed95c8bb
-SHA256: f90055293f844157ce5cb17254b530d91a2b8f1af5dee35d7356ac38921ca38d
-Description: http server for monitoring systemd state
-Vendor: Arne Jørgensen
-
-Package: systemd-state
-Version: 1.3.16
+Version: 1.3.17
 Architecture: amd64
 Maintainer: Arne Jørgensen <arne@arnested.dk>
 Installed-Size: 6339
 Depends: libsystemd0
-Filename: ./systemd-state_1.3.16_linux_amd64.deb
-Size: 2571170
-MD5sum: 2363d2a0b706141e133e6b2fd5d96e5b
-SHA1: 785d133f82bfb37563a57ad48f6b98fe1ebbfd3d
-SHA256: 5f111932f42a17abb61e61a41affaa06caa3fa53f806dbc54cf3f97b621ae1cd
+Filename: ./systemd-state_1.3.17_linux_amd64.deb
+Size: 2571164
+MD5sum: b50639d01db4b14ae4b26db40eb2d740
+SHA1: 8fb16c65f4374f9d9d5c1a7c704609e9c35b6f48
+SHA256: 6b908c13a3a1c23dc55a20441be992af102bf89da71e76dbabd98529348fe76a
+Description: http server for monitoring systemd state
+Vendor: Arne Jørgensen
+
+Package: systemd-state
+Version: 1.3.17
+Architecture: arm64
+Maintainer: Arne Jørgensen <arne@arnested.dk>
+Installed-Size: 5895
+Depends: libsystemd0
+Filename: ./systemd-state_1.3.17_linux_arm64.deb
+Size: 2335084
+MD5sum: 7b72bdfeac5c5cf529655e1ee4a88b11
+SHA1: 8c0d7807869b35362c0f33b0306d1f66bb50eaec
+SHA256: e4e766028e0a43d425e913f8d932992b1797fb4832f34034b1aca4ea2952dbde
 Description: http server for monitoring systemd state
 Vendor: Arne Jørgensen
 
