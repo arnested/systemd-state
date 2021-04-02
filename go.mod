@@ -3,7 +3,7 @@ module github.com/arnested/systemd-state
 go 1.15
 
 require (
-	github.com/coreos/go-systemd/v22 v22.3.0
+	github.com/coreos/go-systemd/v22 v22.3.1
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/elnormous/contenttype v0.0.0-20210110050721-79150725153f
 	github.com/kr/pretty v0.2.0 // indirect
