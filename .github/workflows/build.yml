@@ -10,7 +10,7 @@ jobs:
       matrix: ${{ steps.go-version.outputs.matrix }}
     steps:
     - uses: actions/checkout@v2.3.4
-    - uses: arnested/go-version-action@v1
+    - uses: arnested/go-version-action@v1.0.5
       id: go-version
   go_generate:
     name: Check generated code is up to date
