@@ -10,7 +10,7 @@ jobs:
     - uses: actions/checkout@v2
       with:
         fetch-depth: 0
-    - uses: arnested/go-version-action@v1
+    - uses: arnested/go-version-action@v1.0.19
       id: go-version
     - name: Bump version and push tag
       uses: anothrNick/github-tag-action@1.35.0

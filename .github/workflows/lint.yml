@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.3.4
-      - uses: arnested/go-version-action@v1
+      - uses: arnested/go-version-action@v1.0.19
         id: go-version
       - name: Install Go ${{ steps.go-version.outputs.minimal }}
         uses: actions/setup-go@v2
