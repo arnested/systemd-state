@@ -10,9 +10,7 @@ archives:
   - format: binary
     name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
     replacements:
-      darwin: Darwin
       linux: Linux
-      windows: Windows
       386: i386
       amd64: x86_64
 checksum:
@@ -26,10 +24,6 @@ changelog:
       - '^docs:'
       - '^test:'
 release:
-  # If set to auto, will mark the release as not ready for production
-  # in case there is an indicator for this in the tag e.g. v1.0.0-rc1
-  # If set to true, will mark the release as not ready for production.
-  # Default is false.
   prerelease: auto
 
 nfpms:
@@ -47,13 +41,18 @@ nfpms:
       - src: systemd/systemd-state.service
         dst: /lib/systemd/system/systemd-state.service
 
-      - src: deb/systemd-state.list
-        dst: /etc/apt/sources.list.d/systemd-state.list
+      - src: deb/systemd-state.sources
+        dst: /etc/apt/sources.list.d/systemd-state.sources
 
       - src: deb/systemd-state.gpg
-        dst: /etc/apt/trusted.gpg.d/systemd-state.gpg
+        dst: /usr/share/keyrings/systemd-state.gpg
 
     scripts:
       postinstall: "deb/postinstall.sh"
       preremove: "deb/preremove.sh"
       postremove: "deb/postremove.sh"
+
+    deb:
+      triggers:
+        interest_noawait:
+          - /lib/systemd/systemd

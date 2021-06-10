@@ -1,0 +1,6 @@
+X-Repolib-Name: systemd state http server
+Enabled: yes
+Types: deb
+URIs: https://systemd-state.arnested.dk
+Suites: /
+Signed-By: /usr/share/keyrings/systemd-state.gpg
