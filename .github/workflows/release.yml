@@ -62,7 +62,7 @@ jobs:
         sed -i 's/<!DOCTYPE html>//' README.html
         cat page/header.html README.html page/footer.html > site/index.html
     - name: Deploy deb packages
-      uses: JamesIves/github-pages-deploy-action@4.1.7
+      uses: JamesIves/github-pages-deploy-action@4.1.8
       with:
         branch: gh-pages
         folder: site
