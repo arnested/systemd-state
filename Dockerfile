@@ -6,11 +6,10 @@ ENV GO111MODULE=on
 ENV CGO_ENABLED=0
 ENV GOOS=linux
 
-RUN apk --no-cache add git=~2
-
 COPY *.go go.mod go.sum /build/
 
-RUN go version && \
+RUN apk --no-cache add git=~2 && \
+    go version && \
     go build -tags docker -ldflags '-s -w' && \
     go test -o ./systemd-state.test -v -cover -ldflags '-s -w'
 
