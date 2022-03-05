@@ -21,9 +21,11 @@ jobs:
         DEFAULT_BUMP: patch
         RELEASE_BRANCHES: main
     - name: Set up Go ${{ steps.go-version.outputs.latest }}
-      uses: actions/setup-go@v2
+      uses: WillAbides/setup-go-faster@v1.7.0
       with:
-        go-version: ${{ steps.go-version.outputs.latest }}
+        go-version: ${{ steps.go-version.outputs.latest }}.x
+        ignore-local: true
+    - run: go version
     - name: Run GoReleaser
       uses: goreleaser/goreleaser-action@v2
       with:
