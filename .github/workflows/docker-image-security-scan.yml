@@ -1,5 +1,8 @@
 on: push
 name: Docker image security scan
+permissions:
+  security-events: write
+  actions: read
 jobs:
   security-scan:
     name: Docker build and scan
