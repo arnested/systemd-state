@@ -1,6 +1,8 @@
 on:
 - push
 name: Build and test
+permissions:
+  contents: read
 jobs:
   go-version:
     name: Lookup go versions
