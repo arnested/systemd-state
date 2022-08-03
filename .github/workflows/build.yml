@@ -63,24 +63,3 @@ jobs:
       uses: codecov/codecov-action@v3
       with:
         flags: go${{ matrix.go-version }}
-  license_check:
-    name: License check
-    needs: go-version
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: Install Go ${{ needs.go-version.outputs.minimal }}
-      uses: WillAbides/setup-go-faster@v1.7.0
-      with:
-        go-version: ${{ needs.go-version.outputs.minimal }}
-    - run: go version
-    - name: Install wwhrd
-      env:
-        GO111MODULE: 'off'
-      run: go get -u github.com/frapposelli/wwhrd
-    - name: go mod vendor
-      env:
-        GO111MODULE: 'on'
-      run: go mod vendor
-    - name: wwhrd check
-      run: wwhrd check
