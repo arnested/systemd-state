@@ -1,9 +1,6 @@
 # systemd state http server
 
 [![Docker image size](https://badgen.net/docker/size/arnested/systemd-state)](https://hub.docker.com/r/arnested/systemd-state)
-[![Build Status](https://travis-ci.org/arnested/systemd-state.svg?branch=master)](https://travis-ci.org/arnested/systemd-state)
-[![Release](https://img.shields.io/github/release/arnested/systemd-state.svg)](https://github.com/arnested/systemd-state/releases/latest)
-[![Go Report Card](https://goreportcard.com/badge/github.com/arnested/systemd-state)](https://goreportcard.com/report/github.com/arnested/systemd-state)
 [![CLA assistant](https://cla-assistant.io/readme/badge/arnested/systemd-state)](https://cla-assistant.io/arnested/systemd-state)
 
 A small HTTP server exposing the overall state of systemd.
