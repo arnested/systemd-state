@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Run markdownlint
-      uses: actionshub/markdownlint@main
+      uses: DavidAnson/markdownlint-cli2-action@v8
 
   golangci:
     name: lint
