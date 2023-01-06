@@ -27,7 +27,7 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
         WITH_V: true
         DEFAULT_BUMP: patch
-        RELEASE_BRANCHES: main
+        DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
     - name: Set up Go ${{ steps.go-version.outputs.latest }}
       uses: WillAbides/setup-go-faster@v1.8.0
       with:
