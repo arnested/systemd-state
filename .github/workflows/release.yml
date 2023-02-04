@@ -77,6 +77,7 @@ jobs:
         branch: gh-pages
         folder: site
         clean: true
+        single-commit: true
   docker-build:
     name: Docker build and push
     runs-on: ubuntu-latest
