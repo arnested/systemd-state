@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/coreos/go-systemd/v22 v22.5.0
-	github.com/elnormous/contenttype v1.0.3
+	github.com/elnormous/contenttype v1.0.4
 	go.uber.org/automaxprocs v1.5.1
 )
 
