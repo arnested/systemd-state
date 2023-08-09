@@ -78,6 +78,12 @@ jobs:
         folder: site
         clean: true
         single-commit: true
+    - name: Post status to Google Chat
+      if: ${{ always() }}
+      uses: containrrr/shoutrrr-action@v1
+      with:
+        url: "${{ secrets.WATCHTOWER_NOTIFICATION_URL }}"
+        message: "Released `${{ github.repository }}`@`${{ github.sha }}` as ${{ steps.version.outputs.tag }}: *${{ job.status }}*."
   docker-build:
     name: Docker build and push
     runs-on: ubuntu-latest
