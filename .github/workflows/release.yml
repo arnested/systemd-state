@@ -97,3 +97,9 @@ jobs:
         builder: ${{ steps.buildx.outputs.name }}
         tags: ${{ github.repository }}:latest
         push: true
+    - name: Post status to Google Chat
+      if: ${{ always() }}
+      uses: containrrr/shoutrrr-action@v1
+      with:
+        url: "${{ secrets.WATCHTOWER_NOTIFICATION_URL }}"
+        message: "Released `${{ github.repository }}`@`${{ github.sha }}` as ${{ steps.version.outputs.tag }}: **${{ job.status }}**."
