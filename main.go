@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"flag"
 	"fmt"
 	"net/http"
@@ -10,11 +11,13 @@ import (
 )
 
 func main() {
+	ctx := context.Background()
+
 	healthcheck := flag.Bool("healthcheck", false, "Do health check")
 	flag.Parse()
 
 	if *healthcheck {
-		doHealthcheck()
+		doHealthcheck(ctx)
 	}
 
 	addr := getAddr()
@@ -45,7 +48,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", contentType.String())
 	}
 
-	status, stateFormat := getStatusAndFormat(State())
+	status, stateFormat := getStatusAndFormat(State(r.Context()))
 
 	w.WriteHeader(status)
 
@@ -71,8 +74,8 @@ func getAddr() string {
 // status or not. Notice the health check is not to check whether
 // systemd is healthy or not but to check if this monitoring software
 // itself is healthy.
-func doHealthcheck() {
-	_, err := State()
+func doHealthcheck(ctx context.Context) {
+	_, err := State(ctx)
 	if err != nil {
 		os.Exit(1)
 	}
