@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"testing"
 
 	"github.com/coreos/go-systemd/v22/dbus"
@@ -60,7 +61,7 @@ func TestStateString(t *testing.T) {
 }
 
 func TestGetState(t *testing.T) {
-	_, err := State()
+	_, err := State(context.Background())
 	if err != nil {
 		t.Skipf("Could not get state: %v", err)
 	}

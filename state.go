@@ -1,6 +1,10 @@
 package main
 
-import "github.com/coreos/go-systemd/v22/dbus"
+import (
+	"context"
+
+	"github.com/coreos/go-systemd/v22/dbus"
+)
 
 // SystemdState type is the state of systemd.
 type SystemdState struct {
@@ -20,15 +24,15 @@ func (s *SystemdState) IsRunning() bool {
 }
 
 // State returns the systemd state.
-func State() (SystemdState, error) {
-	conn, err := dbus.NewSystemdConnection()
+func State(ctx context.Context) (SystemdState, error) {
+	conn, err := dbus.NewSystemdConnectionContext(ctx)
 	if err != nil {
 		return SystemdState{}, err
 	}
 
 	defer conn.Close()
 
-	p, err := conn.SystemState()
+	p, err := conn.SystemStateContext(ctx)
 	if err != nil {
 		return SystemdState{}, err
 	}
