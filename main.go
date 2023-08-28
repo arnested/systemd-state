@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"time"
 
 	"github.com/elnormous/contenttype"
 )
@@ -20,10 +21,13 @@ func main() {
 		doHealthcheck(ctx)
 	}
 
-	addr := getAddr()
+	server := &http.Server{
+		Addr:              getAddr(),
+		ReadHeaderTimeout: 3 * time.Second,
+	}
 
 	http.HandleFunc("/", handler)
-	err := http.ListenAndServe(addr, nil)
+	err := server.ListenAndServe()
 	if err != nil {
 		fmt.Print(err)
 	}
