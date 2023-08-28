@@ -13,7 +13,7 @@ permissions:
   actions: read
 jobs:
   bump-version:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v3
       with:
@@ -86,7 +86,7 @@ jobs:
         message: "Released `${{ github.repository }}`@`${{ github.sha }}` as ${{ steps.version.outputs.tag }}: *${{ job.status }}*."
   docker-build:
     name: Docker build and push
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v3
     - name: Set up Docker Buildx
