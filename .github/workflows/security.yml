@@ -35,7 +35,13 @@ jobs:
     name: Govulncheck
     runs-on: ubuntu-22.04
     steps:
+    - uses: actions/checkout@v4
+    - uses: arnested/go-version-action@v1
+      id: go-version
+      with:
+        patch-level: true
     - id: govulncheck
       uses: golang/govulncheck-action@master
       with:
-        go-version-file: go.mod
+        go-version-input: ${{ steps.go-version.outputs.latest }}
+        repo-checkout: false
