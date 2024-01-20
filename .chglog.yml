@@ -1,0 +1,8 @@
+---
+conventional-commits: false
+deb:
+  distribution: []
+  urgency: ""
+debug: false
+owner: "Arne Jørgensen"
+package-name: "systemd-state"
