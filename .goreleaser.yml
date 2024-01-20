@@ -39,6 +39,7 @@ nfpms:
     dependencies:
       - libsystemd0
     bindir: /usr/libexec
+    changelog: ./changelog.yml
     contents:
       - src: systemd/systemd-state.service
         dst: /lib/systemd/system/systemd-state.service

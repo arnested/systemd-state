@@ -34,6 +34,10 @@ jobs:
         go-version: ${{ steps.go-version.outputs.latest }}.x
         ignore-local: true
     - run: go version
+    - name: Install changelog management tool
+      run: go install github.com/goreleaser/chglog/cmd/chglog@latest
+    - name: Build changelog
+      run: chglog init
     - name: Run GoReleaser
       uses: goreleaser/goreleaser-action@v5
       with:
@@ -58,6 +62,7 @@ jobs:
     - name: apt-ftparchive release
       run: |
         apt-ftparchive -o APT::FTPArchive::Release::Origin="Arne Jørgensen" -o APT::FTPArchive::Release::Label="${{ steps.go-version.outputs.module }}" release . > Release
+        echo 'Changelogs: https://systemd-state.arnested.dk/changelog?path=@CHANGEPATH@' >> Release
         gpg -abs --no-tty --batch --yes -o - Release > Release.gpg
         gpg --clearsign --no-tty --batch --yes -o - Release > InRelease
       working-directory: site
@@ -71,6 +76,8 @@ jobs:
         sed -i "s/system-state_.*_linux_amd64.deb/<a href=\"https:\/\/github.com\/arnested\/system-state\/releases\/latest\/download\/${DEB}\">${DEB}<\/a>/" README.html
         sed -i 's/<!DOCTYPE html>//' README.html
         cat page/header.html README.html page/footer.html > site/index.html
+    - name: Add changelog to GitHub Pages
+      run: chglog format --template deb --output site/changelog
     - name: Deploy deb packages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
