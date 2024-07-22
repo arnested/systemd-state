@@ -46,6 +46,8 @@ jobs:
         go-version-input: ${{ steps.go-version.outputs.latest }}
         output-format: sarif
         output-file: results.sarif
+    - name: Fix SARIF format
+      run: yq --inplace --output-format json '.runs |= map ({"results":[]} + .)' results.sarif
     - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v3
       with:
