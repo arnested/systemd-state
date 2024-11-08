@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Fri, 08 Nov 2024 05:05:50 +0000
+Label: github.com/arnested/systemd-state
+Origin: Arne Jørgensen
+MD5Sum:
+ 295b04e75d6d71df56651bb9d221718b             1791 Packages
+ d78dc23716f0eb087e0c5a58da7812b8              830 Packages.gz
+ 5c42bb10852f145807ffe767584a029d              103 Release
+SHA1:
+ 6948c12976e1484b297054717594210300777c14             1791 Packages
+ c13a57de9fcc177dfc8e26c44a4752f8249c362a              830 Packages.gz
+ 313ccccf05b9a850473b4d8d60324f580620653b              103 Release
+SHA256:
+ a7e00858f3e27a1a144c18cd827081d5b8edfda510164ed8da70b764d457a651             1791 Packages
+ 14eefae4cc879bbfca6881a6da39e3c94e040e397a98730d30f60c253eb5a77f              830 Packages.gz
+ 184bef10a214fd0e218b9d7e8b81c3409568efa57d81bc9dba4014753251af34              103 Release
+SHA512:
+ 1bb9457f505c41d3003f313dc742892e63c63727c7170917a425efa5b13a9e60625b28062a90024708928651b13dc3bb0c1b24d6e02778af9683c64293963d4b             1791 Packages
+ 7280ec74cc51374c03429a0a38b04dc57e74a255eae55be6b6b9461d12a2c1719d45272fe06554dd678b6c1d7edad62543d67cc601e949b09db994bf7393374d              830 Packages.gz
+ c6588c9b62fb012de134a11fa9dddd39e6014bf6357b0eec1e5d20b43b7ccd2e0a58f833674fec7502218fe89bb35981baddc04f6f474ae3a737e96d05f2a892              103 Release
+Changelogs: https://systemd-state.arnested.dk/changelog?path=@CHANGEPATH@
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEOaW5aMP09wCi81cVnwaxeMQIvd4FAmctnC4ACgkQnwaxeMQI
+vd5Iegv6AyNnkxlNG99BPSx46RNqjtYYaLOKnlPKrykeFN8X2+iagbl2z7TpXWh/
+Hp+MY/A/MabhXAluCG6rqIFXXU9qUBhe4qBDXbRhZ4WMNZaW1chr0GVTdIzIfpzV
+x1ResvEzVhpXpp9VljzZ2Mkjgya47Wzsvg9sDGCNtq8gXAJ6+UWS+HgHW2Lyg/44
+YBGJwBN/+PXNamBA4o7hv4R9h8w51S2z1QBWblEu5LyNNxbgLMsx+BnKhokfilmi
+qBqIt7sT8GiMuf8ZBXrDt/wG+AEyeoy9iAf1bMxjBn2eDP1ot776wgMgqhX7Zts5
+dfq9Tyrm+Z+gm4yHGGsVofKK23W6984o798do5zshRAZZANTHl6l+VoMN0yTrdNb
+NB1wEm+nKvMvJU4yMQ/dTPCwcfAiTDA2nR1zvv7xSEzn2PZU+LWO7lC+fOyoyX5U
+LA9nMLeiEVFFSCQjpllS3gTjkZAEKeyZqYrLceOmP3iSO9bpiA9fr0ZsT9aTbRBY
++a9HuB+M
+=pqPP
+-----END PGP SIGNATURE-----
