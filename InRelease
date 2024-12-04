@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Wed, 04 Dec 2024 05:04:06 +0000
+Label: github.com/arnested/systemd-state
+Origin: Arne Jørgensen
+MD5Sum:
+ b41ea263294a903c14bf0de784136af7             1791 Packages
+ 0af487bb873512a82729e4f21ea5ac8c              825 Packages.gz
+ 555882674d1044fb94d4d427e4a210c0              103 Release
+SHA1:
+ 00e7dd88d2683603c7f0565d06f503c18fef2b07             1791 Packages
+ b4a57f106a1f944b044bce80157d625ed1261cec              825 Packages.gz
+ 4c90e47fac0b793ec98a6efce235f9e9698ff63a              103 Release
+SHA256:
+ ba5e11af6a444278596e6d7afa7f06df0c0b4e4ea9131290a62d81022aa65b26             1791 Packages
+ 848a0063eef2270ab7a241b0520f00086f5c4f206171f91560e403d3bd9680f0              825 Packages.gz
+ 2b0f2353ca670d73ea09c231d433421e5c2361aae71ee76904ffdaa68a673b28              103 Release
+SHA512:
+ 60a79587d366f777e55d259fe2bab7f2c7ba2cca60a48580af315ab31803fe63fe7a0313ac9fd7e00fa6a0b322884033685eab65e35ced101644e9edbd75e4bd             1791 Packages
+ 23bffde4238ee4a45d6e02785f3cef2d8ec232ba5ea1c944891a44511087e1263e4da2142abf2853bf85f27d7abca2ba327ee5dff06d32a39d7317779cfdb103              825 Packages.gz
+ 19fda7c216a2cc4e0307c294ae3942e93ee5016ea56ecd9e9b403a67b5c48352afd3a475cea7f440d4349882148accf63e804c2017a3834fbdebe11c9f399cf3              103 Release
+Changelogs: https://systemd-state.arnested.dk/changelog?path=@CHANGEPATH@
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEOaW5aMP09wCi81cVnwaxeMQIvd4FAmdP4scACgkQnwaxeMQI
+vd6tzgwAkh0OBUi83gxqsnqQz640xt365+QNX/Ca+kY2vlKw7YC1a9iZrYZaV7x8
+R7y9MgJktvogiPeQ6hamWXa9yHLrYqQcQvu1k4uKOHrstzY5rVu4Gf61CAyEk3ru
+hlTulg6DpFLTsjxTpftLLznnAL6viIev2WzTiyXrPz/Gdist3O5KOOlSA9TXZqN4
+fJPMnZDkIO9kE/2OXO5ZwvkHKDq7TnzsRc3VY3f+gi70TRTjGki71UsKQ4oKrLjI
+4tcJG57Ve0/pnl6D4jU2ZgwlOT9Vccw3cQgaH3fQFcn3DZceMfMQSaJpXOxwzYUu
+VJ/yDFwX7s1hQRmpRJ71FShxwfDr4Z52IkqyIgbb2goueuTRvKkDg3gaG/z7W7EI
+7hPLMroBr6VhexFJWmuxHkuSjQu+yuBlgK8IRbzqKn6BHRCTj9Dnb1aVpLzcvKEO
+KcOs1aNiZ5c/nFjBr+857roJSowgF0LCZQDRb6AzMJUIqIO+fzh6120fL2isyd3F
+MfrMUHQ6
+=ZiCm
+-----END PGP SIGNATURE-----
