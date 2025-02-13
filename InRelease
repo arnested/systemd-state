@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Thu, 13 Feb 2025 05:00:27 +0000
+Label: github.com/arnested/systemd-state
+Origin: Arne Jørgensen
+MD5Sum:
+ 99c4675180df4ac4b3034db3a03149c9             1791 Packages
+ 957b8f19711b11f4c14e16b442ece5cf              830 Packages.gz
+ 9b490b091f51e7773a5e29ec6d9cd274              103 Release
+SHA1:
+ aaa4ffb47b10c6a5270a3da2f2e25eb6d4fb5501             1791 Packages
+ cd12a1e088aef4180e4c9ca955dca5c60929faf2              830 Packages.gz
+ d70ebbe0d5784f4e548c8f36fe808f3221cd25a6              103 Release
+SHA256:
+ c23544afca23ededc4a69ff6889159c0c8f127f79ddeac6882ba4e57193231f0             1791 Packages
+ 567b2e578c6e77d7d5f1f8ba890fd058ed05b79aece0e9a6de4ea83eba4077a4              830 Packages.gz
+ f7061518c2191f9d2b90896791078e174a9ea7a3de937fae81b7b88f6b9cce0c              103 Release
+SHA512:
+ 8a1784052481b0f45e6253421a2e1340de30d5b721abe825cb4597decc6b2f765273437f4c46d68097f46ed228702d2daf4024e42208026bcebaad50c5d6b3b2             1791 Packages
+ 1d51ee56181a4e4328db58b3334a1a2f88d90d6951f0bf4104c459373b44a1785c28da675f7e84c3d8575e8ab97c21de07ed9433f777cb02457700c5204292a6              830 Packages.gz
+ 378f8d54d1e335c1849bc2fc96c7630ecb2c83e6cd0ee58c6a8020325fc7d8a7155c81b0e695f31d660770d295dae9f5cb9a78c8fc438869ea8424d3782fd5ca              103 Release
+Changelogs: https://systemd-state.arnested.dk/changelog?path=@CHANGEPATH@
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEOaW5aMP09wCi81cVnwaxeMQIvd4FAmetfGsACgkQnwaxeMQI
+vd6vxAv+Kbt+zdlw8EQeBD/6JIx0pY8MleWstESQJGGZ3nTZYfYVMoNh2BI0KG5E
+1Cp5Ag2Ic+BVkVoTImvm7Nw6UTAdWG89D39u1UQPf1JJkKq7F6KBg5Tb4SV8uu98
+NhS1v+qVszu357SKEp1IRUuSrMB1TJhtg4sbuvMB2xzO1887dg6SBIWogf+iqA+G
+0YJqWwDHxv7bZe0CAkW7PwkcVB3p1qRBnXr9W/XbdiZFUDNjq5FmcqSQEHmW0Nwn
+EBEyrdKVCx1RT/O66QHUV0HfuL3G2XFr63kCKHwmK//JKfKbgJo0rXf1hlJ4TOcr
+yoP5T6qT8+vJ2kojE57Ypa09epJS9o0bDuDcZJOXMgwxj+/6j6Lp2uXzoOWvbZGK
+FG/nHFiVgpZOSymGr3BTE6F8mHXy2GusIEiNQKb441dhlC46gx1yaOwXY5lLWkgr
+lfrkZpivXTNEQ3WkqEyPaK7DcgwQ+09G/DiLryYIYUxOHG4jbF5FTMpSC49q+N1E
+JIa85Vvy
+=8ioI
+-----END PGP SIGNATURE-----
