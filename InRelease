@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Tue, 25 Mar 2025 06:48:51 +0000
+Label: github.com/arnested/systemd-state
+Origin: Arne Jørgensen
+MD5Sum:
+ 299cbaa083b12e100614c96690f821d7             1791 Packages
+ 79c305e8909dececb64145c8b366c5bb              834 Packages.gz
+ fcb26e4e4792e5967d8f4b73da539c80              103 Release
+SHA1:
+ 91ba5046c2bbac8a46f87dcadf7170a5e88df3b2             1791 Packages
+ cb5abdb8ad038b25995141b9202cbaff87a14025              834 Packages.gz
+ 9260cb4ce82f1a2a00aca9f762b927af7f62051e              103 Release
+SHA256:
+ 253e7d24a20cd08169117a0a8ce236c167ce64cd59daecac550b99bfc0c9e900             1791 Packages
+ 9c6e5d9d21abcc025b8b45b8a31bf3a93bb754271660488e24198f098acdf1b7              834 Packages.gz
+ 799f57c8a708936bec524fd16ab88abbe0eaa81c0aae46ac299eed6f1a2e0fb1              103 Release
+SHA512:
+ d169b806502db328ff3173c050ae76fae04aa8607bd51374460f964d08dfd1126ced2ef0c4b4217a2be5e53ca319ec9f143c579f251eee471a0750a0345fd6f7             1791 Packages
+ d406bfe3b18e13987b59318e4e77e59b3ee19f9352f6069e203272f929d67dd33898d81132fc2c5f9066c40a741953bed461317a21d3fe8ea7ce8977d1c97e4f              834 Packages.gz
+ 3ec22d6fd2e7d49e947727d619e27ad71c7c145e7da32fa8d7c76ef7a4080739e4fd081ba90cf90442ed748068733a2979be66ba0d0aab7d7e2ed81fa62b646a              103 Release
+Changelogs: https://systemd-state.arnested.dk/changelog?path=@CHANGEPATH@
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEOaW5aMP09wCi81cVnwaxeMQIvd4FAmfiUdYACgkQnwaxeMQI
+vd4n5gv/SoF+Nw8S16D3P/fITR9Y77gowIvFJih6NPJZCS09yGbUWD1Tm7Al0RN2
+ZeZhQNlKZxIz0XL9H0S65G8pQJBswHTL6Jj0h4EjSFh5cXg5cb8pgdFWaKzr5Xdc
+5YWlqAzWTaFxAG2j481zu2w4iLx1qzT6VGvdw9B7Z4KaKxTj7j5Qejx+kB64OJ1b
+YgxD2T15W8/ayRWKu1f6eedqdpjWpKiIrU4aRXB3NGyGzsbPliFLMGKJu3uTn4rD
+xnJJ9VwZifDuqFZyThqp7J+g7dNZaNIZLH3qMF4+z5JOM/l0MQ/4QkzAi46jz/fc
+vxwd1NdHLVZTd8lUfAoSwcxKdR31uHefgFMiLqIs6qnciKAUY042qDcGmvHpDxo+
+dU3c4gXgTg+ZUi82fGb/LMPC0ar89vRUCPFcprp99BqeKaYaCNZN0d3JpxDtYCrg
+xPrTRy0NIKH9wIgwqHAejl4tFEgMLVpDf26Q0y1nf8W3RlqfFxuejb3B+nsL3p1U
+Ok7YNbmp
+=kseu
+-----END PGP SIGNATURE-----
