@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Wed, 02 Apr 2025 04:05:49 +0000
+Label: github.com/arnested/systemd-state
+Origin: Arne Jørgensen
+MD5Sum:
+ fdc7bf0d6ec4b78a3e1982044ac348c1             1791 Packages
+ 3139bfab25c27d9568f81958bce7375c              832 Packages.gz
+ 9e2dad503a97382a38ebb49dee4657d6              103 Release
+SHA1:
+ 96305659b2cfc9936054139d321f9e31644db31c             1791 Packages
+ a4779b1c6d92af5ed181f70576fe268577727496              832 Packages.gz
+ e217d1dd8582cc239e6cbaf4e3a1f1117f1b2f86              103 Release
+SHA256:
+ 7eadcaa6240e4bc32643a2c154999b13d479e4c7c15495ff9a47a3dff20ac9e7             1791 Packages
+ 77b44baeb733d1b9579c7b8c3b8c81ad6a06c0bb45df1f5a1d1be7e7cd667820              832 Packages.gz
+ a92619ad4f9a047d1fce1fa0abecdbc4b7961c8b1d4fbc585cbb5488cedd53e9              103 Release
+SHA512:
+ a7c09d514f3b140d0c9ea04464885d44a2f4670e5a8483b14a9f7b6e9c09ae7ca357bbb7398b349655a2ebf9491cff606dd441eb6655564a91a9a55936f9c242             1791 Packages
+ 224d4e01d81e0918cc04f7c4d678d33b091a3e853d57da33d373b269b736f032fb6e8954edba7a50c45b463aa2afeeb5bda4964fc21a197d1249016c3925a538              832 Packages.gz
+ 2d46431131e0dd98896cd04417183cb4ca680d21d4f93a77ebc5908a477bb54d04c58f266a84980c2bec003046ba746cb9f2a7a0b25bf505435d9dd348517318              103 Release
+Changelogs: https://systemd-state.arnested.dk/changelog?path=@CHANGEPATH@
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEOaW5aMP09wCi81cVnwaxeMQIvd4FAmfst54ACgkQnwaxeMQI
+vd6j8QwAnZ5kzjXOxM8tGMghMZB9SnWIv2z9cHfXtKF3MtDM4GtBQ73GJjjRKLhe
+d1qbaVNmNdvAgSf87kVZDW68gTt7E1SMzAAuc/DKiSLN6sIQOdjjh18s1oZXCVXG
+LR10TRdHiuwPRhUUuNz3RfX4uE+OPNjZOCMh1F9wEYvipjJybxXb7BTvCEjRJ0uh
+LtlSma4F2Jx3yM7s0V0kff48RwsMA4GBSxn1GDFlkpjQcT7fIFIZqN/ac+eGzSay
+JASnq3LVSnCSyvzgvNX6iZO4W2AfNlop0aTLcVc2SvaX7T5nFjx0UJBkd0UaaBmV
+WSrb3w9yBCvFYYCBpxO45XIkMirI5ioislJv+9q2VejfJgyxzGB6hA6S/t1XtFHW
+3Pxd/zY8MdUyPmsvDjPojmODPEIBi1vLcly7rKiy5xcEn3Sc5CqiQ2Q00bsUeJg1
+sb6V3enuEzShaNaNXqb/uvB/0JHxXWK7rH9GhH9vf6bBa6dXCWosK386K12ye+pX
+LsGdPCUm
+=CQnc
+-----END PGP SIGNATURE-----
