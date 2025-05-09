@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Fri, 09 May 2025 20:09:43 +0000
+Label: github.com/arnested/systemd-state
+Origin: Arne Jørgensen
+MD5Sum:
+ 84ee795ef41b7a3c7943b6a10017ee13             1791 Packages
+ f66fc50cb077c80cb1f49a0517b0da91              830 Packages.gz
+ 5a3a5114c3c8385983317df92daa566e              103 Release
+SHA1:
+ d43d06bfe6d4eaa653e3f7c52049a815a68605cc             1791 Packages
+ d34312291e8ebe76e0cff2892bf29cc390ce1fc4              830 Packages.gz
+ e42a3900f0698138d31e1eebb1c3f226590284b0              103 Release
+SHA256:
+ abf957885527ad2ea1fd74dca73fdc2b5679e4084c4de953c8533b2790f91049             1791 Packages
+ 5df8dad53b6c626483bb523c236f60d1ffbc6f29f853fa64d9a0b82d5508f0e7              830 Packages.gz
+ 1d9e8e590515cc2bddfcf1526afa7bb36306de39d243fcbbdda27f95d3bb0b29              103 Release
+SHA512:
+ 08f8b2d45522c99afb1b84e05fa49d3fb1484744e5d5bba43db7b38a996e8308c9533fe1c916cfdb0cfe10aa31c96f071a56f2085ab6e92665c4f0a6b998bd9e             1791 Packages
+ fc339ffb57322f3164a5b760236134e83e68e17aaeec7e8272951df75c1a7acb097e09eccd174fbc84c034fc3465bd057c5a6e6394ca949d40ca467362cddeee              830 Packages.gz
+ a6c42b9092804706aae29a7328ce9b593d5574d997d3de868e8f09d4a22bc2d914b15a4a162ce808a644154333e0408053b7d547d3d7518bb00c157cac9b9752              103 Release
+Changelogs: https://systemd-state.arnested.dk/changelog?path=@CHANGEPATH@
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEOaW5aMP09wCi81cVnwaxeMQIvd4FAmgeYQcACgkQnwaxeMQI
+vd6MKQv/S5Y7g34JOQjkdHHyiXIsbZDwF4lspyNwr6WE/I1RWMcqrBfiBLY5bC1A
+bfK3EU2dZi3rsRGDSkUjm3p5GlEaFQr0tcMYTnq3rXdUK9UuaZiutex2+hHNL/2J
+P0laDkLE9ijYrszF9PPkxV+5fn6godaQUkc0mXXGYEdeVqFzZZk8Q3qJlkuW1AAu
+Gsk6OmaUFjs6IkvLoa1e+wlRjPDsU+zkNHwa8+bHpp9JrGeZnxE7ytWCUeRrwKh0
+Gp1c2D9ErRzSXosmiTW3dMItHE0vturtGUvfS6XvKHWDogh4PLR4vTU6F6oQgexm
+8lDNCL07Ea3PYqrbPtIyG5RiDi33aaaXNS80TUCGpTkWJOt6LIFN/Y6FvGsFX1Fi
+A8A+V6jcJ1OmhR/+rj5T38n7DCYeYvLDKRZ8y7UH3CjEvtr7nVFyverEdKhH1q+3
+KOmYuKyTvFC96Yj6GIDs1eO9ozfOyKs76z3nsEVqIcOmtk8UxmgRpehZ23WT0KFx
+APZSmZCe
+=MFeB
+-----END PGP SIGNATURE-----
