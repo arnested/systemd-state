@@ -7,8 +7,6 @@ updates:
     time: '04:00'
     timezone: Europe/Copenhagen
   open-pull-requests-limit: 10
-  reviewers:
-  - arnested
 - package-ecosystem: gomod
   directory: "/"
   schedule:
@@ -16,8 +14,6 @@ updates:
     time: '04:00'
     timezone: Europe/Copenhagen
   open-pull-requests-limit: 10
-  reviewers:
-  - arnested
 - package-ecosystem: docker
   directory: "/"
   schedule:
@@ -25,5 +21,3 @@ updates:
     time: '04:00'
     timezone: Europe/Copenhagen
   open-pull-requests-limit: 10
-  reviewers:
-  - arnested
