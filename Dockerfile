@@ -10,7 +10,7 @@ COPY *.go go.mod go.sum /build/
 
 RUN apk --no-cache add git=~2 && \
     go version && \
-    go build -tags docker -ldflags '-s -w' && \
+    go build -ldflags '-s -w' && \
     go test -o ./systemd-state.test -v -cover -ldflags '-s -w'
 
 FROM scratch
