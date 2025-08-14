@@ -1,0 +1,20 @@
+Date: Thu, 14 Aug 2025 06:42:58 +0000
+Label: github.com/arnested/systemd-state
+Origin: Arne Jørgensen
+MD5Sum:
+ ae157579a4b169dd131402bc2dde3358             1791 Packages
+ a68f342917bb4d024e4c18da525d7ca9              834 Packages.gz
+ 89c82202143639a50392be2365568b93              103 Release
+SHA1:
+ 08c37b4db4b7a64709ea7c267e8bbc1a9ca0dbe1             1791 Packages
+ e16c211840fb5db7c0f3002bc03780ae8eeeee9a              834 Packages.gz
+ 321239df55d555bc45781e0b141ebffdc4e34e97              103 Release
+SHA256:
+ 43f30915c78d0172d8071b1509f071ebeba96af97ed11124672f47b0ad57f05b             1791 Packages
+ f59645361a809691b46ff4c333d04f702d97219f06edd0f3657234d892caa3d9              834 Packages.gz
+ e3efd336d82591ffd0e4e3f91d7fb4b0fccbb08dd9894db1de7ced9d35b8ad91              103 Release
+SHA512:
+ fd5c8a4aa6cc993934837b0728e24d6c25edba81d8f4db45c3336260e2b202dcf31c922c31e29ae11a3751fd31cc7a9c8cea947482e56f8388bc6eda2fc43ac7             1791 Packages
+ b221c83197b6c80da4660c570e93d65260fc0645203aa81e8ad9c202fb604a428685499cf91c1f96d842e370e598b3a2d1f435afba36628046dc66d0777fff9c              834 Packages.gz
+ 8eaca5a257341f8397997eb659aa5fd9ab0c944be698c62c884942e3b3840c11971222ce601511ea6167231f59b0728a24fd3c7822db981ef73f28010faab560              103 Release
+Changelogs: https://systemd-state.arnested.dk/changelog?path=@CHANGEPATH@
