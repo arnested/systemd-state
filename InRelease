@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Mon, 25 Aug 2025 04:05:26 +0000
+Label: github.com/arnested/systemd-state
+Origin: Arne Jørgensen
+MD5Sum:
+ 15734f3f52fbc705b116e8c631601bf0             1791 Packages
+ b85f407ab83a12d4a04c861f9571cb90              829 Packages.gz
+ 58ad9b76123d61bd62335d65291a036d              103 Release
+SHA1:
+ 52a68759fcb5f0c0a52cf2a7f4cf7602677e3cfb             1791 Packages
+ efb736764064c3def615f8e7c0c15d4a8b22f0a8              829 Packages.gz
+ ea6ebcf1b22cd82f7fa58021cd6fe8a6bcf7b17f              103 Release
+SHA256:
+ cb9e3ce460cbb7f9338e850171d362e807e36ac20442f97ce2ac8d049d35a216             1791 Packages
+ 682bd35d4cd142de53f60b29cf26f1aaf7033c2d53fb962c42a625136b8d2208              829 Packages.gz
+ ca510ad9717d766136d05eea49c9358f1b47d59db630325fde4f61428c63e6e0              103 Release
+SHA512:
+ 6a35c51b96008151e5321b282e09c61b659cdabe72a6e141bd4be43cf37537d9e48a2555880703f3f0e71d40bb0e1b62d0e16e926ce59d9d18526ca1636a8f08             1791 Packages
+ 0966790a27c5d8739f5374fd276ef60d6e5c653abf3f9b11566bd25bfea6d260aee7a4c5a632eff4ba258c6f1c40b43fe92dd7ec1d8fa6c1e3e4a43cd6aff0fe              829 Packages.gz
+ 4485ee88e70d4988da3bb715d6ac3a26adc98281ab9f119f1266b0610fb96f7e825608f34af67b9a9af6b7fb76845dafc4cde5c677fec375802918e86cfa38cb              103 Release
+Changelogs: https://systemd-state.arnested.dk/changelog?path=@CHANGEPATH@
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEOaW5aMP09wCi81cVnwaxeMQIvd4FAmir4QkACgkQnwaxeMQI
+vd6QNAv+KKwVKDwTo0SLoAvmS+41+kAHKUpXSovgk+4D0coUWw3BPNcnemSxBBlq
+XjIUYpM+T9X39dZGCKJJEVy5YipNXuvhYe0QT6hhD1G58nvUQ1LEfLsUdozqh49W
+xcMDTDQ5Bs0kYeGQFiV9/fOQJQ6/Mi7cg2oevULFXlrxeyzEUW2mGRyZPJ0Kt5dk
+/D4APiHDwk9LcUBwNAepDO5qEKjPzoatS5P//DbqgJc1Ghm8sf14XP2e7SpZ/9Zk
+knAV7Mu50l1pkJ18hLJs367Zlni8ahULkGQy4Zr5wz4dHKOepGwFS5Bpyq7ZYwrJ
+zgHe6xMmKQwkt2x4yhqJzse74i0eM7nMTJuvHfOtl9omBrFZ4hf0IEStO+lVYIPd
+0L8tUixt4I104a940r+rtig+sqdgf2OItIV78pD0VjMd+AwaIx+n+fCpPJm7MGEU
+6XPWhi4Ot574fraET0bJn1WhKjI/2h13uDVv90v1KmxP5l5ptLBGJzzD00WfvKvJ
+zp9aboB1
+=rGdw
+-----END PGP SIGNATURE-----
