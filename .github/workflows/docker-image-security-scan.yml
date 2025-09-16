@@ -21,7 +21,7 @@ jobs:
         push: false
         load: true
     - name: Scan Docker image
-      uses: anchore/scan-action@v6
+      uses: anchore/scan-action@v7
       id: scan
       with:
         image: ${{ github.repository }}:test
