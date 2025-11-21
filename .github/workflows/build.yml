@@ -11,7 +11,7 @@ jobs:
       minimal: ${{ steps.go-version.outputs.minimal }}
       matrix: ${{ steps.go-version.outputs.matrix }}
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
     - uses: arnested/go-version-action@v1
       id: go-version
   go_generate:
@@ -21,7 +21,7 @@ jobs:
     env:
       workdir: go/src/${{ github.repository }}
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
       with:
         path: ${{env.workdir}}
     - name: Install Go ${{ needs.go-version.outputs.minimal }}
@@ -46,7 +46,7 @@ jobs:
       matrix:
         go-version: ${{ fromJSON(needs.go-version.outputs.matrix) }}
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
     - name: Install Go ${{ matrix.go-version }}
       uses: WillAbides/setup-go-faster@v1.14.0
       with:
