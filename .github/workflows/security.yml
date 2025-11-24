@@ -46,6 +46,7 @@ jobs:
         go-version-input: ${{ steps.go-version.outputs.latest }}
         output-format: sarif
         output-file: results.sarif
+        repo-checkout: false
     - name: Fix SARIF format
       run: yq --inplace --output-format json '.runs |= map ({"results":[]} + .)' results.sarif
     - name: Upload SARIF file
