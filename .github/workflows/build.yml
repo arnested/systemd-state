@@ -6,7 +6,7 @@ permissions:
 jobs:
   go-version:
     name: Lookup go versions
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     outputs:
       minimal: ${{ steps.go-version.outputs.minimal }}
       matrix: ${{ steps.go-version.outputs.matrix }}
@@ -17,26 +17,19 @@ jobs:
   go_generate:
     name: Check generated code is up to date
     needs: go-version
-    runs-on: ubuntu-22.04
-    env:
-      workdir: go/src/${{ github.repository }}
+    runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v6
-      with:
-        path: ${{env.workdir}}
     - name: Install Go ${{ needs.go-version.outputs.minimal }}
-      uses: WillAbides/setup-go-faster@v1.14.0
+      uses: actions/setup-go@v6
       with:
         go-version: ${{ needs.go-version.outputs.minimal }}
     - run: go version
     - name: go generate
       env:
         GO111MODULE: 'on'
-        GOPATH: ${{ github.workspace }}/go
-      working-directory: ${{env.workdir}}
       run: go generate -x
     - name: Diff after go generate
-      working-directory: ${{env.workdir}}
       run: git diff --exit-code
   build_and_test:
     name: Build and test
@@ -48,10 +41,9 @@ jobs:
     steps:
     - uses: actions/checkout@v6
     - name: Install Go ${{ matrix.go-version }}
-      uses: WillAbides/setup-go-faster@v1.14.0
+      uses: actions/setup-go@v6
       with:
         go-version: ${{ matrix.go-version }}.x
-        ignore-local: true
     - run: go version
     - name: go test
       env:
