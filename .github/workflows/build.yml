@@ -18,12 +18,8 @@ jobs:
     name: Check generated code is up to date
     needs: go-version
     runs-on: ubuntu-24.04
-    env:
-      workdir: go/src/${{ github.repository }}
     steps:
     - uses: actions/checkout@v6
-      with:
-        path: ${{env.workdir}}
     - name: Install Go ${{ needs.go-version.outputs.minimal }}
       uses: actions/setup-go@v6
       with:
@@ -32,11 +28,8 @@ jobs:
     - name: go generate
       env:
         GO111MODULE: 'on'
-        GOPATH: ${{ github.workspace }}/go
-      working-directory: ${{env.workdir}}
       run: go generate -x
     - name: Diff after go generate
-      working-directory: ${{env.workdir}}
       run: git diff --exit-code
   build_and_test:
     name: Build and test
