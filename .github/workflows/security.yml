@@ -36,20 +36,18 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v6
-    - uses: arnested/go-version-action@v1
-      id: go-version
+    - name: Setup Go
+      uses: actions/setup-go@v6
       with:
-        patch-level: true
+        go-version-file: go.mod
     - id: govulncheck
-      uses: golang/govulncheck-action@master
+      uses: arnested/govulncheck-action@main
       with:
-        go-version-input: ${{ steps.go-version.outputs.latest }}
         output-format: sarif
         output-file: results.sarif
+        setup-go: false
         repo-checkout: false
-    - name: Fix SARIF format
-      run: yq --inplace --output-format json '.runs |= map ({"results":[]} + .)' results.sarif
-    - name: Upload SARIF file
+   - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v4
       with:
         sarif_file: results.sarif
