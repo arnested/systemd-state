@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Wed, 03 Dec 2025 11:06:46 +0000
+Label: github.com/arnested/systemd-state
+Origin: Arne Jørgensen
+MD5Sum:
+ 0f60761949be3d439836c972e7c36eb9             1791 Packages
+ 2424cd58583219237c752d9b16b04333              829 Packages.gz
+ 0122c18ffb7c8d0cee5b4ad75040a5ec              103 Release
+SHA1:
+ 6393de5435bae51e2e5119437bbfef948c8f41d2             1791 Packages
+ cd52eda9cb04ef9f9700521ece857951db96ffe8              829 Packages.gz
+ 7cf12a106e38652263b028ec517b8e11644171ec              103 Release
+SHA256:
+ e5498392a2d82f03d1d92bea5bcc0c8e21b0f7af02239b4da3791001cbc7af0a             1791 Packages
+ 627dbc5350c5468452627709e002a392a85ae5b1aca427f9c01f3ed9c95339d3              829 Packages.gz
+ de1b38babc10e14cc0043d15cb1685f45170bc79b9867821cc7db10cea77608b              103 Release
+SHA512:
+ 63fabbfdd84912e7d9ab107364117267aca0d68eaa18c5962912a335d429ae864a14afc678fab7e4fcbb22926bf7a1873d079e0e8b55ed2e75aedc7311b35a47             1791 Packages
+ b537ace40eb0a84dd270166033cc97401d2b2ffcf0bcb801c79aaf9b751d013c4d7a49eefd47f1043b05858a1ad40909ec84a9b81db9d31782077d23ef1f7044              829 Packages.gz
+ f39184cbf24afba3d318b310458e6f5e4413f4c29b4cbbd6dd7f6fa1439f063b644428e680fe734400f7815e5146f684ccc78c7fee8b1001daa18b24a4e0acf9              103 Release
+Changelogs: https://systemd-state.arnested.dk/changelog?path=@CHANGEPATH@
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEOaW5aMP09wCi81cVnwaxeMQIvd4FAmkwGdkACgkQnwaxeMQI
+vd5Qiwv/SXdWkk6xa0ioCqZN7aNdFMnzEwIO15rDHngQdaXvkViogF3OZg/SxnSu
+MbHgjj80fG/wcX2d0dnv2m/T6YDW/jRKon0SVtrT2tY1eciKizgjW5c/YQqTWnMQ
+CTCn/FiVf+FkdktG0eGccx+CZffBsycyr/LaMwd3euUKBl9HkhYt+Xvq3HFb91hx
+qp41fMtmNGx0s3+bP5V0Y6xHfCuzpTP24L9nUtetM1gCtYAKxhkMJiuJvzImvGqV
+BGgx9NIurI+PTqI9x1lB02wOXPkawYz91lxv/icxWXszfoggEimTH98XJqtiJx7Z
+iPuhxHo5u/zNh3bOzuOQ/IQQUJr4Jxno8hGT35NgjmlHhzBwg1vpnkfNUaL7r5LK
+62C4ErO9pnnP0+gNNjy7KOTdldMvz6LKPQmcn8a0vK/cCcwAaZQfh1OIhE1VkbhH
+3IBzHLdJVtqG+QJddYeR42KlNKXRsHuc9di3LQPjhwqS+Dyg3fwgHTzYamfs5qxw
+oiyZQAMa
+=585g
+-----END PGP SIGNATURE-----
