@@ -16,7 +16,7 @@ permissions:
 jobs:
   gosec:
     name: Golang Security Checker
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     env:
       GO111MODULE: on
     steps:
@@ -33,7 +33,7 @@ jobs:
           sarif_file: results.sarif
   govulncheck:
     name: Govulncheck
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v6
     - uses: arnested/go-version-action@v1

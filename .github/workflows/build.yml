@@ -6,7 +6,7 @@ permissions:
 jobs:
   go-version:
     name: Lookup go versions
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     outputs:
       minimal: ${{ steps.go-version.outputs.minimal }}
       matrix: ${{ steps.go-version.outputs.matrix }}
@@ -17,7 +17,7 @@ jobs:
   go_generate:
     name: Check generated code is up to date
     needs: go-version
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     env:
       workdir: go/src/${{ github.repository }}
     steps:

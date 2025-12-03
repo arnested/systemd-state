@@ -7,7 +7,7 @@ permissions:
 jobs:
   dockerfile:
     name: dockerfile
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v6
       - name: Run hadolint
@@ -17,7 +17,7 @@ jobs:
 
   markdownlint:
     name: markdown
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v6
     - name: Run markdownlint
@@ -25,7 +25,7 @@ jobs:
 
   golangci:
     name: lint
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v6
       - uses: arnested/go-version-action@v1
