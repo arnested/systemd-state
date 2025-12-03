@@ -40,14 +40,14 @@ jobs:
       uses: actions/setup-go@v6
       with:
         go-version-file: go.mod
-    - id: govulncheck
+    - name: Run govulncheck
       uses: arnested/govulncheck-action@main
       with:
         output-format: sarif
         output-file: results.sarif
         setup-go: false
         repo-checkout: false
-   - name: Upload SARIF file
+    - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v4
       with:
         sarif_file: results.sarif
