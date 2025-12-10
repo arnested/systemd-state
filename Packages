@@ -1,0 +1,48 @@
+Package: systemd-state
+Architecture: i386
+Version: 1.3.241
+Priority: optional
+Maintainer: Arne Jørgensen <arne@arnested.dk>
+Installed-Size: 8091
+Depends: libsystemd0
+Filename: ./systemd-state_1.3.241_linux_386.deb
+Size: 3466552
+MD5sum: a7b142fcf5c7c3973370b8ddd36a2548
+SHA1: fe5b19fbb1edf627cd77aac616cd29f51ba63439
+SHA256: e024d4f4e311a3a7fcbdf67f81d1d89d775ca46343441cb994c4a7723e2cd168
+SHA512: 1fddffb614051755231ffe37c3f681d7756dc34063558b1b5f9e04c315aabf9a403f83bd1c6d13dc32bbe4fb8341d1afa2c4a13ff1b7ef1e0121f739fe54d6f7
+Description: http server for monitoring systemd state
+License: MIT
+
+Package: systemd-state
+Architecture: amd64
+Version: 1.3.241
+Priority: optional
+Maintainer: Arne Jørgensen <arne@arnested.dk>
+Installed-Size: 8423
+Depends: libsystemd0
+Filename: ./systemd-state_1.3.241_linux_amd64.deb
+Size: 3583870
+MD5sum: 8377ea793f1869bbf087fee5bcb2d762
+SHA1: 88084ff4c85a262ac97f100469734a9c42e44ce8
+SHA256: 93ea90590217c6f13db45f2e7ff1d965f05f9fdc13c5b0bc657d3905000c9f89
+SHA512: 2a64a0e9b61ff75f43aa0e7e00808aed51922c02c81ba370022d31abd97cfd82a3be554b35a688318714912db344247084089c84be47159ff689642f7d077bdc
+Description: http server for monitoring systemd state
+License: MIT
+
+Package: systemd-state
+Architecture: arm64
+Version: 1.3.241
+Priority: optional
+Maintainer: Arne Jørgensen <arne@arnested.dk>
+Installed-Size: 7955
+Depends: libsystemd0
+Filename: ./systemd-state_1.3.241_linux_arm64.deb
+Size: 3261508
+MD5sum: 24efee4e043d025c1bbce9bf53ea95d1
+SHA1: 9035a4afeffff26710d370e3799ca017307b2f81
+SHA256: 6e81f203ea1f08beaca7a53a3cf31212805b9de813e3ad2c9b0e04c62d21d12f
+SHA512: c88a6a0f3370b23dc00ed529089ec869744015752ddb0b589df1bac2b29377a71f3f9b57b2829e49adb4cd13fcecd0c95c88be541cadffd36fc95b423df6b073
+Description: http server for monitoring systemd state
+License: MIT
+
