@@ -1,3 +1,4 @@
+---
 name: Lint
 on: pull_request
 
@@ -5,6 +6,12 @@ permissions:
   contents: read
 
 jobs:
+  actionlint:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: reviewdog/action-actionlint@v1
+
   dockerfile:
     name: dockerfile
     runs-on: ubuntu-24.04
@@ -19,9 +26,9 @@ jobs:
     name: markdown
     runs-on: ubuntu-24.04
     steps:
-    - uses: actions/checkout@v6
-    - name: Run markdownlint
-      uses: DavidAnson/markdownlint-cli2-action@v22
+      - uses: actions/checkout@v6
+      - name: Run markdownlint
+        uses: DavidAnson/markdownlint-cli2-action@v22
 
   golangci:
     name: lint
@@ -40,3 +47,13 @@ jobs:
         with:
           version: latest
           only-new-issues: true
+
+  yamllint:
+    name: Yamllint
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - name: Run Yamllint
+        uses: frenck/action-yamllint@v1.5.0
+        with:
+          strict: true
