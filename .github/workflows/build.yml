@@ -1,57 +1,49 @@
-on:
-- push
+---
+on: push
 name: Build and test
 permissions:
-  contents: read
+  contents: write
 jobs:
-  go-version:
-    name: Lookup go versions
-    runs-on: ubuntu-24.04
-    outputs:
-      minimal: ${{ steps.go-version.outputs.minimal }}
-      matrix: ${{ steps.go-version.outputs.matrix }}
-    steps:
-    - uses: actions/checkout@v6
-    - uses: arnested/go-version-action@v1
-      id: go-version
-  go_generate:
-    name: Check generated code is up to date
-    needs: go-version
-    runs-on: ubuntu-24.04
-    steps:
-    - uses: actions/checkout@v6
-    - name: Install Go ${{ needs.go-version.outputs.minimal }}
-      uses: actions/setup-go@v6
-      with:
-        go-version: ${{ needs.go-version.outputs.minimal }}
-    - run: go version
-    - name: go generate
-      env:
-        GO111MODULE: 'on'
-      run: go generate -x
-    - name: Diff after go generate
-      run: git diff --exit-code
   build_and_test:
     name: Build and test
-    needs: go-version
-    runs-on: macos-latest
-    strategy:
-      matrix:
-        go-version: ${{ fromJSON(needs.go-version.outputs.matrix) }}
+    runs-on: ubuntu-24.04
     steps:
-    - uses: actions/checkout@v6
-    - name: Install Go ${{ matrix.go-version }}
-      uses: actions/setup-go@v6
-      with:
-        go-version: ${{ matrix.go-version }}.x
-    - run: go version
-    - name: go test
-      env:
-        GO111MODULE: 'on'
-        # We enable cgo to be able to test with `-race`.
-        CGO_ENABLED: 1 
-      run: go test -v -race -cover -covermode=atomic -coverprofile=coverage.txt ./...
-    - name: Upload coverage report to Codecov
-      uses: codecov/codecov-action@v5
-      with:
-        flags: go${{ matrix.go-version }}
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Setup Go
+        uses: actions/setup-go@v6
+        with:
+          go-version-file: go.mod
+      - name: Run go test
+        uses: robherley/go-test-action@v0.7.1
+        with:
+          testArguments: -race -cover -covermode=atomic -coverprofile=coverage.txt ./...
+      - name: Install changelog management tool
+        run: go install github.com/goreleaser/chglog/cmd/chglog@main
+      - name: Build changelog
+        run: chglog init
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Run GoReleaser
+        uses: goreleaser/goreleaser-action@v6
+        with:
+          args: release --snapshot
+
+  nilaway:
+    name: Nilaway
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Setup Go
+        uses: actions/setup-go@v6
+        with:
+          go-version-file: go.mod
+      - name: Install nilaway
+        run: go install go.uber.org/nilaway/cmd/nilaway@latest
+      - name: Run nilaway
+        run: nilaway ./...

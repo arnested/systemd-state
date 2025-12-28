@@ -1,13 +1,18 @@
-before:
-  hooks:
-    - go mod download
+---
+version: 2
 builds:
   - env:
       - CGO_ENABLED=0
     goos:
       - linux
+    flags:
+      - -trimpath
+    ldflags:
+      - -s -w -X main.version={{.Tag}} -X main.Date={{.CommitDate}}
+    mod_timestamp: '{{.CommitTimestamp}}'
 archives:
-  - format: binary
+  - formats:
+      - binary
     name_template: >-
       {{ .ProjectName }}_
       {{- if eq .Os "linux" }}Linux
@@ -18,7 +23,7 @@ archives:
 checksum:
   name_template: 'checksums.txt'
 snapshot:
-  name_template: "{{ .Tag }}-next"
+  version_template: "{{ .Tag }}-next"
 changelog:
   sort: asc
   filters:
@@ -27,6 +32,24 @@ changelog:
       - '^test:'
 release:
   prerelease: auto
+
+dockers_v2:
+  - images:
+      - 'arnested/{{ .ProjectName }}'
+    tags:
+      - '{{ .Tag }}'
+      - 'v{{ .Major }}'
+      - 'latest'
+    sbom: true
+    labels:
+      "org.opencontainers.image.created": "{{.CommitDate}}"
+      "org.opencontainers.image.revision": "{{.FullCommit}}"
+      "org.opencontainers.image.source": "https://github.com/arnested/{{.ProjectName}}"
+      "org.opencontainers.image.title": "systemd state http server"
+      "org.opencontainers.image.description": "A small HTTP server exposing the overall state of systemd"
+      "org.opencontainers.image.version": "{{.Version}}"
+      "org.opencontainers.image.licenses": "MIT"
+      "org.opencontainers.image.authors": "Arne Jørgensen <arne@arnested.dk>"
 
 nfpms:
   -

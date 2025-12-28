@@ -5,3 +5,5 @@
 /dist/
 /systemd-state
 /systemd-state.test
+/deb/systemd-state.asc
+/site
