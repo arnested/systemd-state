@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Fri, 02 Jan 2026 05:57:16 +0000
+Label: github.com/arnested/systemd-state
+Origin: Arne Jørgensen
+MD5Sum:
+ ef60526ae0a72624c3398c3452b23a06             1791 Packages
+ 5af71d9a490ea6035aa2e3f231cc34be              830 Packages.gz
+ 7c4c9d1af7b81211b2ef5fc9679aa207              103 Release
+SHA1:
+ 92c16b7ce288e1ab1acce838075c2f4a66e4acd3             1791 Packages
+ 72f35e1d4ba32c4b2dddb0e54723c5f2ce6dfe96              830 Packages.gz
+ 9c105bdc92d9876101fb7151f65353169c32352c              103 Release
+SHA256:
+ aa24304999c63ccaccf1b86ff4f4ebf892d46a3c44fcbc4b4cb799216186a849             1791 Packages
+ a3ca6667f7fe705371a9814ac99d7ba51d5044be84d8b24a2163936eb67cb3bb              830 Packages.gz
+ b1c34115dedef40002ef7edd2800e567f238edd502a3aee04a4cc0706a7e2f50              103 Release
+SHA512:
+ fc9588cb1f1b990812081d07dc3ed4334ca7129b0bf140e8d49955acf9a57f237529b71314d3ebc96a3657e02843d48da633129d22740b230484eb14ecbbd04f             1791 Packages
+ 861a8c51c83f73670fae3fb89042f95454b0e90769f53526cd7f04852f4f081d9cc84dcbc6d2128add1627d20b9d75e92ca3f0b626b40149ddcd2f4970712fbc              830 Packages.gz
+ eae3a717a8f1efa5791750e9b54fcfb77ca1863627522b03598ef87888c1443885a2dc9e82fa3eeeed48d457f497c040b45bf163b738c944564e9e744eea14b2              103 Release
+Changelogs: https://systemd-state.arnested.dk/changelog?path=@CHANGEPATH@
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEOaW5aMP09wCi81cVnwaxeMQIvd4FAmlXXj8ACgkQnwaxeMQI
+vd6YdQv/f7u1f2JKvVgb/zdOqG0yY1B59lKKaXZMCtheoZ7/de8QoFgAzIdnLoM2
+WNV5FhWx9DJ8wbA7etYLuFQDM9qO2cnVsXDOQqiwAj3dHNCSviYf9mvaGqk1SMkn
+Jaasy++RiK0JY3C3WgIaq1JbYf0egB2SqoaKkghtdvljZgJQCiVmCL3XTgqlJjW4
+x7sdyaFBUaB46oNkmkAW0ELg7CS+o7VyKSFg3ez0EiR4VNJhHEnYrWbWvRrr2DKS
++9b9z8JXIkSCBaEFhIxPlOLsXXyRnsuuHbssdVlQiC4S/V8JeAfb3gEo27qbHPEB
+YOgxvrU9ELTYVIQv4/Q3l4pPS8EurCtZUuA1g0QfngULOaaNKGFFhFKlMRuY9qxO
+/3nE7ObTSs6+J8t9D3OBxYAk2xxPzQoHh7Po51dMXgrfGWKIYDmkvQiS3z043O9Q
+ybi8/BwWQw9gZvyUmKtuYnfLS0bVk+7MvHMe5WopIga3JNVcaIUjfwPE4/JhtsbW
+x3y0JbKT
+=BD13
+-----END PGP SIGNATURE-----
