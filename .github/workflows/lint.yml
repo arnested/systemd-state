@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v6
-      - uses: arnested/go-version-action@v1
+      - uses: arnested/go-version-action@v2
         id: go-version
       - name: Install Go ${{ steps.go-version.outputs.minimal }}
         uses: actions/setup-go@v6
