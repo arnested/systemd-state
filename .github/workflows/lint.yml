@@ -38,7 +38,7 @@ jobs:
       - uses: arnested/go-version-action@v2
         id: go-version
       - name: Install Go ${{ steps.go-version.outputs.minimal }}
-        uses: actions/setup-go@v6
+        uses: arnested/setup-go@rc
         with:
           go-version: ${{ steps.go-version.outputs.minimal }}
       - run: go version

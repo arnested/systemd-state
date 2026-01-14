@@ -30,7 +30,7 @@ jobs:
           DEFAULT_BUMP: patch
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
       - name: Set up Go ${{ steps.go-version.outputs.go-mod-version }}
-        uses: actions/setup-go@v6
+        uses: arnested/setup-go@rc
         with:
           go-version: ${{ steps.go-version.outputs.go-mod-version }}
       - name: Install changelog management tool
