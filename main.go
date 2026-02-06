@@ -48,7 +48,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	// Explicitly set the Content-Type header on non-HEAD requests
 	// if the request "application/json". This is because
 	// http.DetectContentType() is not able to detect it.
-	if "application/json" == contentType.String() && r.Method != http.MethodHead {
+	if contentType.String() == "application/json" && r.Method != http.MethodHead {
 		w.Header().Set("Content-Type", contentType.String())
 	}
 
