@@ -32,7 +32,7 @@ jobs:
       - name: Set up Go ${{ steps.go-version.outputs.go-mod-version }}
         uses: arnested/setup-go@rc
         with:
-          go-version: ${{ steps.go-version.outputs.go-mod-version }}
+          go-version-file: go.mod
       - name: Build changelog
         run: go tool chglog init
       - name: Set up QEMU
