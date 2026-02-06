@@ -19,10 +19,8 @@ jobs:
         uses: robherley/go-test-action@v0.7.1
         with:
           testArguments: -race -cover -covermode=atomic -coverprofile=coverage.txt ./...
-      - name: Install changelog management tool
-        run: go install github.com/goreleaser/chglog/cmd/chglog@main
       - name: Build changelog
-        run: chglog init
+        run: go tool chglog init
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
@@ -43,7 +41,5 @@ jobs:
         uses: arnested/setup-go@rc
         with:
           go-version-file: go.mod
-      - name: Install nilaway
-        run: go install go.uber.org/nilaway/cmd/nilaway@latest
       - name: Run nilaway
-        run: nilaway ./...
+        run: go tool nilaway ./...
