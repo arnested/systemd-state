@@ -35,13 +35,10 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v6
-      - uses: arnested/go-version-action@v2
-        id: go-version
-      - name: Install Go ${{ steps.go-version.outputs.minimal }}
+      - name: Setup Go
         uses: arnested/setup-go@rc
         with:
           go-version-file: go.mod
-      - run: go version
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v9
         with:
