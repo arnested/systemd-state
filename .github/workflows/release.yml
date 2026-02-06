@@ -32,11 +32,9 @@ jobs:
       - name: Set up Go ${{ steps.go-version.outputs.go-mod-version }}
         uses: arnested/setup-go@rc
         with:
-          go-version: ${{ steps.go-version.outputs.go-mod-version }}
-      - name: Install changelog management tool
-        run: go install github.com/goreleaser/chglog/cmd/chglog@main
+          go-version-file: go.mod
       - name: Build changelog
-        run: chglog init
+        run: go tool chglog init
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
