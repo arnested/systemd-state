@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Fri, 06 Feb 2026 23:28:39 +0000
+Label: github.com/arnested/systemd-state
+Origin: Arne Jørgensen
+MD5Sum:
+ a5c1a1e7c875417fe5276f66f9f915f9             1791 Packages
+ d4052334b98d0e7c62586eeae847f706              833 Packages.gz
+ 3958e994dabde62cdae7652f88a5ef6f              103 Release
+SHA1:
+ dfa8b5d0a2fc610f66217355b91d3aab9ce74bad             1791 Packages
+ 91f112b1d171a60c0dfb54aea4f4ce21d02de23a              833 Packages.gz
+ 59dacfcd966a0333d1c6d8650cdca6be9f746d93              103 Release
+SHA256:
+ 7dc02a2b299be3d72d2620589a3a8936493b3ab2b910bbdc439bcc81772e82d3             1791 Packages
+ 1a3a8e789ac5657080aeba89a8788c965adacf34f0f55314ba08e7c150181c30              833 Packages.gz
+ d7517d4fafac8611d0b532628a171e16c5fd1d01c00d258a89f41ade2ac3d38b              103 Release
+SHA512:
+ 687ad104fd248fcd1cd6c3dd63eb7fa6f3f0fa72d8388346557e0a0222eede9e04ea93707e27740db7dbfc8d43374c3e1882b8898c794cc23a1a40505a45055e             1791 Packages
+ 6fc0ce3ffb646814359938033d804bbf7bf79e2a496b97dfb76f1f2691870fc5cb8a11977bfd07043049825c7c0d7e71a03a702412436d72bab35200baf6446f              833 Packages.gz
+ 0ea8560b57a2fae61dd46f7b9c49861aaa11830d44c2beef1f20bafd74ca2f071202ef4f9534f5aa316818568476f7c313c6f71f6f823a9156939a77e43aff99              103 Release
+Changelogs: https://systemd-state.arnested.dk/changelog?path=@CHANGEPATH@
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEOaW5aMP09wCi81cVnwaxeMQIvd4FAmmGeScACgkQnwaxeMQI
+vd6eTwv7BT84Fv9buWxMNBL/HNwvNIyVFX+gaCxVlvTKATO6sa/fD4xp6Sf37G09
+lhnN+GzBmeS4eCxvv1ryeSdzZCDtcfKKAwlK7x+KFJ1APdAPZJtU81XeM9lTIY40
+LHnmCd71wp2oCMvraowwmvDaKg2TFA0UmhRAWL5ARWGtYvjVEbo7x9uXHZheq9JI
+Qrq6lSTelP+pBjZVRtoE0ypkyESx/yCQvog3mQH0VtnP77Latm8Eo98vAVFntpRo
+tk9LL6gr6Yg7dz3cfEKKhGu4URmP1FYHOLnf6/G7CAztX7Oth4Mq2+m8lv7S0aG3
+pSNTnM8t5vwjZwYOJ9u0VQxcEgdEGNrKg1LzpJr/LOBtYbdl9tBwaIoWd/VKmoCM
+tGeDwhpppVO1mQ/Cs/MzNymk7dFedKQ2wdqH4WpzIphkLYEEOdeKJ1oCeTR2SOYe
+/cOWGH/Lfs55S1nGMbvF1xOdfQ5wWlICmpLO4/nDvFYEU8LEPyB1y7kmMIdLAV8R
+DTLVZRFJ
+=958z
+-----END PGP SIGNATURE-----
