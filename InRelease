@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Tue, 10 Feb 2026 20:30:28 +0000
+Label: github.com/arnested/systemd-state
+Origin: Arne Jørgensen
+MD5Sum:
+ a84b16a2b438cc6646b972b768f942e7             1791 Packages
+ 3e6a4ca4abd5dcc71da375c3f64c02dc              831 Packages.gz
+ bc9f405ecc69cd50580714ca1b5fa172              103 Release
+SHA1:
+ dc4685e60e11b6ff8198b79d162f362b3636f983             1791 Packages
+ ed3ed4aac802f28da329c08601343d40efc4483d              831 Packages.gz
+ a20c7247258495846c81996a9761466279101aa5              103 Release
+SHA256:
+ 2211b83f314a33d2d9c340796d0b3eb56483979b421c581d092b6416a1672c8d             1791 Packages
+ a025b2192aba1ec41f15502aedb5ee60a4356f1ab0687d7913b0621140db119f              831 Packages.gz
+ f5eebd4d412185082519a18207e0aa76b24f368ae4b7248469ba1cc457d5fca7              103 Release
+SHA512:
+ 6a1a478ea3679644735193848b066ccf2af3dbd414194c765dec55440aba830cdf0ab09d82d86862842c4645406c6539593226fc28f3ac074b3b6ad2788dea03             1791 Packages
+ b1fcca003230b4b38b6ce29c5711daac11523448806a12d7e15fcccbd225d414ee8e78e8c5d165a0042df88bd22cecb15f20cd2cc3f377a5eb6415093dc5b922              831 Packages.gz
+ 6842d3ea46907997edca601fe9ffc04231e1410fe0708363984b1367f81efde697de0cfdbd6ae0881c96208136dcdac8a690dff4453bb23e3984d5144e22ffb4              103 Release
+Changelogs: https://systemd-state.arnested.dk/changelog?path=@CHANGEPATH@
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEOaW5aMP09wCi81cVnwaxeMQIvd4FAmmLlWUACgkQnwaxeMQI
+vd7PIQwAsQ+1nhop+yhefepp9unxJJrWxjJAvW1fg8nVu7mfpYakq2Zf7Gc2mxuU
+gH52ENEvDvcjvnraA+udTQdoepyAHlSgTvl+Gjq3HPO6ZJ8XT9IzqMPF7H8mk2/K
+HPmzxb5niCFrWTw+pWn65jAFr4XWR2QpjdRllaYBpRA+LSsjnHi7zbrjXpPvZyx+
+k+WocDVnbAEr9faaDsz05l1LJ3Uj9wLg7rc+CqVR7gIF//0XvHeUq4v+Nl4ibOo0
+1JRdmUDtgsTgVxqK0S0Fv6JhJaEPnfr2L3qyYk/q7RWj0Ohojh8093EzZI+zMJZB
+ni737E7XTshtBy4yqwIvdWWY7/sZ2ZjvLIQpAQMxG34PnCViK4QoSh6oW/NBXyni
+jwDyHpo2KOEZ7lf6Ql/tFth+78hmiCquj9JKeptAQfOnePUks3+rKOM8G+y6TWtN
+P0/6jyDzD/cZvfzVuN6SB0HHdDAxo4ns3mDH/sI39szQh5pkH3wozIjnDw5lX/hy
+oCBFtseN
+=B93v
+-----END PGP SIGNATURE-----
