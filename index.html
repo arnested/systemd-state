@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>systemd-state</title>
+<meta name="description" content="http server for monitoring systemd state" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+html {
+  background-color: white;
+  color: black;
+  font-family: system-ui, -apple-system;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body {
+  padding: 0 2em;
+  max-width: 62em;
+  margin: 10ex auto;
+}
+
+code {
+  background-color: whitesmoke;
+  color: darkslategrey;
+  padding: 0.5ex 0.5em;
+  border-radius: 0.75em;
+}
+
+code.language-ini,
+code.language-console {
+  padding: 2ex 1em;
+  margin: 2ex 0;
+  display: block;
+  overflow-x: auto;
+}
+
+code.language-console::before {
+  content: "$ ";
+  color: black;
+  font-weight: bold;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: black;
+    color: white;
+  }
+
+  code {
+    background-color: darkslategrey;
+    color: whitesmoke;
+  }
+
+  code.language-console::before {
+    color: white;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<h1>systemd state http server</h1>
+<p><a href="https://hub.docker.com/r/arnested/systemd-state"><img alt="Docker image size" src="https://badgen.net/docker/size/arnested/systemd-state"></a>
+<a href="https://cla-assistant.io/arnested/systemd-state"><img alt="CLA assistant" src="https://cla-assistant.io/readme/badge/arnested/systemd-state"></a></p>
+<p>A small HTTP server exposing the overall state of systemd.</p>
+<p>Equivalent to <code>systemctl is-system-running</code>.</p>
+<p>The server will answer with the following HTTP status codes:</p>
+<ul>
+<li>200 OK: The system is fully operational.</li>
+<li>503 Internal Server error: If the system is in any other state</li>
+<li>500 Service Unavailable: If we could not determine the systemd state</li>
+</ul>
+<h2>What is the purpose of this</h2>
+<p>This is a "poor mans" monitoring solution.</p>
+<p>It has been created to expose the overall system state to monitoring
+solutions such as <a href="https://www.pingdom.com/">Pingdom</a> or
+<a href="https://www.statuscake.com/">StatusCake</a>.</p>
+<h2>Docker image</h2>
+<p>There is a <a href="https://hub.docker.com/r/arnested/systemd-state/">Docker image at Docker
+Hub</a>.</p>
+<h2>The status is not protected by HTTPS or authentication</h2>
+<p>You are right. It is exposed on HTTP without any authentication. I
+have chosen the same stance as Prometheus on this. See <a href="https://prometheus.io/docs/introduction/faq/#why-don-t-the-prometheus-server-components-support-tls-or-authentication-can-i-add-those">Prometheus'
+FAQ</a>.</p>
+<p>Personally I have placed systemd-state behind
+<a href="https://traefik.io">Træfik</a> with basic authentication.</p>
+<h2>Example docker-compose configuration with traefik</h2>
+<p>Exposing the status on <code>https://example.com/_systemd</code>:</p>
+<pre><code class="language-yml">version: &quot;2&quot;
+
+services:
+  systemd:
+    image: arnested/systemd-state
+    volumes:
+      - '/run/systemd/:/run/systemd/:ro'
+    restart: always
+    labels:
+      - 'traefik.frontend.auth.basic=foo:$$apr1$$WCYo2XY2$$7PDdo922necZuGkMAeTI70'
+      - &quot;traefik.port=80&quot;
+      - &quot;traefik.enable=true&quot;
+      - &quot;traefik.frontend.rule=Host:example.com;Path:/_systemd&quot;
+    networks:
+      - web
+
+networks:
+  web:
+    external:
+      name: traefik_webgateway
+</code></pre></body>
+</html>

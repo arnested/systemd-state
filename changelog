@@ -1,0 +1,3168 @@
+
+systemd-state (1.3.254)
+  * Bump github.com/cloudflare/circl from 1.6.1 to 1.6.3
+   - Bumps [github.com/cloudflare/circl](https://github.com/cloudflare/circl) from 1.6.1 to 1.6.3.
+   - - [Release notes](https://github.com/cloudflare/circl/releases)
+   - - [Commits](https://github.com/cloudflare/circl/compare/v1.6.1...v1.6.3)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: github.com/cloudflare/circl
+   -   dependency-version: 1.6.3
+   -   dependency-type: indirect
+   - ...
+
+ -- Arne Jørgensen  Wed, 25 Feb 2026 19:39:07 +0000
+
+systemd-state (1.3.253)
+  * Bump goreleaser/goreleaser-action from 6 to 7
+   - Bumps [goreleaser/goreleaser-action](https://github.com/goreleaser/goreleaser-action) from 6 to 7.
+   - - [Release notes](https://github.com/goreleaser/goreleaser-action/releases)
+   - - [Commits](https://github.com/goreleaser/goreleaser-action/compare/v6...v7)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: goreleaser/goreleaser-action
+   -   dependency-version: '7'
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Mon, 23 Feb 2026 04:57:24 +0000
+
+systemd-state (1.3.252)
+  * Update Go version to 1.26.0
+   - See the release history: https://go.dev/doc/devel/release#go1.26.0.
+
+ -- Arne Jørgensen  Tue, 10 Feb 2026 20:26:48 +0000
+
+systemd-state (1.3.251)
+  * Bump github.com/go-git/go-git/v5 from 5.16.4 to 5.16.5
+   - Bumps [github.com/go-git/go-git/v5](https://github.com/go-git/go-git) from 5.16.4 to 5.16.5.
+   - - [Release notes](https://github.com/go-git/go-git/releases)
+   - - [Commits](https://github.com/go-git/go-git/compare/v5.16.4...v5.16.5)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: github.com/go-git/go-git/v5
+   -   dependency-version: 5.16.5
+   -   dependency-type: indirect
+   - ...
+
+ -- Arne Jørgensen  Tue, 10 Feb 2026 05:02:31 +0000
+
+systemd-state (1.3.250)
+  * Use install mode `goinstall` when installing golangci-lint in CI
+
+ -- Arne Jørgensen  Fri, 06 Feb 2026 23:24:00 +0000
+
+systemd-state (1.3.249)
+  * Fix linting when Go is a release candidate / no need to lookup go version
+
+ -- Arne Jørgensen  Fri, 06 Feb 2026 23:13:44 +0000
+
+systemd-state (1.3.248)
+  * Fix spell error in command name
+
+ -- Arne Jørgensen  Fri, 06 Feb 2026 18:11:55 +0000
+
+systemd-state (1.3.247)
+  * Fix changeæog generation in release workflow
+
+ -- Arne Jørgensen  Fri, 06 Feb 2026 18:03:30 +0000
+
+systemd-state (1.3.246)
+  * Add "LicenseRef-scancode-google-patent-license-golang" as allowed license
+  * Use go version from go.mod in actions
+  * Update dependencies (`go get -u ./...`)
+  * Update Go version to 1.25.7
+  * Update copyright years
+  * Use go tools for some tools
+  * Don't use Yoda conditions (staticcheck)
+  * Add update go version action
+
+ -- Arne Jørgensen  Fri, 06 Feb 2026 17:31:53 +0000
+
+systemd-state (1.3.245)
+  * Bump github.com/coreos/go-systemd/v22 from 22.6.0 to 22.7.0
+   - Bumps [github.com/coreos/go-systemd/v22](https://github.com/coreos/go-systemd) from 22.6.0 to 22.7.0.
+   - - [Release notes](https://github.com/coreos/go-systemd/releases)
+   - - [Commits](https://github.com/coreos/go-systemd/compare/v22.6.0...v22.7.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: github.com/coreos/go-systemd/v22
+   -   dependency-version: 22.7.0
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Wed, 28 Jan 2026 05:14:00 +0000
+
+systemd-state (1.3.244)
+  * Use a fork of actions/setup-go
+   - The fork supports release candidate versions.
+
+ -- Arne Jørgensen  Wed, 14 Jan 2026 09:46:52 +0000
+
+systemd-state (1.3.243)
+  * Bump arnested/go-version-action from 1 to 2
+   - Bumps [arnested/go-version-action](https://github.com/arnested/go-version-action) from 1 to 2.
+   - - [Release notes](https://github.com/arnested/go-version-action/releases)
+   - - [Commits](https://github.com/arnested/go-version-action/compare/v1...v2)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: arnested/go-version-action
+   -   dependency-version: '2'
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Fri, 02 Jan 2026 05:54:04 +0000
+
+systemd-state (1.3.242)
+  * Update CI and release builds
+
+ -- Arne Jørgensen  Sun, 28 Dec 2025 18:31:27 +0000
+
+systemd-state (1.3.241)
+  * Bump DavidAnson/markdownlint-cli2-action from 21 to 22
+   - Bumps [DavidAnson/markdownlint-cli2-action](https://github.com/davidanson/markdownlint-cli2-action) from 21 to 22.
+   - - [Release notes](https://github.com/davidanson/markdownlint-cli2-action/releases)
+   - - [Commits](https://github.com/davidanson/markdownlint-cli2-action/compare/v21...v22)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: DavidAnson/markdownlint-cli2-action
+   -   dependency-version: '22'
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Wed, 10 Dec 2025 05:15:59 +0000
+
+systemd-state (1.3.240)
+  * Fix action syntax
+   - Introduced in 8bf47189fded72fd17b764a1cddd437f83cb309b.
+
+ -- Arne Jørgensen  Wed, 03 Dec 2025 11:04:19 +0000
+
+systemd-state (1.3.239)
+  * Bump golang from 1.25.4-alpine to 1.25.5-alpine
+   - Bumps golang from 1.25.4-alpine to 1.25.5-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-version: 1.25.5-alpine
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 03 Dec 2025 10:59:13 +0000
+
+systemd-state (1.3.238)
+  * No need to use special workdir
+  * Use actions/setup-go
+   - Since it's version 6.1 it supports dowbnloading from go.dev which
+   - should ensure we always can get the newest Go version installed.
+  * Update govulncheck step
+  * Use newest Ubuntu as action runner
+
+ -- Arne Jørgensen  Wed, 03 Dec 2025 10:56:27 +0000
+
+systemd-state (1.3.237)
+  * No need to checkout the code - it's already checked out
+  * Bump actions/checkout from 5 to 6
+   - Bumps [actions/checkout](https://github.com/actions/checkout) from 5 to 6.
+   - - [Release notes](https://github.com/actions/checkout/releases)
+   - - [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+   - - [Commits](https://github.com/actions/checkout/compare/v5...v6)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: actions/checkout
+   -   dependency-version: '6'
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Mon, 24 Nov 2025 08:34:15 +0000
+
+systemd-state (1.3.236)
+  * Bump DavidAnson/markdownlint-cli2-action from 20 to 21
+   - Bumps [DavidAnson/markdownlint-cli2-action](https://github.com/davidanson/markdownlint-cli2-action) from 20 to 21.
+   - - [Release notes](https://github.com/davidanson/markdownlint-cli2-action/releases)
+   - - [Commits](https://github.com/davidanson/markdownlint-cli2-action/compare/v20...v21)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: DavidAnson/markdownlint-cli2-action
+   -   dependency-version: '21'
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Mon, 17 Nov 2025 05:03:18 +0000
+
+systemd-state (1.3.235)
+  * Bump golangci/golangci-lint-action from 8 to 9
+   - Bumps [golangci/golangci-lint-action](https://github.com/golangci/golangci-lint-action) from 8 to 9.
+   - - [Release notes](https://github.com/golangci/golangci-lint-action/releases)
+   - - [Commits](https://github.com/golangci/golangci-lint-action/compare/v8...v9)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golangci/golangci-lint-action
+   -   dependency-version: '9'
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Mon, 10 Nov 2025 05:05:45 +0000
+
+systemd-state (1.3.234)
+  * Bump golang from 1.25.3-alpine to 1.25.4-alpine
+   - Bumps golang from 1.25.3-alpine to 1.25.4-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-version: 1.25.4-alpine
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Thu, 06 Nov 2025 05:02:18 +0000
+
+systemd-state (1.3.233)
+  * Bump golang from 1.25.2-alpine to 1.25.3-alpine
+   - Bumps golang from 1.25.2-alpine to 1.25.3-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-version: 1.25.3-alpine
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Tue, 14 Oct 2025 05:51:11 +0000
+
+systemd-state (1.3.232)
+  * Bump github/codeql-action from 3 to 4
+   - Bumps [github/codeql-action](https://github.com/github/codeql-action) from 3 to 4.
+   - - [Release notes](https://github.com/github/codeql-action/releases)
+   - - [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+   - - [Commits](https://github.com/github/codeql-action/compare/v3...v4)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: github/codeql-action
+   -   dependency-version: '4'
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Wed, 08 Oct 2025 04:06:08 +0000
+
+systemd-state (1.3.231)
+  * Bump golang from 1.25.1-alpine to 1.25.2-alpine
+   - Bumps golang from 1.25.1-alpine to 1.25.2-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-version: 1.25.2-alpine
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 08 Oct 2025 04:02:09 +0000
+
+systemd-state (1.3.230)
+  * Bump hadolint/hadolint-action from 3.2.0 to 3.3.0
+   - Bumps [hadolint/hadolint-action](https://github.com/hadolint/hadolint-action) from 3.2.0 to 3.3.0.
+   - - [Release notes](https://github.com/hadolint/hadolint-action/releases)
+   - - [Changelog](https://github.com/hadolint/hadolint-action/blob/master/.releaserc)
+   - - [Commits](https://github.com/hadolint/hadolint-action/compare/v3.2.0...v3.3.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: hadolint/hadolint-action
+   -   dependency-version: 3.3.0
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Tue, 23 Sep 2025 04:02:39 +0000
+
+systemd-state (1.3.229)
+  * Bump anchore/scan-action from 6 to 7
+   - Bumps [anchore/scan-action](https://github.com/anchore/scan-action) from 6 to 7.
+   - - [Release notes](https://github.com/anchore/scan-action/releases)
+   - - [Changelog](https://github.com/anchore/scan-action/blob/main/RELEASE.md)
+   - - [Commits](https://github.com/anchore/scan-action/compare/v6...v7)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anchore/scan-action
+   -   dependency-version: '7'
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Tue, 16 Sep 2025 03:55:59 +0000
+
+systemd-state (1.3.228)
+  * Bump golang from 1.25.0-alpine to 1.25.1-alpine
+   - Bumps golang from 1.25.0-alpine to 1.25.1-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-version: 1.25.1-alpine
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Mon, 08 Sep 2025 04:04:15 +0000
+
+systemd-state (1.3.227)
+  * Bump hadolint/hadolint-action from 3.1.0 to 3.2.0
+   - Bumps [hadolint/hadolint-action](https://github.com/hadolint/hadolint-action) from 3.1.0 to 3.2.0.
+   - - [Release notes](https://github.com/hadolint/hadolint-action/releases)
+   - - [Changelog](https://github.com/hadolint/hadolint-action/blob/master/.releaserc)
+   - - [Commits](https://github.com/hadolint/hadolint-action/compare/v3.1.0...v3.2.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: hadolint/hadolint-action
+   -   dependency-version: 3.2.0
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Thu, 04 Sep 2025 09:53:31 +0000
+
+systemd-state (1.3.226)
+  * Bump anothrNick/github-tag-action from 1.73.0 to 1.75.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrnick/github-tag-action) from 1.73.0 to 1.75.0.
+   - - [Release notes](https://github.com/anothrnick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrnick/github-tag-action/compare/1.73.0...1.75.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-version: 1.75.0
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Mon, 25 Aug 2025 04:03:04 +0000
+
+systemd-state (1.3.225)
+  * We have switched o the default CodeQL analysis setup
+
+ -- Arne Jørgensen  Sat, 23 Aug 2025 19:57:51 +0000
+
+systemd-state (1.3.224)
+  * Bump github.com/coreos/go-systemd/v22 from 22.5.0 to 22.6.0
+   - Bumps [github.com/coreos/go-systemd/v22](https://github.com/coreos/go-systemd) from 22.5.0 to 22.6.0.
+   - - [Release notes](https://github.com/coreos/go-systemd/releases)
+   - - [Commits](https://github.com/coreos/go-systemd/compare/v22.5.0...v22.6.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: github.com/coreos/go-systemd/v22
+   -   dependency-version: 22.6.0
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Thu, 21 Aug 2025 04:04:40 +0000
+
+systemd-state (1.3.223)
+  * Remove go.uber.org/automaxprocs
+  * Bump golang from 1.24.6-alpine to 1.25.0-alpine
+   - Bumps golang from 1.24.6-alpine to 1.25.0-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-version: 1.25.0-alpine
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Thu, 14 Aug 2025 06:40:09 +0000
+
+systemd-state (1.3.222)
+  * Bump actions/checkout from 4 to 5
+   - Bumps [actions/checkout](https://github.com/actions/checkout) from 4 to 5.
+   - - [Release notes](https://github.com/actions/checkout/releases)
+   - - [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+   - - [Commits](https://github.com/actions/checkout/compare/v4...v5)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: actions/checkout
+   -   dependency-version: '5'
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Tue, 12 Aug 2025 10:21:36 +0000
+
+systemd-state (1.3.221)
+  * Bump golang from 1.24.5-alpine to 1.24.6-alpine
+   - Bumps golang from 1.24.5-alpine to 1.24.6-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-version: 1.24.6-alpine
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Thu, 07 Aug 2025 04:03:27 +0000
+
+systemd-state (1.3.220)
+  * Bump golang from 1.24.4-alpine to 1.24.5-alpine
+   - Bumps golang from 1.24.4-alpine to 1.24.5-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-version: 1.24.5-alpine
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 09 Jul 2025 04:23:03 +0000
+
+systemd-state (1.3.219)
+  * Bump golang from 1.24.3-alpine to 1.24.4-alpine
+   - Bumps golang from 1.24.3-alpine to 1.24.4-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-version: 1.24.4-alpine
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Fri, 06 Jun 2025 04:25:02 +0000
+
+systemd-state (1.3.218)
+  * Bump DavidAnson/markdownlint-cli2-action from 19 to 20
+   - Bumps [DavidAnson/markdownlint-cli2-action](https://github.com/davidanson/markdownlint-cli2-action) from 19 to 20.
+   - - [Release notes](https://github.com/davidanson/markdownlint-cli2-action/releases)
+   - - [Commits](https://github.com/davidanson/markdownlint-cli2-action/compare/v19...v20)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: DavidAnson/markdownlint-cli2-action
+   -   dependency-version: '20'
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Fri, 16 May 2025 04:04:14 +0000
+
+systemd-state (1.3.217)
+  * Remove reviewers from Dependabot configuration
+   - See https://github.blog/changelog/2025-04-29-dependabot-reviewers-configuration-option-being-replaced-by-code-owners/
+
+ -- Arne Jørgensen  Fri, 09 May 2025 20:07:16 +0000
+
+systemd-state (1.3.216)
+  * Bump anothrNick/github-tag-action from 1.71.0 to 1.73.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrnick/github-tag-action) from 1.71.0 to 1.73.0.
+   - - [Release notes](https://github.com/anothrnick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrnick/github-tag-action/compare/1.71.0...1.73.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-version: 1.73.0
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Thu, 08 May 2025 04:02:22 +0000
+
+systemd-state (1.3.215)
+  * Bump golang from 1.24.2-alpine to 1.24.3-alpine
+   - Bumps golang from 1.24.2-alpine to 1.24.3-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-version: 1.24.3-alpine
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 07 May 2025 04:02:14 +0000
+
+systemd-state (1.3.214)
+  * Bump golangci/golangci-lint-action from 7 to 8
+   - Bumps [golangci/golangci-lint-action](https://github.com/golangci/golangci-lint-action) from 7 to 8.
+   - - [Release notes](https://github.com/golangci/golangci-lint-action/releases)
+   - - [Commits](https://github.com/golangci/golangci-lint-action/compare/v7...v8)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golangci/golangci-lint-action
+   -   dependency-version: '8'
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Mon, 05 May 2025 04:06:17 +0000
+
+systemd-state (1.3.213)
+  * Bump golang from 1.24.1-alpine to 1.24.2-alpine
+   - Bumps golang from 1.24.1-alpine to 1.24.2-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 02 Apr 2025 04:03:28 +0000
+
+systemd-state (1.3.212)
+  * Bump golangci/golangci-lint-action from 6 to 7
+   - Bumps [golangci/golangci-lint-action](https://github.com/golangci/golangci-lint-action) from 6 to 7.
+   - - [Release notes](https://github.com/golangci/golangci-lint-action/releases)
+   - - [Commits](https://github.com/golangci/golangci-lint-action/compare/v6...v7)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golangci/golangci-lint-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Tue, 25 Mar 2025 06:46:25 +0000
+
+systemd-state (1.3.211)
+  * Bump golang from 1.24.0-alpine to 1.24.1-alpine
+   - Bumps golang from 1.24.0-alpine to 1.24.1-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 05 Mar 2025 05:17:10 +0000
+
+systemd-state (1.3.210)
+  * Bump golang from 1.23.6-alpine to 1.24.0-alpine
+   - Bumps golang from 1.23.6-alpine to 1.24.0-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Thu, 13 Feb 2025 04:58:06 +0000
+
+systemd-state (1.3.209)
+  * Update Dockerfile
+
+ -- Arne Jørgensen  Wed, 05 Feb 2025 06:55:09 +0000
+
+systemd-state (1.3.208)
+  * Bump golang from 1.23.4-alpine to 1.23.5-alpine
+   - Bumps golang from 1.23.4-alpine to 1.23.5-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Fri, 17 Jan 2025 04:59:44 +0000
+
+systemd-state (1.3.207)
+  * Bump DavidAnson/markdownlint-cli2-action from 18 to 19
+   - Bumps [DavidAnson/markdownlint-cli2-action](https://github.com/davidanson/markdownlint-cli2-action) from 18 to 19.
+   - - [Release notes](https://github.com/davidanson/markdownlint-cli2-action/releases)
+   - - [Commits](https://github.com/davidanson/markdownlint-cli2-action/compare/v18...v19)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: DavidAnson/markdownlint-cli2-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Mon, 30 Dec 2024 07:57:26 +0000
+
+systemd-state (1.3.206)
+  * Bump anchore/scan-action from 5 to 6
+   - Bumps [anchore/scan-action](https://github.com/anchore/scan-action) from 5 to 6.
+   - - [Release notes](https://github.com/anchore/scan-action/releases)
+   - - [Changelog](https://github.com/anchore/scan-action/blob/main/CHANGELOG.md)
+   - - [Commits](https://github.com/anchore/scan-action/compare/v5...v6)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anchore/scan-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Mon, 16 Dec 2024 05:46:43 +0000
+
+systemd-state (1.3.205)
+  * Bump golang from 1.23.3-alpine to 1.23.4-alpine
+   - Bumps golang from 1.23.3-alpine to 1.23.4-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 04 Dec 2024 05:01:33 +0000
+
+systemd-state (1.3.204)
+  * Bump codecov/codecov-action from 4 to 5
+   - Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from 4 to 5.
+   - - [Release notes](https://github.com/codecov/codecov-action/releases)
+   - - [Changelog](https://github.com/codecov/codecov-action/blob/main/CHANGELOG.md)
+   - - [Commits](https://github.com/codecov/codecov-action/compare/v4...v5)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: codecov/codecov-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Fri, 15 Nov 2024 05:10:27 +0000
+
+systemd-state (1.3.203)
+  * Bump DavidAnson/markdownlint-cli2-action from 17 to 18
+   - Bumps [DavidAnson/markdownlint-cli2-action](https://github.com/davidanson/markdownlint-cli2-action) from 17 to 18.
+   - - [Release notes](https://github.com/davidanson/markdownlint-cli2-action/releases)
+   - - [Commits](https://github.com/davidanson/markdownlint-cli2-action/compare/v17...v18)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: DavidAnson/markdownlint-cli2-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Fri, 15 Nov 2024 05:07:35 +0000
+
+systemd-state (1.3.202)
+  * Bump golang from 1.23.2-alpine to 1.23.3-alpine
+   - Bumps golang from 1.23.2-alpine to 1.23.3-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Fri, 08 Nov 2024 05:03:26 +0000
+
+systemd-state (1.3.201)
+  * Bump anchore/scan-action from 4 to 5
+   - Bumps [anchore/scan-action](https://github.com/anchore/scan-action) from 4 to 5.
+   - - [Release notes](https://github.com/anchore/scan-action/releases)
+   - - [Changelog](https://github.com/anchore/scan-action/blob/main/CHANGELOG.md)
+   - - [Commits](https://github.com/anchore/scan-action/compare/v4...v5)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anchore/scan-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Mon, 14 Oct 2024 05:51:59 +0000
+
+systemd-state (1.3.200)
+  * Bump golang from 1.23.1-alpine to 1.23.2-alpine
+   - Bumps golang from 1.23.1-alpine to 1.23.2-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 02 Oct 2024 04:01:32 +0000
+
+systemd-state (1.3.199)
+  * Bump anothrNick/github-tag-action from 1.70.0 to 1.71.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrnick/github-tag-action) from 1.70.0 to 1.71.0.
+   - - [Release notes](https://github.com/anothrnick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrnick/github-tag-action/compare/1.70.0...1.71.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+  * Bump go.uber.org/automaxprocs from 1.5.3 to 1.6.0
+   - Bumps [go.uber.org/automaxprocs](https://github.com/uber-go/automaxprocs) from 1.5.3 to 1.6.0.
+   - - [Release notes](https://github.com/uber-go/automaxprocs/releases)
+   - - [Changelog](https://github.com/uber-go/automaxprocs/blob/master/CHANGELOG.md)
+   - - [Commits](https://github.com/uber-go/automaxprocs/compare/v1.5.3...v1.6.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: go.uber.org/automaxprocs
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Tue, 24 Sep 2024 06:15:51 +0000
+
+systemd-state (1.3.198)
+  * Bump DavidAnson/markdownlint-cli2-action from 16 to 17
+   - Bumps [DavidAnson/markdownlint-cli2-action](https://github.com/davidanson/markdownlint-cli2-action) from 16 to 17.
+   - - [Release notes](https://github.com/davidanson/markdownlint-cli2-action/releases)
+   - - [Commits](https://github.com/davidanson/markdownlint-cli2-action/compare/v16...v17)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: DavidAnson/markdownlint-cli2-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Thu, 12 Sep 2024 04:02:32 +0000
+
+systemd-state (1.3.197)
+  * Bump golang from 1.23.0-alpine to 1.23.1-alpine
+   - Bumps golang from 1.23.0-alpine to 1.23.1-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Mon, 09 Sep 2024 04:04:21 +0000
+
+systemd-state (1.3.196)
+  * Bump golang from 1.22.6-alpine to 1.23.0-alpine
+   - Bumps golang from 1.22.6-alpine to 1.23.0-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Wed, 14 Aug 2024 04:06:30 +0000
+
+systemd-state (1.3.195)
+  * Bump golang from 1.22.5-alpine to 1.22.6-alpine
+   - Bumps golang from 1.22.5-alpine to 1.22.6-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 07 Aug 2024 11:21:42 +0000
+
+systemd-state (1.3.194)
+  * Add an empty `results` to Sarif file
+   - GitHub requires an empty `results` array if no vulnerabilities where found.
+  * Use sarif output of golang.org/x/vuln/cmd/govulncheck
+
+ -- Arne Jørgensen  Mon, 22 Jul 2024 06:49:31 +0000
+
+systemd-state (1.3.193)
+  * Bump anchore/scan-action from 3 to 4
+   - Bumps [anchore/scan-action](https://github.com/anchore/scan-action) from 3 to 4.
+   - - [Release notes](https://github.com/anchore/scan-action/releases)
+   - - [Changelog](https://github.com/anchore/scan-action/blob/main/CHANGELOG.md)
+   - - [Commits](https://github.com/anchore/scan-action/compare/v3...v4)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anchore/scan-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Thu, 11 Jul 2024 04:03:18 +0000
+
+systemd-state (1.3.192)
+  * Bump anothrNick/github-tag-action from 1.69.0 to 1.70.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrnick/github-tag-action) from 1.69.0 to 1.70.0.
+   - - [Release notes](https://github.com/anothrnick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrnick/github-tag-action/compare/1.69.0...1.70.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Tue, 09 Jul 2024 04:50:42 +0000
+
+systemd-state (1.3.191)
+  * Bump golang from 1.22.4-alpine to 1.22.5-alpine
+   - Bumps golang from 1.22.4-alpine to 1.22.5-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Thu, 04 Jul 2024 04:10:21 +0000
+
+systemd-state (1.3.190)
+  * Bump docker/build-push-action from 5 to 6
+   - Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 5 to 6.
+   - - [Release notes](https://github.com/docker/build-push-action/releases)
+   - - [Commits](https://github.com/docker/build-push-action/compare/v5...v6)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: docker/build-push-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Tue, 18 Jun 2024 04:04:54 +0000
+
+systemd-state (1.3.189)
+  * Bump goreleaser/goreleaser-action from 5 to 6
+   - Bumps [goreleaser/goreleaser-action](https://github.com/goreleaser/goreleaser-action) from 5 to 6.
+   - - [Release notes](https://github.com/goreleaser/goreleaser-action/releases)
+   - - [Commits](https://github.com/goreleaser/goreleaser-action/compare/v5...v6)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: goreleaser/goreleaser-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Wed, 05 Jun 2024 04:19:06 +0000
+
+systemd-state (1.3.188)
+  * Bump golang from 1.22.3-alpine to 1.22.4-alpine
+   - Bumps golang from 1.22.3-alpine to 1.22.4-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 05 Jun 2024 04:04:33 +0000
+
+systemd-state (1.3.187)
+  * Bump golang from 1.22.2-alpine to 1.22.3-alpine
+   - Bumps golang from 1.22.2-alpine to 1.22.3-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 08 May 2024 02:48:45 +0000
+
+systemd-state (1.3.186)
+  * Bump golangci/golangci-lint-action from 5 to 6
+   - Bumps [golangci/golangci-lint-action](https://github.com/golangci/golangci-lint-action) from 5 to 6.
+   - - [Release notes](https://github.com/golangci/golangci-lint-action/releases)
+   - - [Commits](https://github.com/golangci/golangci-lint-action/compare/v5...v6)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golangci/golangci-lint-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Tue, 07 May 2024 03:56:18 +0000
+
+systemd-state (1.3.185)
+  * Bump golangci/golangci-lint-action from 4 to 5
+   - Bumps [golangci/golangci-lint-action](https://github.com/golangci/golangci-lint-action) from 4 to 5.
+   - - [Release notes](https://github.com/golangci/golangci-lint-action/releases)
+   - - [Commits](https://github.com/golangci/golangci-lint-action/compare/v4...v5)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golangci/golangci-lint-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Thu, 25 Apr 2024 04:14:17 +0000
+
+systemd-state (1.3.184)
+  * Bump anothrNick/github-tag-action from 1.67.0 to 1.69.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrnick/github-tag-action) from 1.67.0 to 1.69.0.
+   - - [Release notes](https://github.com/anothrnick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrnick/github-tag-action/compare/1.67.0...1.69.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Mon, 15 Apr 2024 04:04:20 +0000
+
+systemd-state (1.3.183)
+  * Bump DavidAnson/markdownlint-cli2-action from 15 to 16
+   - Bumps [DavidAnson/markdownlint-cli2-action](https://github.com/davidanson/markdownlint-cli2-action) from 15 to 16.
+   - - [Release notes](https://github.com/davidanson/markdownlint-cli2-action/releases)
+   - - [Commits](https://github.com/davidanson/markdownlint-cli2-action/compare/v15...v16)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: DavidAnson/markdownlint-cli2-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Mon, 08 Apr 2024 04:00:32 +0000
+
+systemd-state (1.3.182)
+  * Bump golang from 1.22.1-alpine to 1.22.2-alpine
+   - Bumps golang from 1.22.1-alpine to 1.22.2-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Thu, 04 Apr 2024 04:03:06 +0000
+
+systemd-state (1.3.181)
+  * Bump golang from 1.22.0-alpine to 1.22.1-alpine
+   - Bumps golang from 1.22.0-alpine to 1.22.1-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 06 Mar 2024 05:01:00 +0000
+
+systemd-state (1.3.180)
+  * Bump golangci/golangci-lint-action from 3 to 4
+   - Bumps [golangci/golangci-lint-action](https://github.com/golangci/golangci-lint-action) from 3 to 4.
+   - - [Release notes](https://github.com/golangci/golangci-lint-action/releases)
+   - - [Commits](https://github.com/golangci/golangci-lint-action/compare/v3...v4)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golangci/golangci-lint-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Mon, 12 Feb 2024 05:07:55 +0000
+
+systemd-state (1.3.179)
+  * Bump golang from 1.21.6-alpine to 1.22.0-alpine
+   - Bumps golang from 1.21.6-alpine to 1.22.0-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Wed, 07 Feb 2024 05:02:03 +0000
+
+systemd-state (1.3.178)
+  * Bump codecov/codecov-action from 3 to 4
+   - Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from 3 to 4.
+   - - [Release notes](https://github.com/codecov/codecov-action/releases)
+   - - [Changelog](https://github.com/codecov/codecov-action/blob/main/CHANGELOG.md)
+   - - [Commits](https://github.com/codecov/codecov-action/compare/v3...v4)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: codecov/codecov-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Thu, 01 Feb 2024 04:55:18 +0000
+
+systemd-state (1.3.177)
+  * Don't include merge commits in changelog
+
+ -- Arne Jørgensen  Mon, 29 Jan 2024 17:42:14 +0000
+
+systemd-state (1.3.176)
+  * Don't hardcode changelog URL
+
+ -- Arne Jørgensen  Sat, 20 Jan 2024 14:51:35 +0000
+
+systemd-state (1.3.175)
+  * Add changelog config
+   - Should have been part of 98c42091964f75833e1bd17016c98c4283d9df81.
+
+ -- Arne Jørgensen  Sat, 20 Jan 2024 12:11:36 +0000
+
+systemd-state (1.3.174)
+  * Use apt-ftparchive instead of dpkg-scanpackages
+  * Build and add changelog to site and package
+
+ -- Arne Jørgensen  Sat, 20 Jan 2024 12:04:46 +0000
+
+systemd-state (1.3.173)
+  * Bump DavidAnson/markdownlint-cli2-action from 14 to 15
+   - Bumps [DavidAnson/markdownlint-cli2-action](https://github.com/davidanson/markdownlint-cli2-action) from 14 to 15.
+   - - [Release notes](https://github.com/davidanson/markdownlint-cli2-action/releases)
+   - - [Commits](https://github.com/davidanson/markdownlint-cli2-action/compare/v14...v15)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: DavidAnson/markdownlint-cli2-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Fri, 19 Jan 2024 05:07:45 +0000
+
+systemd-state (1.3.172)
+  * Bump actions/dependency-review-action from 3 to 4
+   - Bumps [actions/dependency-review-action](https://github.com/actions/dependency-review-action) from 3 to 4.
+   - - [Release notes](https://github.com/actions/dependency-review-action/releases)
+   - - [Commits](https://github.com/actions/dependency-review-action/compare/v3...v4)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: actions/dependency-review-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Fri, 19 Jan 2024 05:04:31 +0000
+
+systemd-state (1.3.171)
+  * Bump WillAbides/setup-go-faster from 1.13.0 to 1.14.0
+   - Bumps [WillAbides/setup-go-faster](https://github.com/willabides/setup-go-faster) from 1.13.0 to 1.14.0.
+   - - [Release notes](https://github.com/willabides/setup-go-faster/releases)
+   - - [Commits](https://github.com/willabides/setup-go-faster/compare/v1.13.0...v1.14.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: WillAbides/setup-go-faster
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Tue, 16 Jan 2024 05:04:12 +0000
+
+systemd-state (1.3.170)
+  * Bump golang from 1.21.5-alpine to 1.21.6-alpine
+   - Bumps golang from 1.21.5-alpine to 1.21.6-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 10 Jan 2024 05:01:25 +0000
+
+systemd-state (1.3.169)
+  * Bump github/codeql-action from 2 to 3
+   - Bumps [github/codeql-action](https://github.com/github/codeql-action) from 2 to 3.
+   - - [Release notes](https://github.com/github/codeql-action/releases)
+   - - [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+   - - [Commits](https://github.com/github/codeql-action/compare/v2...v3)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: github/codeql-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Thu, 14 Dec 2023 05:01:47 +0000
+
+systemd-state (1.3.168)
+  * Convert license file to Markdown
+
+ -- Arne Jørgensen  Wed, 06 Dec 2023 20:35:44 +0000
+
+systemd-state (1.3.167)
+  * Bump golang from 1.21.4-alpine to 1.21.5-alpine
+   - Bumps golang from 1.21.4-alpine to 1.21.5-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 06 Dec 2023 05:00:57 +0000
+
+systemd-state (1.3.166)
+  * Bump WillAbides/setup-go-faster from 1.12.0 to 1.13.0
+   - Bumps [WillAbides/setup-go-faster](https://github.com/willabides/setup-go-faster) from 1.12.0 to 1.13.0.
+   - - [Release notes](https://github.com/willabides/setup-go-faster/releases)
+   - - [Commits](https://github.com/willabides/setup-go-faster/compare/v1.12.0...v1.13.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: WillAbides/setup-go-faster
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Mon, 04 Dec 2023 05:03:20 +0000
+
+systemd-state (1.3.165)
+  * Bump DavidAnson/markdownlint-cli2-action from 13 to 14
+   - Bumps [DavidAnson/markdownlint-cli2-action](https://github.com/davidanson/markdownlint-cli2-action) from 13 to 14.
+   - - [Release notes](https://github.com/davidanson/markdownlint-cli2-action/releases)
+   - - [Commits](https://github.com/davidanson/markdownlint-cli2-action/compare/v13...v14)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: DavidAnson/markdownlint-cli2-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Mon, 27 Nov 2023 05:49:17 +0000
+
+systemd-state (1.3.164)
+  * Bump golang from 1.21.3-alpine to 1.21.4-alpine
+   - Bumps golang from 1.21.3-alpine to 1.21.4-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 08 Nov 2023 05:02:43 +0000
+
+systemd-state (1.3.163)
+  * Bump golang from 1.21.2-alpine to 1.21.3-alpine
+   - Bumps golang from 1.21.2-alpine to 1.21.3-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 11 Oct 2023 04:02:50 +0000
+
+systemd-state (1.3.162)
+  * Bump golang from 1.21.1-alpine to 1.21.2-alpine
+   - Bumps golang from 1.21.1-alpine to 1.21.2-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Fri, 06 Oct 2023 04:01:22 +0000
+
+systemd-state (1.3.161)
+  * Bump WillAbides/setup-go-faster from 1.11.0 to 1.12.0
+   - Bumps [WillAbides/setup-go-faster](https://github.com/willabides/setup-go-faster) from 1.11.0 to 1.12.0.
+   - - [Release notes](https://github.com/willabides/setup-go-faster/releases)
+   - - [Commits](https://github.com/willabides/setup-go-faster/compare/v1.11.0...v1.12.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: WillAbides/setup-go-faster
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Mon, 25 Sep 2023 04:04:25 +0000
+
+systemd-state (1.3.160)
+  * Bump DavidAnson/markdownlint-cli2-action from 12 to 13
+   - Bumps [DavidAnson/markdownlint-cli2-action](https://github.com/davidanson/markdownlint-cli2-action) from 12 to 13.
+   - - [Release notes](https://github.com/davidanson/markdownlint-cli2-action/releases)
+   - - [Commits](https://github.com/davidanson/markdownlint-cli2-action/compare/v12...v13)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: DavidAnson/markdownlint-cli2-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Thu, 21 Sep 2023 04:32:14 +0000
+
+systemd-state (1.3.159)
+  * Revert cc5cff3f615bca3a23f951766e7c8d18fe7a316e
+
+ -- Arne Jørgensen  Thu, 21 Sep 2023 04:09:16 +0000
+
+systemd-state (1.3.158)
+  * Bump codecov/codecov-action from 3 to 4
+   - Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from 3 to 4.
+   - - [Release notes](https://github.com/codecov/codecov-action/releases)
+   - - [Changelog](https://github.com/codecov/codecov-action/blob/main/CHANGELOG.md)
+   - - [Commits](https://github.com/codecov/codecov-action/compare/v3...v4)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: codecov/codecov-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Fri, 15 Sep 2023 04:01:21 +0000
+
+systemd-state (1.3.157)
+  * Bump WillAbides/setup-go-faster from 1.10.1 to 1.11.0
+   - Bumps [WillAbides/setup-go-faster](https://github.com/willabides/setup-go-faster) from 1.10.1 to 1.11.0.
+   - - [Release notes](https://github.com/willabides/setup-go-faster/releases)
+   - - [Commits](https://github.com/willabides/setup-go-faster/compare/v1.10.1...v1.11.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: WillAbides/setup-go-faster
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Thu, 14 Sep 2023 03:54:12 +0000
+
+systemd-state (1.3.156)
+  * Bump docker/build-push-action from 4 to 5
+   - Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 4 to 5.
+   - - [Release notes](https://github.com/docker/build-push-action/releases)
+   - - [Commits](https://github.com/docker/build-push-action/compare/v4...v5)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: docker/build-push-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Wed, 13 Sep 2023 04:03:39 +0000
+
+systemd-state (1.3.155)
+  * Bump docker/login-action from 2 to 3
+   - Bumps [docker/login-action](https://github.com/docker/login-action) from 2 to 3.
+   - - [Release notes](https://github.com/docker/login-action/releases)
+   - - [Commits](https://github.com/docker/login-action/compare/v2...v3)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: docker/login-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Wed, 13 Sep 2023 03:58:47 +0000
+
+systemd-state (1.3.154)
+  * Bump goreleaser/goreleaser-action from 4 to 5
+   - Bumps [goreleaser/goreleaser-action](https://github.com/goreleaser/goreleaser-action) from 4 to 5.
+   - - [Release notes](https://github.com/goreleaser/goreleaser-action/releases)
+   - - [Commits](https://github.com/goreleaser/goreleaser-action/compare/v4...v5)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: goreleaser/goreleaser-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Tue, 12 Sep 2023 03:55:48 +0000
+
+systemd-state (1.3.153)
+  * Use explicit build for CodeQL analysis
+  * Bump required minimum go version
+  * Be explicit about which version to use for govulncheck
+
+ -- Arne Jørgensen  Mon, 11 Sep 2023 06:53:32 +0000
+
+systemd-state (1.3.152)
+  * Bump golang from 1.21.0-alpine to 1.21.1-alpine
+   - Bumps golang from 1.21.0-alpine to 1.21.1-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Thu, 07 Sep 2023 04:02:12 +0000
+
+systemd-state (1.3.151)
+  * Bump actions/checkout from 3 to 4
+   - Bumps [actions/checkout](https://github.com/actions/checkout) from 3 to 4.
+   - - [Release notes](https://github.com/actions/checkout/releases)
+   - - [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+   - - [Commits](https://github.com/actions/checkout/compare/v3...v4)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: actions/checkout
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Tue, 05 Sep 2023 03:51:36 +0000
+
+systemd-state (1.3.150)
+  * Bump DavidAnson/markdownlint-cli2-action from 11 to 12
+   - Bumps [DavidAnson/markdownlint-cli2-action](https://github.com/davidanson/markdownlint-cli2-action) from 11 to 12.
+   - - [Release notes](https://github.com/davidanson/markdownlint-cli2-action/releases)
+   - - [Commits](https://github.com/davidanson/markdownlint-cli2-action/compare/v11...v12)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: DavidAnson/markdownlint-cli2-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Thu, 31 Aug 2023 04:04:22 +0000
+
+systemd-state (1.3.149)
+  * Run GitHub Action workflows on ubuntu-22.04 insteadof -latest
+  * Add timeout to http server
+  * Add gossec and govulncheck to GitHub Actions workflow
+
+ -- Arne Jørgensen  Mon, 28 Aug 2023 19:38:17 +0000
+
+systemd-state (1.3.148)
+  * Bump WillAbides/setup-go-faster from 1.9.1 to 1.10.1
+   - Bumps [WillAbides/setup-go-faster](https://github.com/willabides/setup-go-faster) from 1.9.1 to 1.10.1.
+   - - [Release notes](https://github.com/willabides/setup-go-faster/releases)
+   - - [Commits](https://github.com/willabides/setup-go-faster/compare/v1.9.1...v1.10.1)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: WillAbides/setup-go-faster
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+  * Use go1.21
+  * Introduce context
+
+ -- Arne Jørgensen  Fri, 11 Aug 2023 18:43:22 +0000
+
+systemd-state (1.3.147)
+  * Remove status from wrong job
+
+ -- Arne Jørgensen  Wed, 09 Aug 2023 07:17:52 +0000
+
+systemd-state (1.3.146)
+  * Move status in right place
+
+ -- Arne Jørgensen  Wed, 09 Aug 2023 07:13:38 +0000
+
+systemd-state (1.3.145)
+  * Post status of release workflow to Google Chat
+  * Fix dreprecated goreleaser config
+
+ -- Arne Jørgensen  Wed, 09 Aug 2023 07:05:26 +0000
+
+systemd-state (1.3.144)
+  * Bump golang from 1.20.7-alpine to 1.21.0-alpine
+   - Bumps golang from 1.20.7-alpine to 1.21.0-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Wed, 09 Aug 2023 04:09:15 +0000
+
+systemd-state (1.3.143)
+  * Bump WillAbides/setup-go-faster from 1.9.0 to 1.9.1
+   - Bumps [WillAbides/setup-go-faster](https://github.com/willabides/setup-go-faster) from 1.9.0 to 1.9.1.
+   - - [Release notes](https://github.com/willabides/setup-go-faster/releases)
+   - - [Commits](https://github.com/willabides/setup-go-faster/compare/v1.9.0...v1.9.1)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: WillAbides/setup-go-faster
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 09 Aug 2023 04:04:08 +0000
+
+systemd-state (1.3.142)
+  * Bump WillAbides/setup-go-faster from 1.8.0 to 1.9.0
+   - Bumps [WillAbides/setup-go-faster](https://github.com/willabides/setup-go-faster) from 1.8.0 to 1.9.0.
+   - - [Release notes](https://github.com/willabides/setup-go-faster/releases)
+   - - [Commits](https://github.com/willabides/setup-go-faster/compare/v1.8.0...v1.9.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: WillAbides/setup-go-faster
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Fri, 04 Aug 2023 04:03:11 +0000
+
+systemd-state (1.3.141)
+  * Bump golang from 1.20.6-alpine to 1.20.7-alpine
+   - Bumps golang from 1.20.6-alpine to 1.20.7-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 02 Aug 2023 03:30:47 +0000
+
+systemd-state (1.3.140)
+  * Bump go.uber.org/automaxprocs from 1.5.2 to 1.5.3
+   - Bumps [go.uber.org/automaxprocs](https://github.com/uber-go/automaxprocs) from 1.5.2 to 1.5.3.
+   - - [Release notes](https://github.com/uber-go/automaxprocs/releases)
+   - - [Changelog](https://github.com/uber-go/automaxprocs/blob/master/CHANGELOG.md)
+   - - [Commits](https://github.com/uber-go/automaxprocs/compare/v1.5.2...v1.5.3)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: go.uber.org/automaxprocs
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Thu, 20 Jul 2023 05:00:30 +0000
+
+systemd-state (1.3.139)
+  * Bump golang from 1.20.5-alpine to 1.20.6-alpine
+   - Bumps golang from 1.20.5-alpine to 1.20.6-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 12 Jul 2023 04:46:50 +0000
+
+systemd-state (1.3.138)
+  * Bump anothrNick/github-tag-action from 1.66.0 to 1.67.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.66.0 to 1.67.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.66.0...1.67.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Wed, 14 Jun 2023 04:39:18 +0000
+
+systemd-state (1.3.137)
+  * Bump DavidAnson/markdownlint-cli2-action from 10 to 11
+   - Bumps [DavidAnson/markdownlint-cli2-action](https://github.com/DavidAnson/markdownlint-cli2-action) from 10 to 11.
+   - - [Release notes](https://github.com/DavidAnson/markdownlint-cli2-action/releases)
+   - - [Commits](https://github.com/DavidAnson/markdownlint-cli2-action/compare/v10...v11)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: DavidAnson/markdownlint-cli2-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Wed, 14 Jun 2023 04:07:07 +0000
+
+systemd-state (1.3.136)
+  * Bump golang from 1.20.4-alpine to 1.20.5-alpine
+   - Bumps golang from 1.20.4-alpine to 1.20.5-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 07 Jun 2023 04:01:55 +0000
+
+systemd-state (1.3.135)
+  * Bump anothrNick/github-tag-action from 1.65.0 to 1.66.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.65.0 to 1.66.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.65.0...1.66.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Mon, 22 May 2023 04:05:12 +0000
+
+systemd-state (1.3.134)
+  * Bump anothrNick/github-tag-action from 1.64.0 to 1.65.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.64.0 to 1.65.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.64.0...1.65.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Tue, 16 May 2023 03:47:42 +0000
+
+systemd-state (1.3.133)
+  * Bump anothrNick/github-tag-action from 1.63.0 to 1.64.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.63.0 to 1.64.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.63.0...1.64.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Mon, 15 May 2023 05:30:52 +0000
+
+systemd-state (1.3.132)
+  * Bump anothrNick/github-tag-action from 1.62.0 to 1.63.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.62.0 to 1.63.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.62.0...1.63.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Thu, 11 May 2023 03:54:38 +0000
+
+systemd-state (1.3.131)
+  * Bump golang from 1.20.3-alpine to 1.20.4-alpine
+   - Bumps golang from 1.20.3-alpine to 1.20.4-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 03 May 2023 03:54:09 +0000
+
+systemd-state (1.3.130)
+  * Fix markdownlint MS034 no bare URLs
+  * Bump DavidAnson/markdownlint-cli2-action from 9 to 10
+   - Bumps [DavidAnson/markdownlint-cli2-action](https://github.com/DavidAnson/markdownlint-cli2-action) from 9 to 10.
+   - - [Release notes](https://github.com/DavidAnson/markdownlint-cli2-action/releases)
+   - - [Commits](https://github.com/DavidAnson/markdownlint-cli2-action/compare/v9...v10)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: DavidAnson/markdownlint-cli2-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Fri, 28 Apr 2023 19:18:03 +0000
+
+systemd-state (1.3.129)
+  * Bump anothrNick/github-tag-action from 1.61.0 to 1.62.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.61.0 to 1.62.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.61.0...1.62.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Tue, 11 Apr 2023 04:03:14 +0000
+
+systemd-state (1.3.128)
+  * Bump golang from 1.20.2-alpine to 1.20.3-alpine
+   - Bumps golang from 1.20.2-alpine to 1.20.3-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 05 Apr 2023 04:01:52 +0000
+
+systemd-state (1.3.127)
+  * Bump go.uber.org/automaxprocs from 1.5.1 to 1.5.2
+   - Bumps [go.uber.org/automaxprocs](https://github.com/uber-go/automaxprocs) from 1.5.1 to 1.5.2.
+   - - [Release notes](https://github.com/uber-go/automaxprocs/releases)
+   - - [Changelog](https://github.com/uber-go/automaxprocs/blob/master/CHANGELOG.md)
+   - - [Commits](https://github.com/uber-go/automaxprocs/compare/v1.5.1...v1.5.2)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: go.uber.org/automaxprocs
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Mon, 20 Mar 2023 05:01:18 +0000
+
+systemd-state (1.3.126)
+  * Bump ZacJW/markdown-html-action from 1.1.1 to 1.2.0
+   - Bumps [ZacJW/markdown-html-action](https://github.com/ZacJW/markdown-html-action) from 1.1.1 to 1.2.0.
+   - - [Release notes](https://github.com/ZacJW/markdown-html-action/releases)
+   - - [Commits](https://github.com/ZacJW/markdown-html-action/compare/1.1.1...1.2.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: ZacJW/markdown-html-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Tue, 14 Mar 2023 05:01:35 +0000
+
+systemd-state (1.3.125)
+  * Bump golang from 1.20.1-alpine to 1.20.2-alpine
+   - Bumps golang from 1.20.1-alpine to 1.20.2-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 08 Mar 2023 05:02:27 +0000
+
+systemd-state (1.3.124)
+  * Bump github.com/elnormous/contenttype from 1.0.3 to 1.0.4
+   - Bumps [github.com/elnormous/contenttype](https://github.com/elnormous/contenttype) from 1.0.3 to 1.0.4.
+   - - [Release notes](https://github.com/elnormous/contenttype/releases)
+   - - [Commits](https://github.com/elnormous/contenttype/compare/v1.0.3...v1.0.4)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: github.com/elnormous/contenttype
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 01 Mar 2023 05:01:41 +0000
+
+systemd-state (1.3.123)
+  * Bump golang from 1.20.0-alpine to 1.20.1-alpine
+   - Bumps golang from 1.20.0-alpine to 1.20.1-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 15 Feb 2023 05:01:54 +0000
+
+systemd-state (1.3.122)
+  * Use single-commit for pages
+   - To reduce the size of the branch and hence the repository.
+
+ -- Arne Jørgensen  Sat, 04 Feb 2023 17:39:31 +0000
+
+systemd-state (1.3.121)
+  * Bump golang from 1.19.5-alpine to 1.20.0-alpine
+   - Bumps golang from 1.19.5-alpine to 1.20.0-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Wed, 01 Feb 2023 23:16:40 +0000
+
+systemd-state (1.3.120)
+  * Bump docker/build-push-action from 3 to 4
+   - Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 3 to 4.
+   - - [Release notes](https://github.com/docker/build-push-action/releases)
+   - - [Commits](https://github.com/docker/build-push-action/compare/v3...v4)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: docker/build-push-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Tue, 31 Jan 2023 04:56:08 +0000
+
+systemd-state (1.3.119)
+  * Bump hadolint/hadolint-action from 3.0.0 to 3.1.0
+   - Bumps [hadolint/hadolint-action](https://github.com/hadolint/hadolint-action) from 3.0.0 to 3.1.0.
+   - - [Release notes](https://github.com/hadolint/hadolint-action/releases)
+   - - [Changelog](https://github.com/hadolint/hadolint-action/blob/master/.releaserc)
+   - - [Commits](https://github.com/hadolint/hadolint-action/compare/v3.0.0...v3.1.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: hadolint/hadolint-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Wed, 18 Jan 2023 05:06:17 +0000
+
+systemd-state (1.3.118)
+  * Bump golang from 1.19.4-alpine to 1.19.5-alpine
+   - Bumps golang from 1.19.4-alpine to 1.19.5-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 11 Jan 2023 05:03:37 +0000
+
+systemd-state (1.3.117)
+  * Bump anothrNick/github-tag-action from 1.60.0 to 1.61.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.60.0 to 1.61.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.60.0...1.61.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Mon, 09 Jan 2023 05:06:45 +0000
+
+systemd-state (1.3.116)
+  * Add default branch config to anothrNick/github-tag-action
+  * Bump anothrNick/github-tag-action from 1.58.0 to 1.60.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.58.0 to 1.60.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.58.0...1.60.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+  * Bump anothrNick/github-tag-action from 1.56.0 to 1.58.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.56.0 to 1.58.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.56.0...1.58.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Fri, 06 Jan 2023 07:33:26 +0000
+
+systemd-state (1.3.115)
+  * Bump DavidAnson/markdownlint-cli2-action from 8 to 9
+   - Bumps [DavidAnson/markdownlint-cli2-action](https://github.com/DavidAnson/markdownlint-cli2-action) from 8 to 9.
+   - - [Release notes](https://github.com/DavidAnson/markdownlint-cli2-action/releases)
+   - - [Commits](https://github.com/DavidAnson/markdownlint-cli2-action/compare/v8...v9)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: DavidAnson/markdownlint-cli2-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Tue, 03 Jan 2023 06:10:06 +0000
+
+systemd-state (1.3.114)
+  * Bump anothrNick/github-tag-action from 1.55.0 to 1.56.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.55.0 to 1.56.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.55.0...1.56.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Tue, 03 Jan 2023 06:05:26 +0000
+
+systemd-state (1.3.113)
+  * Bump anothrNick/github-tag-action from 1.53.0 to 1.55.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.53.0 to 1.55.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.53.0...1.55.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Tue, 20 Dec 2022 05:07:03 +0000
+
+systemd-state (1.3.112)
+  * Switch to DavidAnson/markdownlint-cli2-action@v8
+
+ -- Arne Jørgensen  Mon, 19 Dec 2022 08:19:53 +0000
+
+systemd-state (1.3.111)
+  * Bump goreleaser/goreleaser-action from 3 to 4
+   - Bumps [goreleaser/goreleaser-action](https://github.com/goreleaser/goreleaser-action) from 3 to 4.
+   - - [Release notes](https://github.com/goreleaser/goreleaser-action/releases)
+   - - [Commits](https://github.com/goreleaser/goreleaser-action/compare/v3...v4)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: goreleaser/goreleaser-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Wed, 14 Dec 2022 05:03:02 +0000
+
+systemd-state (1.3.110)
+  * Bump golang from 1.19.3-alpine to 1.19.4-alpine
+   - Bumps golang from 1.19.3-alpine to 1.19.4-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Tue, 06 Dec 2022 21:56:25 +0000
+
+systemd-state (1.3.109)
+  * Bump anothrNick/github-tag-action from 1.52.0 to 1.53.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.52.0 to 1.53.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.52.0...1.53.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Mon, 05 Dec 2022 05:05:12 +0000
+
+systemd-state (1.3.108)
+  * Bump WillAbides/setup-go-faster from 1.7.0 to 1.8.0
+   - Bumps [WillAbides/setup-go-faster](https://github.com/WillAbides/setup-go-faster) from 1.7.0 to 1.8.0.
+   - - [Release notes](https://github.com/WillAbides/setup-go-faster/releases)
+   - - [Commits](https://github.com/WillAbides/setup-go-faster/compare/v1.7.0...v1.8.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: WillAbides/setup-go-faster
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Fri, 18 Nov 2022 05:03:36 +0000
+
+systemd-state (1.3.107)
+  * Bump actions/dependency-review-action from 2 to 3
+   - Bumps [actions/dependency-review-action](https://github.com/actions/dependency-review-action) from 2 to 3.
+   - - [Release notes](https://github.com/actions/dependency-review-action/releases)
+   - - [Commits](https://github.com/actions/dependency-review-action/compare/v2...v3)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: actions/dependency-review-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+  * Bump hadolint/hadolint-action from 2.1.0 to 3.0.0
+   - Bumps [hadolint/hadolint-action](https://github.com/hadolint/hadolint-action) from 2.1.0 to 3.0.0.
+   - - [Release notes](https://github.com/hadolint/hadolint-action/releases)
+   - - [Changelog](https://github.com/hadolint/hadolint-action/blob/master/.releaserc)
+   - - [Commits](https://github.com/hadolint/hadolint-action/compare/v2.1.0...v3.0.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: hadolint/hadolint-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Mon, 14 Nov 2022 05:09:28 +0000
+
+systemd-state (1.3.106)
+  * Bump github.com/coreos/go-systemd/v22 from 22.4.0 to 22.5.0
+   - Bumps [github.com/coreos/go-systemd/v22](https://github.com/coreos/go-systemd) from 22.4.0 to 22.5.0.
+   - - [Release notes](https://github.com/coreos/go-systemd/releases)
+   - - [Commits](https://github.com/coreos/go-systemd/compare/v22.4.0...v22.5.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: github.com/coreos/go-systemd/v22
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Tue, 08 Nov 2022 05:01:45 +0000
+
+systemd-state (1.3.105)
+  * Bump golang from 1.19.2-alpine to 1.19.3-alpine
+   - Bumps golang from 1.19.2-alpine to 1.19.3-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 02 Nov 2022 04:59:15 +0000
+
+systemd-state (1.3.104)
+  * Bump anothrNick/github-tag-action from 1.51.0 to 1.52.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.51.0 to 1.52.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.51.0...1.52.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Wed, 05 Oct 2022 03:52:05 +0000
+
+systemd-state (1.3.103)
+  * Bump golang from 1.19.1-alpine to 1.19.2-alpine
+   - Bumps golang from 1.19.1-alpine to 1.19.2-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Tue, 04 Oct 2022 21:14:40 +0000
+
+systemd-state (1.3.102)
+  * Bump anothrNick/github-tag-action from 1.50.0 to 1.51.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.50.0 to 1.51.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.50.0...1.51.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Mon, 03 Oct 2022 04:02:44 +0000
+
+systemd-state (1.3.101)
+  * Bump anothrNick/github-tag-action from 1.49.0 to 1.50.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.49.0 to 1.50.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.49.0...1.50.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Thu, 29 Sep 2022 04:02:04 +0000
+
+systemd-state (1.3.100)
+  * Bump anothrNick/github-tag-action from 1.47.0 to 1.49.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.47.0 to 1.49.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.47.0...1.49.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Wed, 28 Sep 2022 04:06:34 +0000
+
+systemd-state (1.3.99)
+  * Bump anothrNick/github-tag-action from 1.46.0 to 1.47.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.46.0 to 1.47.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.46.0...1.47.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Tue, 27 Sep 2022 04:02:12 +0000
+
+systemd-state (1.3.98)
+  * Bump github.com/coreos/go-systemd/v22 from 22.3.2 to 22.4.0
+   - Bumps [github.com/coreos/go-systemd/v22](https://github.com/coreos/go-systemd) from 22.3.2 to 22.4.0.
+   - - [Release notes](https://github.com/coreos/go-systemd/releases)
+   - - [Commits](https://github.com/coreos/go-systemd/compare/v22.3.2...v22.4.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: github.com/coreos/go-systemd/v22
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Mon, 19 Sep 2022 04:03:23 +0000
+
+systemd-state (1.3.97)
+  * Bump anothrNick/github-tag-action from 1.42.0 to 1.46.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.42.0 to 1.46.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.42.0...1.46.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Thu, 15 Sep 2022 03:51:50 +0000
+
+systemd-state (1.3.96)
+  * Bump anothrNick/github-tag-action from 1.41.0 to 1.42.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.41.0 to 1.42.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.41.0...1.42.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Tue, 13 Sep 2022 04:21:35 +0000
+
+systemd-state (1.3.95)
+  * Bump anothrNick/github-tag-action from 1.39.0 to 1.41.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.39.0 to 1.41.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.39.0...1.41.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Mon, 12 Sep 2022 04:06:17 +0000
+
+systemd-state (1.3.94)
+  * Bump golang from 1.19.0-alpine to 1.19.1-alpine
+   - Bumps golang from 1.19.0-alpine to 1.19.1-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 07 Sep 2022 03:54:39 +0000
+
+systemd-state (1.3.93)
+  * Remove old badges
+
+ -- Arne Jørgensen  Wed, 03 Aug 2022 05:48:38 +0000
+
+systemd-state (1.3.92)
+  * Trigger release on `workflow_run` instead of `push`
+  * Use dependency-review for license check
+  * Bump minimum go version to 1.19
+
+ -- Arne Jørgensen  Wed, 03 Aug 2022 05:43:06 +0000
+
+systemd-state (1.3.91)
+  * Bump golang from 1.18.5-alpine to 1.19.0-alpine
+   - Bumps golang from 1.18.5-alpine to 1.19.0-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Wed, 03 Aug 2022 04:03:18 +0000
+
+systemd-state (1.3.90)
+  * Bump minimum supported Go version to 1.17
+  * Cleanup GitHub Actions
+
+ -- Arne Jørgensen  Tue, 02 Aug 2022 09:30:12 +0000
+
+systemd-state (1.3.89)
+  * Bump golang from 1.18.4-alpine to 1.18.5-alpine
+   - Bumps golang from 1.18.4-alpine to 1.18.5-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Tue, 02 Aug 2022 08:48:32 +0000
+
+systemd-state (1.3.88)
+  * Add actions permissions
+
+ -- Arne Jørgensen  Tue, 02 Aug 2022 08:40:38 +0000
+
+systemd-state (1.3.87)
+  * Add actions permissions
+
+ -- Arne Jørgensen  Tue, 02 Aug 2022 08:37:25 +0000
+
+systemd-state (1.3.86)
+  * Add actions permissions
+
+ -- Arne Jørgensen  Tue, 02 Aug 2022 08:36:36 +0000
+
+systemd-state (1.3.85)
+  * Use reviewers instead of assignees for Dependabot
+
+ -- Arne Jørgensen  Tue, 02 Aug 2022 08:29:29 +0000
+
+systemd-state (1.3.84)
+  * Bump golang from 1.18.3-alpine to 1.18.4-alpine
+   - Bumps golang from 1.18.3-alpine to 1.18.4-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 13 Jul 2022 07:06:58 +0000
+
+systemd-state (1.3.83)
+  * Bump actions/dependency-review-action from 1 to 2
+   - Bumps [actions/dependency-review-action](https://github.com/actions/dependency-review-action) from 1 to 2.
+   - - [Release notes](https://github.com/actions/dependency-review-action/releases)
+   - - [Commits](https://github.com/actions/dependency-review-action/compare/v1...v2)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: actions/dependency-review-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Thu, 16 Jun 2022 04:03:23 +0000
+
+systemd-state (1.3.82)
+  * Update dependencies
+
+ -- Arne Jørgensen  Thu, 09 Jun 2022 13:32:44 +0000
+
+systemd-state (1.3.81)
+  * Bump golang from 1.18.2-alpine to 1.18.3-alpine
+   - Bumps golang from 1.18.2-alpine to 1.18.3-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Thu, 02 Jun 2022 04:06:22 +0000
+
+systemd-state (1.3.80)
+  * Bump goreleaser/goreleaser-action from 2 to 3
+   - Bumps [goreleaser/goreleaser-action](https://github.com/goreleaser/goreleaser-action) from 2 to 3.
+   - - [Release notes](https://github.com/goreleaser/goreleaser-action/releases)
+   - - [Commits](https://github.com/goreleaser/goreleaser-action/compare/v2...v3)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: goreleaser/goreleaser-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Mon, 23 May 2022 04:10:31 +0000
+
+systemd-state (1.3.79)
+  * Bump golang from 1.18.1-alpine to 1.18.2-alpine
+   - Bumps golang from 1.18.1-alpine to 1.18.2-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 11 May 2022 03:51:49 +0000
+
+systemd-state (1.3.78)
+  * Bump docker/build-push-action from 2 to 3
+   - Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 2 to 3.
+   - - [Release notes](https://github.com/docker/build-push-action/releases)
+   - - [Commits](https://github.com/docker/build-push-action/compare/v2...v3)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: docker/build-push-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Fri, 06 May 2022 04:07:31 +0000
+
+systemd-state (1.3.77)
+  * Bump docker/login-action from 1 to 2
+   - Bumps [docker/login-action](https://github.com/docker/login-action) from 1 to 2.
+   - - [Release notes](https://github.com/docker/login-action/releases)
+   - - [Commits](https://github.com/docker/login-action/compare/v1...v2)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: docker/login-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Fri, 06 May 2022 04:02:28 +0000
+
+systemd-state (1.3.76)
+  * Bump github/codeql-action from 1 to 2
+   - Bumps [github/codeql-action](https://github.com/github/codeql-action) from 1 to 2.
+   - - [Release notes](https://github.com/github/codeql-action/releases)
+   - - [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+   - - [Commits](https://github.com/github/codeql-action/compare/v1...v2)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: github/codeql-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Tue, 26 Apr 2022 04:12:12 +0000
+
+systemd-state (1.3.75)
+  * Bump anothrNick/github-tag-action from 1.38.0 to 1.39.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.38.0 to 1.39.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.38.0...1.39.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Fri, 15 Apr 2022 06:20:01 +0000
+
+systemd-state (1.3.74)
+  * Bump golang from 1.18.0-alpine to 1.18.1-alpine
+   - Bumps golang from 1.18.0-alpine to 1.18.1-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 13 Apr 2022 20:53:09 +0000
+
+systemd-state (1.3.73)
+  * Bump go.uber.org/automaxprocs from 1.5.0 to 1.5.1
+   - Bumps [go.uber.org/automaxprocs](https://github.com/uber-go/automaxprocs) from 1.5.0 to 1.5.1.
+   - - [Release notes](https://github.com/uber-go/automaxprocs/releases)
+   - - [Changelog](https://github.com/uber-go/automaxprocs/blob/master/CHANGELOG.md)
+   - - [Commits](https://github.com/uber-go/automaxprocs/compare/v1.5.0...v1.5.1)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: go.uber.org/automaxprocs
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Thu, 07 Apr 2022 04:20:09 +0000
+
+systemd-state (1.3.72)
+  * Create dependency-review.yml
+
+ -- Arne Jørgensen  Wed, 06 Apr 2022 21:44:39 +0000
+
+systemd-state (1.3.71)
+
+ -- Arne Jørgensen  Wed, 06 Apr 2022 04:22:50 +0000
+
+systemd-state (1.3.70)
+  * Bump go.uber.org/automaxprocs from 1.4.0 to 1.5.0
+   - Bumps [go.uber.org/automaxprocs](https://github.com/uber-go/automaxprocs) from 1.4.0 to 1.5.0.
+   - - [Release notes](https://github.com/uber-go/automaxprocs/releases)
+   - - [Changelog](https://github.com/uber-go/automaxprocs/blob/master/CHANGELOG.md)
+   - - [Commits](https://github.com/uber-go/automaxprocs/compare/v1.4.0...v1.5.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: go.uber.org/automaxprocs
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Wed, 06 Apr 2022 04:11:40 +0000
+
+systemd-state (1.3.69)
+  * Bump hadolint/hadolint-action from 2.0.0 to 2.1.0
+   - Bumps [hadolint/hadolint-action](https://github.com/hadolint/hadolint-action) from 2.0.0 to 2.1.0.
+   - - [Release notes](https://github.com/hadolint/hadolint-action/releases)
+   - - [Changelog](https://github.com/hadolint/hadolint-action/blob/master/.releaserc)
+   - - [Commits](https://github.com/hadolint/hadolint-action/compare/v2.0.0...v2.1.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: hadolint/hadolint-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Fri, 01 Apr 2022 04:08:22 +0000
+
+systemd-state (1.3.68)
+  * Bump hadolint/hadolint-action from 1.7.0 to 2.0.0
+   - Bumps [hadolint/hadolint-action](https://github.com/hadolint/hadolint-action) from 1.7.0 to 2.0.0.
+   - - [Release notes](https://github.com/hadolint/hadolint-action/releases)
+   - - [Changelog](https://github.com/hadolint/hadolint-action/blob/master/.releaserc)
+   - - [Commits](https://github.com/hadolint/hadolint-action/compare/v1.7.0...v2.0.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: hadolint/hadolint-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Fri, 25 Mar 2022 05:14:52 +0000
+
+systemd-state (1.3.67)
+  * Update action workflow configurations
+
+ -- Arne Jørgensen  Wed, 23 Mar 2022 06:03:24 +0000
+
+systemd-state (1.3.66)
+  * Bump hadolint/hadolint-action from 1.6.0 to 1.7.0
+   - Bumps [hadolint/hadolint-action](https://github.com/hadolint/hadolint-action) from 1.6.0 to 1.7.0.
+   - - [Release notes](https://github.com/hadolint/hadolint-action/releases)
+   - - [Changelog](https://github.com/hadolint/hadolint-action/blob/master/.releaserc)
+   - - [Commits](https://github.com/hadolint/hadolint-action/compare/v1.6.0...v1.7.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: hadolint/hadolint-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Wed, 23 Mar 2022 05:10:41 +0000
+
+systemd-state (1.3.65)
+  * Bump golang from 1.17.8-alpine to 1.18.0-alpine
+   - Bumps golang from 1.17.8-alpine to 1.18.0-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Thu, 17 Mar 2022 05:29:25 +0000
+
+systemd-state (1.3.64)
+  * Bump golang from 1.17.7-alpine to 1.17.8-alpine
+   - Bumps golang from 1.17.7-alpine to 1.17.8-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Sat, 05 Mar 2022 12:35:58 +0000
+
+systemd-state (1.3.63)
+  * Update copyright years
+  * Use WillAbides/setup-go-faster
+
+ -- Arne Jørgensen  Sat, 05 Mar 2022 12:24:59 +0000
+
+systemd-state (1.3.62)
+  * Use fewer layers in Dockerfile
+  * Update Hadolint action
+
+ -- Arne Jørgensen  Wed, 02 Mar 2022 08:12:14 +0000
+
+systemd-state (1.3.61)
+  * Fix Dockerfile file code style and drop upx
+
+ -- Arne Jørgensen  Wed, 02 Mar 2022 08:03:47 +0000
+
+systemd-state (1.3.60)
+  * Bump actions/checkout from 2 to 3
+   - Bumps [actions/checkout](https://github.com/actions/checkout) from 2 to 3.
+   - - [Release notes](https://github.com/actions/checkout/releases)
+   - - [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+   - - [Commits](https://github.com/actions/checkout/compare/v2...v3)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: actions/checkout
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Wed, 02 Mar 2022 03:56:41 +0000
+
+systemd-state (1.3.59)
+  * Bump golangci/golangci-lint-action from 2.5.2 to 3
+   - Bumps [golangci/golangci-lint-action](https://github.com/golangci/golangci-lint-action) from 2.5.2 to 3.
+   - - [Release notes](https://github.com/golangci/golangci-lint-action/releases)
+   - - [Commits](https://github.com/golangci/golangci-lint-action/compare/v2.5.2...v3)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golangci/golangci-lint-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Fri, 25 Feb 2022 07:14:59 +0000
+
+systemd-state (1.3.58)
+  * Bump golang from 1.17.6-alpine to 1.17.7-alpine
+   - Bumps golang from 1.17.6-alpine to 1.17.7-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Fri, 11 Feb 2022 05:09:24 +0000
+
+systemd-state (1.3.57)
+  * Bump anothrNick/github-tag-action from 1.37.0 to 1.38.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.37.0 to 1.38.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.37.0...1.38.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Tue, 08 Feb 2022 05:06:55 +0000
+
+systemd-state (1.3.56)
+  * Bump anothrNick/github-tag-action from 1.36.0 to 1.37.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.36.0 to 1.37.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.36.0...1.37.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Mon, 07 Feb 2022 05:08:48 +0000
+
+systemd-state (1.3.55)
+  * Update release.yml
+
+ -- Arne Jørgensen  Tue, 11 Jan 2022 05:14:08 +0000
+
+systemd-state (1.3.54)
+  * Bump JamesIves/github-pages-deploy-action from 4.2.1 to 4.2.2
+   - Bumps [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) from 4.2.1 to 4.2.2.
+   - - [Release notes](https://github.com/JamesIves/github-pages-deploy-action/releases)
+   - - [Commits](https://github.com/JamesIves/github-pages-deploy-action/compare/4.2.1...v4.2.2)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: JamesIves/github-pages-deploy-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Tue, 11 Jan 2022 05:08:23 +0000
+
+systemd-state (1.3.53)
+  * Bump JamesIves/github-pages-deploy-action from 4.2.0 to 4.2.1
+   - Bumps [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) from 4.2.0 to 4.2.1.
+   - - [Release notes](https://github.com/JamesIves/github-pages-deploy-action/releases)
+   - - [Commits](https://github.com/JamesIves/github-pages-deploy-action/compare/4.2.0...4.2.1)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: JamesIves/github-pages-deploy-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Mon, 10 Jan 2022 05:22:17 +0000
+
+systemd-state (1.3.52)
+
+ -- Arne Jørgensen  Fri, 07 Jan 2022 05:25:57 +0000
+
+systemd-state (1.3.51)
+  * Bump JamesIves/github-pages-deploy-action from 4.1.9 to 4.2.0
+   - Bumps [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) from 4.1.9 to 4.2.0.
+   - - [Release notes](https://github.com/JamesIves/github-pages-deploy-action/releases)
+   - - [Commits](https://github.com/JamesIves/github-pages-deploy-action/compare/4.1.9...4.2.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: JamesIves/github-pages-deploy-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Fri, 07 Jan 2022 05:19:31 +0000
+
+systemd-state (1.3.50)
+  * Bump JamesIves/github-pages-deploy-action from 4.1.8 to 4.1.9
+   - Bumps [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) from 4.1.8 to 4.1.9.
+   - - [Release notes](https://github.com/JamesIves/github-pages-deploy-action/releases)
+   - - [Commits](https://github.com/JamesIves/github-pages-deploy-action/compare/4.1.8...4.1.9)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: JamesIves/github-pages-deploy-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+  * Bump golang from 1.17.4-alpine to 1.17.5-alpine
+   - Bumps golang from 1.17.4-alpine to 1.17.5-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Thu, 06 Jan 2022 05:24:56 +0000
+
+systemd-state (1.3.49)
+  * Bump JamesIves/github-pages-deploy-action from 4.1.7 to 4.1.8
+   - Bumps [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) from 4.1.7 to 4.1.8.
+   - - [Release notes](https://github.com/JamesIves/github-pages-deploy-action/releases)
+   - - [Commits](https://github.com/JamesIves/github-pages-deploy-action/compare/4.1.7...4.1.8)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: JamesIves/github-pages-deploy-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Mon, 20 Dec 2021 06:12:40 +0000
+
+systemd-state (1.3.48)
+  * Bump golang from 1.17.3-alpine to 1.17.4-alpine
+   - Bumps golang from 1.17.3-alpine to 1.17.4-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Mon, 06 Dec 2021 05:20:26 +0000
+
+systemd-state (1.3.47)
+  * Bump JamesIves/github-pages-deploy-action from 4.1.6 to 4.1.7
+   - Bumps [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) from 4.1.6 to 4.1.7.
+   - - [Release notes](https://github.com/JamesIves/github-pages-deploy-action/releases)
+   - - [Commits](https://github.com/JamesIves/github-pages-deploy-action/compare/4.1.6...4.1.7)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: JamesIves/github-pages-deploy-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Mon, 29 Nov 2021 05:41:48 +0000
+
+systemd-state (1.3.46)
+  * Bump JamesIves/github-pages-deploy-action from 4.1.5 to 4.1.6
+   - Bumps [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) from 4.1.5 to 4.1.6.
+   - - [Release notes](https://github.com/JamesIves/github-pages-deploy-action/releases)
+   - - [Commits](https://github.com/JamesIves/github-pages-deploy-action/compare/4.1.5...4.1.6)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: JamesIves/github-pages-deploy-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Fri, 19 Nov 2021 05:28:29 +0000
+
+systemd-state (1.3.45)
+  * Bump golang from 1.17.2-alpine to 1.17.3-alpine
+   - Bumps golang from 1.17.2-alpine to 1.17.3-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Fri, 05 Nov 2021 05:07:08 +0000
+
+systemd-state (1.3.44)
+  * Bump golang from 1.17.1-alpine to 1.17.2-alpine
+   - Bumps golang from 1.17.1-alpine to 1.17.2-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Fri, 08 Oct 2021 04:15:09 +0000
+
+systemd-state (1.3.43)
+  * Bump golang from 1.17.0-alpine to 1.17.1-alpine
+   - Bumps golang from 1.17.0-alpine to 1.17.1-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Fri, 10 Sep 2021 07:39:16 +0000
+
+systemd-state (1.3.42)
+  * Bump anothrNick/github-tag-action from 1.35.0 to 1.36.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.35.0 to 1.36.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.35.0...1.36.0)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anothrNick/github-tag-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Thu, 09 Sep 2021 04:07:01 +0000
+
+systemd-state (1.3.41)
+  * Bump anchore/scan-action from 2 to 3
+   - Bumps [anchore/scan-action](https://github.com/anchore/scan-action) from 2 to 3.
+   - - [Release notes](https://github.com/anchore/scan-action/releases)
+   - - [Changelog](https://github.com/anchore/scan-action/blob/main/CHANGELOG.md)
+   - - [Commits](https://github.com/anchore/scan-action/compare/v2...v3)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: anchore/scan-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Fri, 03 Sep 2021 05:17:37 +0000
+
+systemd-state (1.3.40)
+  * Bump JamesIves/github-pages-deploy-action from 4.1.4 to 4.1.5
+   - Bumps [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) from 4.1.4 to 4.1.5.
+   - - [Release notes](https://github.com/JamesIves/github-pages-deploy-action/releases)
+   - - [Commits](https://github.com/JamesIves/github-pages-deploy-action/compare/4.1.4...4.1.5)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: JamesIves/github-pages-deploy-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Fri, 27 Aug 2021 04:25:00 +0000
+
+systemd-state (1.3.39)
+  * Bump golang from 1.16.7-alpine to 1.17.0-alpine
+   - Bumps golang from 1.16.7-alpine to 1.17.0-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-minor
+   - ...
+
+ -- Arne Jørgensen  Wed, 18 Aug 2021 04:07:13 +0000
+
+systemd-state (1.3.38)
+  * Bump golang from 1.16.6-alpine to 1.16.7-alpine
+   - Bumps golang from 1.16.6-alpine to 1.16.7-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Fri, 06 Aug 2021 04:17:47 +0000
+
+systemd-state (1.3.37)
+  * Fine tune workflow
+  * Bump codecov/codecov-action from 1.5.2 to 2.0.1
+   - Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from 1.5.2 to 2.0.1.
+   - - [Release notes](https://github.com/codecov/codecov-action/releases)
+   - - [Changelog](https://github.com/codecov/codecov-action/blob/master/CHANGELOG.md)
+   - - [Commits](https://github.com/codecov/codecov-action/compare/v1.5.2...v2.0.1)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: codecov/codecov-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-major
+   - ...
+
+ -- Arne Jørgensen  Wed, 21 Jul 2021 14:24:39 +0000
+
+systemd-state (1.3.36)
+  * Bump golang from 1.16.5-alpine to 1.16.6-alpine
+   - Bumps golang from 1.16.5-alpine to 1.16.6-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Tue, 13 Jul 2021 04:43:05 +0000
+
+systemd-state (1.3.35)
+  * Finetune .deb package
+
+ -- Arne Jørgensen  Thu, 10 Jun 2021 22:28:18 +0000
+
+systemd-state (1.3.34)
+  * Bump codecov/codecov-action from 1.5.0 to 1.5.2
+   - Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from 1.5.0 to 1.5.2.
+   - - [Release notes](https://github.com/codecov/codecov-action/releases)
+   - - [Changelog](https://github.com/codecov/codecov-action/blob/master/CHANGELOG.md)
+   - - [Commits](https://github.com/codecov/codecov-action/compare/v1.5.0...v1.5.2)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: codecov/codecov-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Wed, 09 Jun 2021 05:35:44 +0000
+
+systemd-state (1.3.33)
+  * Bump JamesIves/github-pages-deploy-action from 4.1.3 to 4.1.4
+   - Bumps [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) from 4.1.3 to 4.1.4.
+   - - [Release notes](https://github.com/JamesIves/github-pages-deploy-action/releases)
+   - - [Commits](https://github.com/JamesIves/github-pages-deploy-action/compare/4.1.3...4.1.4)
+   - ---
+   - updated-dependencies:
+   - - dependency-name: JamesIves/github-pages-deploy-action
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Mon, 07 Jun 2021 04:15:49 +0000
+
+systemd-state (1.3.32)
+  * Bump golang from 1.16.4-alpine to 1.16.5-alpine
+   - Bumps golang from 1.16.4-alpine to 1.16.5-alpine.
+   - ---
+   - updated-dependencies:
+   - - dependency-name: golang
+   -   dependency-type: direct:production
+   -   update-type: version-update:semver-patch
+   - ...
+
+ -- Arne Jørgensen  Fri, 04 Jun 2021 04:14:37 +0000
+
+systemd-state (1.3.31)
+  * Bump JamesIves/github-pages-deploy-action from 4.1.2 to 4.1.3
+   - Bumps [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) from 4.1.2 to 4.1.3.
+   - - [Release notes](https://github.com/JamesIves/github-pages-deploy-action/releases)
+   - - [Commits](https://github.com/JamesIves/github-pages-deploy-action/compare/4.1.2...4.1.3)
+
+ -- Arne Jørgensen  Wed, 12 May 2021 07:31:07 +0000
+
+systemd-state (1.3.30)
+
+ -- Arne Jørgensen  Tue, 11 May 2021 05:41:04 +0000
+
+systemd-state (1.3.29)
+
+ -- Arne Jørgensen  Tue, 11 May 2021 05:40:29 +0000
+
+systemd-state (1.3.28)
+  * Bump github.com/coreos/go-systemd/v22 from 22.3.1 to 22.3.2
+   - Bumps [github.com/coreos/go-systemd/v22](https://github.com/coreos/go-systemd) from 22.3.1 to 22.3.2.
+   - - [Release notes](https://github.com/coreos/go-systemd/releases)
+   - - [Commits](https://github.com/coreos/go-systemd/compare/v22.3.1...v22.3.2)
+
+ -- Arne Jørgensen  Tue, 11 May 2021 05:37:15 +0000
+
+systemd-state (1.3.27)
+  * Bump golang from 1.16.3-alpine to 1.16.4-alpine
+   - Bumps golang from 1.16.3-alpine to 1.16.4-alpine.
+
+ -- Arne Jørgensen  Fri, 07 May 2021 03:26:46 +0000
+
+systemd-state (1.3.26)
+  * Bump codecov/codecov-action from v1.4.1 to v1.5.0
+   - Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from v1.4.1 to v1.5.0.
+   - - [Release notes](https://github.com/codecov/codecov-action/releases)
+   - - [Changelog](https://github.com/codecov/codecov-action/blob/master/CHANGELOG.md)
+   - - [Commits](https://github.com/codecov/codecov-action/compare/v1.4.1...a1ed4b322b4b38cb846afb5a0ebfa17086917d27)
+
+ -- Arne Jørgensen  Tue, 04 May 2021 21:41:20 +0000
+
+systemd-state (1.3.25)
+  * Use v1 of arnested/go-version-action
+
+ -- Arne Jørgensen  Mon, 03 May 2021 10:20:43 +0000
+
+systemd-state (1.3.24)
+  * Bump codecov/codecov-action from v1.4.0 to v1.4.1
+   - Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from v1.4.0 to v1.4.1.
+   - - [Release notes](https://github.com/codecov/codecov-action/releases)
+   - - [Changelog](https://github.com/codecov/codecov-action/blob/master/CHANGELOG.md)
+   - - [Commits](https://github.com/codecov/codecov-action/compare/v1.4.0...967e2b38a85a62bd61be5529ada27ebc109948c2)
+
+ -- Arne Jørgensen  Wed, 21 Apr 2021 04:08:22 +0000
+
+systemd-state (1.3.23)
+  * Bump codecov/codecov-action from v1.3.2 to v1.4.0
+   - Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from v1.3.2 to v1.4.0.
+   - - [Release notes](https://github.com/codecov/codecov-action/releases)
+   - - [Changelog](https://github.com/codecov/codecov-action/blob/master/CHANGELOG.md)
+   - - [Commits](https://github.com/codecov/codecov-action/compare/v1.3.2...0e28ff86a50029a44d10df6ed4c308711925a6a8)
+
+ -- Arne Jørgensen  Mon, 19 Apr 2021 06:48:57 +0000
+
+systemd-state (1.3.22)
+  * Bump brpaz/hadolint-action from v1.3.1 to v1.4.0
+   - Bumps [brpaz/hadolint-action](https://github.com/brpaz/hadolint-action) from v1.3.1 to v1.4.0.
+   - - [Release notes](https://github.com/brpaz/hadolint-action/releases)
+   - - [Changelog](https://github.com/hadolint/hadolint-action/blob/master/.releaserc)
+   - - [Commits](https://github.com/brpaz/hadolint-action/compare/v1.3.1...473e36ba306c199243ffe4f1e652a8b60a8fa296)
+
+ -- Arne Jørgensen  Fri, 16 Apr 2021 04:00:37 +0000
+
+systemd-state (1.3.21)
+  * Bump codecov/codecov-action from v1.3.1 to v1.3.2
+   - Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from v1.3.1 to v1.3.2.
+   - - [Release notes](https://github.com/codecov/codecov-action/releases)
+   - - [Changelog](https://github.com/codecov/codecov-action/blob/master/CHANGELOG.md)
+   - - [Commits](https://github.com/codecov/codecov-action/compare/v1.3.1...9b0b9bbe2c64e9ed41413180dd7398450dfeee14)
+
+ -- Arne Jørgensen  Tue, 06 Apr 2021 05:01:18 +0000
+
+systemd-state (1.3.20)
+  * Bump JamesIves/github-pages-deploy-action from 4.1.0 to 4.1.1
+   - Bumps [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) from 4.1.0 to 4.1.1.
+   - - [Release notes](https://github.com/JamesIves/github-pages-deploy-action/releases)
+   - - [Commits](https://github.com/JamesIves/github-pages-deploy-action/compare/4.1.0...164583b9e44b4fc5910e78feb607ea7c98d3c7b9)
+  * Bump golangci/golangci-lint-action from v2.5.1 to v2.5.2
+   - Bumps [golangci/golangci-lint-action](https://github.com/golangci/golangci-lint-action) from v2.5.1 to v2.5.2.
+   - - [Release notes](https://github.com/golangci/golangci-lint-action/releases)
+   - - [Commits](https://github.com/golangci/golangci-lint-action/compare/v2.5.1...5c56cd6c9dc07901af25baab6f2b0d9f3b7c3018)
+  * Bump golang from 1.16.2-alpine to 1.16.3-alpine
+   - Bumps golang from 1.16.2-alpine to 1.16.3-alpine.
+  * Bump github.com/coreos/go-systemd/v22 from 22.3.0 to 22.3.1
+   - Bumps [github.com/coreos/go-systemd/v22](https://github.com/coreos/go-systemd) from 22.3.0 to 22.3.1.
+   - - [Release notes](https://github.com/coreos/go-systemd/releases)
+   - - [Commits](https://github.com/coreos/go-systemd/compare/v22.3.0...v22.3.1)
+
+ -- Arne Jørgensen  Mon, 05 Apr 2021 04:41:14 +0000
+
+systemd-state (1.3.19)
+  * Bump github.com/coreos/go-systemd/v22 from 22.2.0 to 22.3.0
+   - Bumps [github.com/coreos/go-systemd/v22](https://github.com/coreos/go-systemd) from 22.2.0 to 22.3.0.
+   - - [Release notes](https://github.com/coreos/go-systemd/releases)
+   - - [Commits](https://github.com/coreos/go-systemd/compare/v22.2.0...v22.3.0)
+
+ -- Arne Jørgensen  Mon, 22 Mar 2021 05:06:38 +0000
+
+systemd-state (1.3.18)
+  * Bump codecov/codecov-action from v1.2.2 to v1.3.1
+   - Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from v1.2.2 to v1.3.1.
+   - - [Release notes](https://github.com/codecov/codecov-action/releases)
+   - - [Changelog](https://github.com/codecov/codecov-action/blob/master/CHANGELOG.md)
+   - - [Commits](https://github.com/codecov/codecov-action/compare/v1.2.2...fcebab03f26c7530a22baa63f06b3e0515f0c7cd)
+
+ -- Arne Jørgensen  Wed, 17 Mar 2021 05:05:12 +0000
+
+systemd-state (1.3.17)
+  * Bump golang from 1.16.1-alpine to 1.16.2-alpine
+   - Bumps golang from 1.16.1-alpine to 1.16.2-alpine.
+
+ -- Arne Jørgensen  Fri, 12 Mar 2021 03:39:38 +0000
+
+systemd-state (1.3.16)
+  * Add Origin and Label to APT archive
+
+ -- Arne Jørgensen  Thu, 11 Mar 2021 13:45:28 +0000
+
+systemd-state (1.3.15)
+  * Bump golang from 1.16.0-alpine to 1.16.1-alpine
+   - Bumps golang from 1.16.0-alpine to 1.16.1-alpine.
+
+ -- Arne Jørgensen  Thu, 11 Mar 2021 05:03:00 +0000
+
+systemd-state (1.3.14)
+  * Bump codecov/codecov-action from v1.2.1 to v1.2.2
+   - Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from v1.2.1 to v1.2.2.
+   - - [Release notes](https://github.com/codecov/codecov-action/releases)
+   - - [Changelog](https://github.com/codecov/codecov-action/blob/master/CHANGELOG.md)
+   - - [Commits](https://github.com/codecov/codecov-action/compare/v1.2.1...1f8f3abcccf7960749744fd13547965f0e7d1bdd)
+
+ -- Arne Jørgensen  Wed, 10 Mar 2021 04:14:41 +0000
+
+systemd-state (1.3.13)
+  * Bump JamesIves/github-pages-deploy-action from 4.0.0 to 4.1.0
+   - Bumps [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) from 4.0.0 to 4.1.0.
+   - - [Release notes](https://github.com/JamesIves/github-pages-deploy-action/releases)
+   - - [Commits](https://github.com/JamesIves/github-pages-deploy-action/compare/4.0.0...3dbacc7e69578703f91f077118b3475862cb09b8)
+
+ -- Arne Jørgensen  Fri, 05 Mar 2021 06:25:36 +0000
+
+systemd-state (1.3.12)
+  * Bump github.com/coreos/go-systemd/v22 from 22.1.0 to 22.2.0
+   - Bumps [github.com/coreos/go-systemd/v22](https://github.com/coreos/go-systemd) from 22.1.0 to 22.2.0.
+   - - [Release notes](https://github.com/coreos/go-systemd/releases)
+   - - [Commits](https://github.com/coreos/go-systemd/compare/v22.1.0...v22.2.0)
+
+ -- Arne Jørgensen  Thu, 04 Mar 2021 05:28:16 +0000
+
+systemd-state (1.3.11)
+  * Bump anothrNick/github-tag-action from 1.34.0 to 1.35.0
+   - Bumps [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) from 1.34.0 to 1.35.0.
+   - - [Release notes](https://github.com/anothrNick/github-tag-action/releases)
+   - - [Commits](https://github.com/anothrNick/github-tag-action/compare/1.34.0...cfd2c75d0bf1071c5355d577f0018b0e1b515e9c)
+
+ -- Arne Jørgensen  Wed, 03 Mar 2021 05:05:23 +0000
+
+systemd-state (1.3.10)
+  * Bump golangci/golangci-lint-action from v2.5.0 to v2.5.1
+   - Bumps [golangci/golangci-lint-action](https://github.com/golangci/golangci-lint-action) from v2.5.0 to v2.5.1.
+   - - [Release notes](https://github.com/golangci/golangci-lint-action/releases)
+   - - [Commits](https://github.com/golangci/golangci-lint-action/compare/v2.5.0...d9f0e73c0497685d68af8c58280f49fcaf0545ff)
+
+ -- Arne Jørgensen  Thu, 25 Feb 2021 04:50:11 +0000
+
+systemd-state (1.3.9)
+  * Bump golangci/golangci-lint-action from v2.4.0 to v2.5.0
+   - Bumps [golangci/golangci-lint-action](https://github.com/golangci/golangci-lint-action) from v2.4.0 to v2.5.0.
+   - - [Release notes](https://github.com/golangci/golangci-lint-action/releases)
+   - - [Commits](https://github.com/golangci/golangci-lint-action/compare/v2.4.0...51485a400157c52f3eb32373c318c69c43a6c48c)
+
+ -- Arne Jørgensen  Wed, 24 Feb 2021 05:07:55 +0000
+
+systemd-state (1.3.8)
+  * Upgrade dependencies
+   - - github.com/coreos/go-systemd to the tagged v22
+   - - remove the archived github.com/golang/gddo and use
+   -   github.com/elnormous/contenttype instead
+
+ -- Arne Jørgensen  Fri, 19 Feb 2021 07:58:22 +0000
+
+systemd-state (1.3.7)
+  * Remove unused step
+
+ -- Arne Jørgensen  Fri, 19 Feb 2021 07:16:09 +0000
+
+systemd-state (1.3.6)
+  * Use arnested/go-version-action
+
+ -- Arne Jørgensen  Thu, 18 Feb 2021 23:20:17 +0000
+
+systemd-state (1.3.5)
+  * Bump golang from 1.15.8-alpine to 1.16.0-alpine
+   - Bumps golang from 1.15.8-alpine to 1.16.0-alpine.
+
+ -- Arne Jørgensen  Wed, 17 Feb 2021 05:09:00 +0000
+
+systemd-state (1.3.4)
+  * Deamour gpg public key for older apt
+
+ -- Arne Jørgensen  Tue, 16 Feb 2021 22:49:05 +0000
+
+systemd-state (1.3.3)
+  * Remove install.sh from release process
+   - Leftover from ldddns.
+
+ -- Arne Jørgensen  Tue, 16 Feb 2021 22:34:51 +0000
+
+systemd-state (1.3.2)
+  * Use build test from TravisCI to GitHub Actions
+  * fixup! Move release to Go Releaser on GitHib Actions
+  * Use go 1.15
+  * Move release to Go Releaser on GitHib Actions
+   - Also add building deb packages and publishing them to GitHub Pages.
+  * Remove CodeClimate and use golangci-lint on GitHub Actions
+  * Bump golang from 1.15.7-alpine to 1.15.8-alpine
+   - Bumps golang from 1.15.7-alpine to 1.15.8-alpine.
+  * Bump actionshub/markdownlint from 2.0.0 to 2.0.2
+   - Bumps [actionshub/markdownlint](https://github.com/actionshub/markdownlint) from 2.0.0 to 2.0.2.
+   - - [Release notes](https://github.com/actionshub/markdownlint/releases)
+   - - [Changelog](https://github.com/actionshub/markdownlint/blob/master/CHANGELOG.md)
+   - - [Commits](https://github.com/actionshub/markdownlint/compare/2.0.0...4668c0321d5e398f4776e88e0f87d203dec0fd99)
+  * Switch default branch to main
+  * Bump go.uber.org/automaxprocs from 1.3.0 to 1.4.0
+   - Bumps [go.uber.org/automaxprocs](https://github.com/uber-go/automaxprocs) from 1.3.0 to 1.4.0.
+   - - [Release notes](https://github.com/uber-go/automaxprocs/releases)
+   - - [Changelog](https://github.com/uber-go/automaxprocs/blob/master/CHANGELOG.md)
+   - - [Commits](https://github.com/uber-go/automaxprocs/compare/v1.3.0...v1.4.0)
+  * Bump golang from 1.15.6-alpine to 1.15.7-alpine
+   - Bumps golang from 1.15.6-alpine to 1.15.7-alpine.
+  * Bump brpaz/hadolint-action from v1.3.0 to v1.3.1
+   - Bumps [brpaz/hadolint-action](https://github.com/brpaz/hadolint-action) from v1.3.0 to v1.3.1.
+   - - [Release notes](https://github.com/brpaz/hadolint-action/releases)
+   - - [Changelog](https://github.com/brpaz/hadolint-action/blob/master/.releaserc)
+   - - [Commits](https://github.com/brpaz/hadolint-action/compare/v1.3.0...1623ba61710b974b55ba455930e6f2c8ef919778)
+  * Bump brpaz/hadolint-action from v1.2.1 to v1.3.0
+   - Bumps [brpaz/hadolint-action](https://github.com/brpaz/hadolint-action) from v1.2.1 to v1.3.0.
+   - - [Release notes](https://github.com/brpaz/hadolint-action/releases)
+   - - [Changelog](https://github.com/brpaz/hadolint-action/blob/master/.releaserc)
+   - - [Commits](https://github.com/brpaz/hadolint-action/compare/v1.2.1...bf7fe9f9b98e48f29f63756ea03afde785afc508)
+  * Bump brpaz/hadolint-action from v1.1.0 to v1.2.1
+   - Bumps [brpaz/hadolint-action](https://github.com/brpaz/hadolint-action) from v1.1.0 to v1.2.1.
+   - - [Release notes](https://github.com/brpaz/hadolint-action/releases)
+   - - [Changelog](https://github.com/brpaz/hadolint-action/blob/master/.releaserc)
+   - - [Commits](https://github.com/brpaz/hadolint-action/compare/v1.1.0...7e374b112fd3e7e6ea346131c40e17c7254f64bf)
+  * Add automatic fixes from golangci-lint
+  * Add Anchor Scan of Docker image
+  * Fix markdownlint issues
+  * Add linting of Dockerfile and markdown
+  * Bump golang from 1.15.5-alpine to 1.15.6-alpine
+   - Bumps golang from 1.15.5-alpine to 1.15.6-alpine.
+  * Bump golang from 1.15.4-alpine to 1.15.5-alpine
+   - Bumps golang from 1.15.4-alpine to 1.15.5-alpine.
+  * Bump golang from 1.15.3-alpine to 1.15.4-alpine
+   - Bumps golang from 1.15.3-alpine to 1.15.4-alpine.
+  * Bump golang from 1.15.2-alpine to 1.15.3-alpine
+   - Bumps golang from 1.15.2-alpine to 1.15.3-alpine.
+  * Bump golang from 1.15.1-alpine to 1.15.2-alpine
+   - Bumps golang from 1.15.1-alpine to 1.15.2-alpine.
+  * Update docker build and push action to v2 syntax
+  * Bump docker/build-push-action from v1.1.0 to v2
+   - Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from v1.1.0 to v2.
+   - - [Release notes](https://github.com/docker/build-push-action/releases)
+   - - [Changelog](https://github.com/docker/build-push-action/blob/85d408708d8c09e8991e7b18899e77d7aee89287/CHANGELOG.md)
+   - - [Commits](https://github.com/docker/build-push-action/compare/v1.1.0...85d408708d8c09e8991e7b18899e77d7aee89287)
+  * Bump golang from 1.15.0-alpine to 1.15.1-alpine
+   - Bumps golang from 1.15.0-alpine to 1.15.1-alpine.
+  * Revert "Add action to push README to Docker Hub"
+   - This reverts commit 7ef250c306082f743bf5f41d609f457d39d0d537.
+  * Add action to push README to Docker Hub
+  * Bump golang from 1.14.7-alpine to 1.15.0-alpine
+   - Bumps golang from 1.14.7-alpine to 1.15.0-alpine.
+  * Bump golang from 1.14.6-alpine to 1.14.7-alpine
+   - Bumps golang from 1.14.6-alpine to 1.14.7-alpine.
+  * Bump golang from 1.14.5-alpine to 1.14.6-alpine
+   - Bumps golang from 1.14.5-alpine to 1.14.6-alpine.
+  * Create codeql-analysis.yml
+  * Bump golang from 1.14.4-alpine to 1.14.5-alpine
+   - Bumps golang from 1.14.4-alpine to 1.14.5-alpine.
+  * Update README.md
+  * Bump actions/checkout from v2.3.0 to v2.3.1
+   - Bumps [actions/checkout](https://github.com/actions/checkout) from v2.3.0 to v2.3.1.
+   - - [Release notes](https://github.com/actions/checkout/releases)
+   - - [Changelog](https://github.com/actions/checkout/blob/master/CHANGELOG.md)
+   - - [Commits](https://github.com/actions/checkout/compare/v2.3.0...28c7f3d2b5162b5ddd3dfd9a45aa55eaf396478b)
+  * Bump actions/checkout from v2 to v2.3.0
+   - Bumps [actions/checkout](https://github.com/actions/checkout) from v2 to v2.3.0.
+   - - [Release notes](https://github.com/actions/checkout/releases)
+   - - [Changelog](https://github.com/actions/checkout/blob/master/CHANGELOG.md)
+   - - [Commits](https://github.com/actions/checkout/compare/v2...b4483adec309c0d01a5435c5e24eb40de5773ad9)
+  * Bump docker/build-push-action from v1.0.0 to v1.1.0
+   - Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from v1.0.0 to v1.1.0.
+   - - [Release notes](https://github.com/docker/build-push-action/releases)
+   - - [Commits](https://github.com/docker/build-push-action/compare/v1.0.0...92e71463491f2d026a477188b8ad3a0fdd9d672c)
+  * Create Dependabot config file
+  * Bump golang from 1.14.3-alpine to 1.14.4-alpine
+   - Bumps golang from 1.14.3-alpine to 1.14.4-alpine.
+  * Bump golang from 1.14.2-alpine to 1.14.3-alpine
+   - Bumps golang from 1.14.2-alpine to 1.14.3-alpine.
+
+ -- Arne Jørgensen  Tue, 16 Feb 2021 21:58:02 +0000
+
+systemd-state (1.3.1)
+  * Fix deploy token
+  * Use Go 1.1.4 on Travis CI as well
+
+ -- Arne Jørgensen  Tue, 28 Apr 2020 14:56:15 +0000
+
+systemd-state (1.3.0)
+  * Reduce docker image size
+  * Bump golang from 1.14.1-alpine to 1.14.2-alpine
+   - Bumps golang from 1.14.1-alpine to 1.14.2-alpine.
+  * Fewer hardcoded values in Github action
+   - Assume the same repo name on Docker Hub as on GitHub
+  * Bump golang from 1.14.0-alpine to 1.14.1-alpine
+   - Bumps golang from 1.14.0-alpine to 1.14.1-alpine.
+  * Add labels to docker image
+
+ -- Arne Jørgensen  Tue, 28 Apr 2020 14:23:16 +0000
+
+systemd-state (1.2.0)
+  * Docker build and push to Docker Hub
+   - Also push to Docker Hub instead.
+   - Use Dockers own action for building and pushing.
+  * Use Ubers automaxprocs in docker builds
+  * Bump golang from 1.13.8-alpine to 1.14.0-alpine
+   - Bumps golang from 1.13.8-alpine to 1.14.0-alpine.
+  * Bump golang from 1.13.7-alpine to 1.13.8-alpine
+   - Bumps golang from 1.13.7-alpine to 1.13.8-alpine.
+  * Bump golang from 1.13.6-alpine to 1.13.7-alpine
+   - Bumps golang from 1.13.6-alpine to 1.13.7-alpine.
+  * Bump golang from 1.13.5-alpine to 1.13.6-alpine
+   - Bumps golang from 1.13.5-alpine to 1.13.6-alpine.
+  * Tweak whitelisted licenses
+   - Wwhrd changed its license detection library. The new library detects the
+   - previous "NewBSD" as "BSD-2-Clause" and "BSD-3-Clause".
+  * Bump golang from 1.13.4-alpine to 1.13.5-alpine
+   - Bumps golang from 1.13.4-alpine to 1.13.5-alpine.
+  * Create SECURITY.md
+  * Create CONTRIBUTING.md
+  * Create CODE_OF_CONDUCT.md
+  * Bump golang from 1.13.3-alpine to 1.13.4-alpine
+   - Bumps golang from 1.13.3-alpine to 1.13.4-alpine.
+  * Bump golang from 1.13.1-alpine to 1.13.3-alpine
+   - Bumps golang from 1.13.1-alpine to 1.13.3-alpine.
+  * Replace actions/docker with "raw" actions run
+  * Bump golang from 1.13.0-alpine to 1.13.1-alpine
+   - Bumps golang from 1.13.0-alpine to 1.13.1-alpine.
+  * Fix git version in Docker build
+  * Add Docker build as GitHub action
+  * Add CODEOWNERS
+  * Bump golang from 1.12-alpine to 1.13.0-alpine
+   - Bumps golang from 1.12-alpine to 1.13.0-alpine.
+  * Use github.com/golang/gddo/httputil instead of bitbucket.org/ww/goautoneg
+   - goautoneg gave some problems because it is hosted on Bitbucket:
+   - * Dependabot has problems detecting it because Bitbucket has no
+   -   go-import meta tag pointing to Mercurial.
+   - * We need to also add Mercurial to the build process in Docker to be
+   -   able to build.
+   - Also it appears to not be maintained.
+  * Update CI to Go modules
+  * Convert to Go modules
+  * Bump golang from 1.11-alpine to 1.12-alpine
+   - Bumps golang from 1.11-alpine to 1.12-alpine.
+  * Add goreportcard refresh
+  * Update dependencies
+  * Refresh godoc.org documentation
+  * Update dependencies
+  * Fix copyright years in license
+   - This project was not written in 2017.
+  * Add license check to Travis CI
+  * Use Go 1.11 in Docker image
+  * Update dependency info
+  * Add `dep check` on Travis
+  * Use Go 1.11 on Travis
+  * Fix IneffAssign warning
+   - ```
+   - IneffAssign detects ineffectual assignments in Go code.
+   - systemd-state/statusformat.go
+   - Line 6: warning: ineffectual assignment to stateFormat (ineffassign)
+   - ```
+  * Add more files to git ignore
+   - * Code coverage files
+   - * Code coverage reporter
+   - * Dist build directory
+
+ -- Arne Jørgensen  Sun, 22 Mar 2020 21:06:31 +0000
+
+systemd-state (1.1.0)
+  * Fix release badge
+  * Add health check to Docker image/container
+  * Split out address config and add test
+  * Use tabel driven test
+  * Add test for GetStatusAndFormat()
+  * Rename Lead to Label in StateFormat
+   - A better name
+  * Make bind address configurable
+  * Fix port number
+  * Add text/plain and application/json format and refactor
+  * Add test coverage badge
+  * Git ignore test executable
+  * Add test to docker build and image
+  * Add test and code coverage to travis build
+  * Use Go 1.10
+  * Split state into separate file with tests
+  * Rename systemd-state.go to main.go
+  * Log go version during build
+  * Tune docker-compose example
+   - Don't mount the specific socket as it might be rotated by systemd in
+   - which case the socket will no longer be available inside the docker
+   - container. Instead we add the whole directory as a volume.
+  * Support HEAD requests
+  * Fix markdownlint issues
+
+ -- Arne Jørgensen  Thu, 15 Mar 2018 22:08:25 +0000
+
+systemd-state (1.0.0)
+  * Extend documentation
+  * Add Travis CI config
+  * Add Code Climate config
+  * Add badges to readme
+  * Use html/template for response page
+  * Improve building Docker image
+  * Switch github.com/coreos/go-systemd back to upstream
+   - Upstream merge our change into master (https://github.com/coreos/go-systemd/pull/247).
+  * Initial version
+
+ -- Arne Jørgensen  Sun, 04 Feb 2018 09:19:54 +0000
+
