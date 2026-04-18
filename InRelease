@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Sat, 18 Apr 2026 05:07:37 +0000
+Label: github.com/arnested/systemd-state
+Origin: Arne Jørgensen
+MD5Sum:
+ 4a14a6badf02c7e06a69cb38acfe12f8             1782 Packages
+ 409ff4dfe083e2345fa8b47c0a78fe9f              835 Packages.gz
+ 1c57f4b3232e61cd1883cdf3fd7c96d9              103 Release
+SHA1:
+ 9bad2871e24bf770641f1e0237c3f35a380b74be             1782 Packages
+ bee3a7706e0e56f38a251cd60b2be86c7432e502              835 Packages.gz
+ b7e7028fbacfacd46be0fa1e28bb163357061b87              103 Release
+SHA256:
+ 5403cc64c4f8b49c6a4598a68da891ddf6ac42bdf3fb6bf3f443d9c9fba299ad             1782 Packages
+ c5b5837ee76addeab3aaaeb890647333655e9b2511f836d39bc53c04f870fedc              835 Packages.gz
+ 1889c10236db993b394b9fd15982eb392c1993656c21f09910f4a691cf156e1d              103 Release
+SHA512:
+ 05a7b735df134ea3de8b8e4e3a09a0d573833f7d6184e48a8a75201f7ff152732c3f0742a1d1e2272e73dd251f840c431880320d390ed5a82c194f68ff506983             1782 Packages
+ 114751e48591ae08ae4d98e976be1c4b76e396065a29b27d49b98972a0f70c144450bc840ee4f99cfaa2200cf3dc5012f28139596b33d400810e73a302783fb2              835 Packages.gz
+ b76652bb599483e496cdd4762354c4def826328b671249dbecbf6462061e593e3e4dc5b2d821a2a2619c2ecc592fa0cb7b02494c188a042640a8212424b6d064              103 Release
+Changelogs: https://systemd-state.arnested.dk/changelog?path=@CHANGEPATH@
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEOaW5aMP09wCi81cVnwaxeMQIvd4FAmnjEZkACgkQnwaxeMQI
+vd7bcgv+MiQ2QuNFqI95vtOwKaK+O6KrItTEdm8wKPmyxyAUCTmV12kFJrLIdFcu
+Kj9QkESQxbiJL/Gl7M3AozgztX7M46cEQPJtiqv5NSYXroN4NuU78wsbiqlVckX6
+N2US8guchHNS4QrE4ou7V3mkS0nUGxJc0lZhHGqdYGbcqpzZGMpAeJnOfWHmCU2f
+DByg7/0J8Jmvi1tKe9i+ZBtgfaRaGjbTIiNPFS96z8S+IKAlJydzZll4o+chiLH9
+u+VI90oJEMelHliIM/Blzut4xgBDb8KKKKkkayZ/MY0JO2hEaBVG/L23GDfrDAW3
+4J5i5WsKNDE4vRWMQMWiC2SXbbLgR4BmPLKCsXV26vfjbA01Q32HAmWwu7Iqt0tJ
+nne69rJq6nb8kyM1Z/wYcB8abgZPBk9DBeChcbyU3P9Lia3GAQZwud3PsYp5fys9
+y6pA146Fm+8xlRU+gsfBw1agSPCmRdHxtYIr5cUyqJk7kKzQtLCc7xmNj1ATCNos
+oAdJaRCF
+=nkYR
+-----END PGP SIGNATURE-----
