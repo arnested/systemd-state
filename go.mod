@@ -1,6 +1,6 @@
 module github.com/arnested/systemd-state
 
-go 1.26.2
+go 1.26.3
 
 require (
 	github.com/coreos/go-systemd/v22 v22.7.0
