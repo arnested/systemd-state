@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Mon, 11 May 2026 16:14:39 +0000
+Label: github.com/arnested/systemd-state
+Origin: Arne Jørgensen
+MD5Sum:
+ 02c58dde4ae90f310f411201089ea30c             1782 Packages
+ acaab31a23eecbe183c9dcd451a3a3cf              833 Packages.gz
+ c601cab546ac7bf85dbfaecca8af12ac              103 Release
+SHA1:
+ 1416619e20f54f0b89883cafe59952a0e012ae79             1782 Packages
+ 366ed1eb92983a0027ba25fba80e46a4e4e23a1a              833 Packages.gz
+ ffd2e154974a114998c7babc1f86b31bf6c1a191              103 Release
+SHA256:
+ 8c6dedb83175e8a04ebc8ed84a4ab6445847a460d2303a853ea6bb6257b2697f             1782 Packages
+ 0ae851dd059742a4c444bdf576e2e8f418041c0d890fa7f22c418002ad5c14bf              833 Packages.gz
+ 6fdbd1ae23b5089b2dcc6f926d8a3b50c966e1a5a038167161f38488d09f8535              103 Release
+SHA512:
+ 3441f4f3f118c8bb4e356de6e5055b14914b6d629bc9f0b02316d260ea623f2080af2bbd3c288b296a306a44538c7cb40019ad9e6a1d57d36f4937de8aa97164             1782 Packages
+ 1e57549977eec9dc6943f6b1cef0d459a4bc2eb31b0ebb0941c7600345e55ea0735fe73ab6fa4eebe3902fa0e84ddbfa2de2d437e70e4951fd50b638771a0052              833 Packages.gz
+ 92bd7d6423c051099b143dd8871f48f1dce528a32758a07bf7755365688d7fcda98b298016b9a9dfcbb8c2cd2141224a1be6a6312dbbe320b242d5d2b8d0f421              103 Release
+Changelogs: https://systemd-state.arnested.dk/changelog?path=@CHANGEPATH@
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEOaW5aMP09wCi81cVnwaxeMQIvd4FAmoCAHAACgkQnwaxeMQI
+vd5u2Qv/Q/J+U68fQgEV6JYBfiuK4DVdKjKSBlPW9zwrCLubt58mQqlQ88OjATLr
+Ske8xbe8/Ctaf0/2IdgEy6eLMVP6noKheOzhh+7cGuZyW4GaXfWkJ+aQOQygSVPZ
+nO+xcP25n2aM4dIQycFpJON7UqkVFthK4e8dEl+vrfii8liLoTN8Cfr0zD9qp3Hl
+bK9UELhCKWsxGXn2+s9qu0WXwpxDwv6exQq1T98/TC6jGgvi4VbLvc1yAcJurns3
+U8PRPoTakxzn/tnVaQVx/kqsjx8b6BtVfWXVjh/aLOzqxm7e8PE2bRtYW3eSV5Qf
+0BLcCdE78MDlE73ksu4TzeqgjuRzqEQUZdSa6rZ1K2NSFiQ8m+qu6Urr2TgJlJKg
+jkE5dn151FPk29vYKUbhLHTuTEuCiapWcuXqtS3F8byw1vOWQS333gClxprXusTD
+9NGg/n1cQlzge/aTTVVDN2icClnboXlFbi9TdfJkHkUMpW7ybCJR+rYou6X23UQ2
+lJwlB6jp
+=qMxb
+-----END PGP SIGNATURE-----
