@@ -7,11 +7,12 @@ on:
     types:
       - completed
 permissions:
+  actions: read
   contents: write
+  id-token: write
   packages: write
   pages: write
   security-events: write
-  actions: read
 jobs:
   bump-version:
     runs-on: ubuntu-24.04
@@ -87,13 +88,14 @@ jobs:
           cat page/header.html README.html page/footer.html > site/index.html
       - name: Add changelog to GitHub Pages
         run: go tool chglog format --template deb --output site/changelog
-      - name: Deploy deb packages
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload site files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v5
         with:
-          branch: gh-pages
-          folder: site
-          clean: true
-          single-commit: true
+          path: site/
+          include-hidden-files: true
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v5
       - name: Post status to Google Chat
         if: ${{ always() }}
         uses: containrrr/shoutrrr-action@v1
