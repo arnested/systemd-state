@@ -12,7 +12,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Setup Go
-        uses: arnested/setup-go@rc
+        uses: actions/setup-go@v7.1.0
         with:
           go-version-file: go.mod
       - name: Run go test
@@ -38,7 +38,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Setup Go
-        uses: arnested/setup-go@rc
+        uses: actions/setup-go@v7.1.0
         with:
           go-version-file: go.mod
       - name: Run nilaway
